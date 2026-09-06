@@ -1,0 +1,290 @@
+{
+  "brand": {
+    "name": "ALTIVA",
+    "tagline": "Real Estate"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About Us",
+    "contact": "Contact",
+    "consultation": "Book a Consultation",
+    "privacy": "Privacy Policy",
+    "cta": "Book a Free Consultation"
+  },
+  "common": {
+    "viewDetails": "View Details",
+    "readMore": "Read More",
+    "learnMore": "Discover More",
+    "startingFrom": "Starting from",
+    "estimated": "Estimated",
+    "comingSoon": "Coming Soon",
+    "aed": "AED",
+    "whatsapp": "Chat on WhatsApp",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "loading": "Loading...",
+    "noResults": "No projects match your search right now",
+    "resetFilters": "Reset Filters",
+    "showResults": "Show {{count}} results",
+    "share": "Share",
+    "backToProjects": "Back to Projects",
+    "required": "This field is required",
+    "send": "Send",
+    "sending": "Sending...",
+    "thankYou": "Thank You",
+    "submissionError": "We couldn't send your request right now. Please try again or contact us on WhatsApp.",
+    "loadError": "We couldn't load the projects right now. Please try again shortly.",
+    "close": "Close",
+    "all": "All",
+    "sqft": "sqft",
+    "sqm": "sqm",
+    "bedrooms": "Bedrooms",
+    "bedroomsShort": "Beds",
+    "studio": "Studio",
+    "and": "and"
+  },
+  "footer": {
+    "aboutText": "Connecting Kuwaiti investors and GCC partners with the best real estate opportunities in the UAE, backed by more than 23 years of experience.",
+    "contactTitle": "Contact Us",
+    "quickLinks": "Quick Links",
+    "companyProfileAr": "Company Profile (Arabic)",
+    "companyProfileEn": "Company Profile (English)",
+    "rights": "All rights reserved",
+    "address": "Al Salhiya Complex, Gate 5, Second Floor, Kuwait"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Invest confidently in Dubai",
+      "title": "Invest in Dubai from Kuwait, Effortlessly",
+      "subtitle": "Selected real estate opportunities with returns starting from 8% annually — backed by more than 23 years of real estate market expertise",
+      "ctaPrimary": "Get the Best Opportunities Now",
+      "ctaSecondary": "Discover More"
+    },
+    "whyDubai": {
+      "title": "Why Dubai?",
+      "subtitle": "A global investment destination that combines security and return",
+      "cards": [
+        { "title": "High Rental Yields", "text": "Among the highest returns in the world" },
+        { "title": "Strong, Growing Demand", "text": "For property purchase and investment" },
+        { "title": "Stable & Secure Market", "text": "A trusted investment environment" },
+        { "title": "Strategic Location", "text": "A gateway between East and West" }
+      ]
+    },
+    "featured": {
+      "title": "Selected Investment Opportunities",
+      "subtitle": "Carefully studied projects across every emirate",
+      "viewAll": "View All Opportunities"
+    },
+    "about": {
+      "title": "About Us",
+      "text": "We are Altiva Real Estate, connecting Kuwaiti investors with the best real estate opportunities in Dubai. Our team combines local expertise with deep knowledge of the Dubai property market, offering carefully studied opportunities and full support from the first consultation through closing the deal."
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "End-to-end solutions from consultation to closing",
+      "items": [
+        { "title": "Carefully Selected Investment Opportunities", "text": "We screen the market to offer opportunities that fit your financial goals" },
+        { "title": "Property Sale, Purchase & Marketing", "text": "Across all areas of the country" },
+        { "title": "Property Insurance", "text": "Protecting your property investment with confidence" },
+        { "title": "Handling All Transactions", "text": "Easily, quickly, and securely" },
+        { "title": "Direct Access to Top Developers", "text": "Direct partnerships with the largest real estate developers" }
+      ]
+    },
+    "stats": {
+      "years": "Years of experience in real estate investment and development",
+      "partners": "Trusted partnerships with Dubai's top developers",
+      "management": "Comprehensive property management",
+      "returns": "Rewarding returns — well-studied investments that deliver"
+    },
+    "partners": {
+      "title": "Our Partners Among Dubai's Leading Developers"
+    },
+    "calculator": {
+      "title": "Calculate Your Investment Return",
+      "subtitle": "Enter your investment amount and choose a property type to estimate the expected annual return",
+      "amountLabel": "Investment Amount (KWD)",
+      "typeLabel": "Property Type",
+      "types": { "villa": "Villa", "tower": "Residential Tower", "resort": "Holiday Home" },
+      "resultLabel": "Expected Annual Return",
+      "disclaimer": "Note: This result is an estimate only. It is not a guaranteed return or binding financial advice."
+    },
+    "testimonials": {
+      "title": "Investor Voices",
+      "subtitle": "Success stories from investors who trusted Altiva",
+      "items": [
+        { "text": "A standout experience, with clear explanations and professional follow-up from start to finish.", "name": "Mohammed Al Kandari", "meta": "ALTIVA Client" },
+        { "text": "A trusted team that helped me understand the market and choose the right project with confidence.", "name": "Yahya Al Manaei", "meta": "ALTIVA Client" },
+        { "text": "What impressed me most was the transparency, quick responses, and attention to every detail.", "name": "Mahzam Al Suhaili", "meta": "ALTIVA Client" },
+        { "text": "The investment process was simple and well organised, with clear support at every stage.", "name": "Mohammed Abdulaziz", "meta": "ALTIVA Client" },
+        { "text": "Well-studied options and professional service that reflect real expertise in the UAE property market.", "name": "Tariq Al Ghanim", "meta": "ALTIVA Client" },
+        { "text": "Excellent service and a helpful team that made finding the right property easier and more comfortable.", "name": "Fawzia Ahmed", "meta": "ALTIVA Client" }
+      ]
+    },
+    "finalCta": {
+      "title": "Looking for a real investment opportunity in Dubai?",
+      "subtitle": "Our team is ready to help you choose the best opportunities to achieve your financial goals",
+      "cta": "Book Your Free Consultation Now"
+    }
+  },
+  "projects": {
+    "pageTitle": "Projects",
+    "pageSubtitle": "Explore our selected real estate opportunities across every emirate",
+    "filters": {
+      "title": "Filters",
+      "emirate": "Emirate",
+      "area": "Area",
+      "propertyType": "Property Type",
+      "priceRange": "Price Range",
+      "bedrooms": "Bedrooms",
+      "developer": "Developer",
+      "status": "Project Status",
+      "handover": "Handover",
+      "search": "Search for a project or area...",
+      "apply": "Apply Filters",
+      "clear": "Clear All"
+    }
+  },
+  "propertyTypes": {
+    "apartment": "Apartment",
+    "villa": "Villa",
+    "townhouse": "Townhouse",
+    "penthouse": "Penthouse",
+    "duplex": "Duplex",
+    "hotel_apartment": "Hotel Apartment",
+    "holiday_home": "Holiday Home",
+    "residential_land": "Residential Land",
+    "residential_building": "Residential Building",
+    "office": "Office",
+    "shop": "Shop",
+    "warehouse": "Warehouse",
+    "commercial_building": "Commercial Building",
+    "commercial_land": "Commercial Land"
+  },
+  "priceRanges": {
+    "under_500k": "Under 500K",
+    "500k_750k": "500K - 750K",
+    "750k_1m": "750K - 1M",
+    "1m_1_5m": "1M - 1.5M",
+    "1_5m_2m": "1.5M - 2M",
+    "2m_3m": "2M - 3M",
+    "3m_5m": "3M - 5M",
+    "5m_10m": "5M - 10M",
+    "over_10m": "Over 10M"
+  },
+  "emirates": {
+    "dubai": "Dubai",
+    "abu_dhabi": "Abu Dhabi",
+    "sharjah": "Sharjah",
+    "ajman": "Ajman",
+    "umm_al_quwain": "Umm Al Quwain",
+    "ras_al_khaimah": "Ras Al Khaimah",
+    "fujairah": "Fujairah"
+  },
+  "projectStatus": {
+    "coming_soon": "Coming Soon",
+    "off_plan": "Off-Plan",
+    "ready": "Ready to Move",
+    "sold_out": "Sold Out"
+  },
+  "projectDetails": {
+    "overview": "Overview",
+    "priceFrom": "Starting Price",
+    "paymentPlan": "Payment Plan",
+    "handover": "Handover",
+    "developer": "Developer",
+    "location": "Location",
+    "propertyType": "Property Type",
+    "areaRange": "Area",
+    "bedroomsRange": "Bedrooms",
+    "gallery": "Gallery",
+    "brochure": "Brochure",
+    "brochureAr": "Download Brochure (Arabic)",
+    "brochureEn": "Download Brochure (English)",
+    "interested": "Interested in this project?",
+    "requestInfo": "Request More Information",
+    "similar": "Similar Projects",
+    "notFound": "Project Not Found",
+    "notFoundText": "This project may no longer be available or has been removed."
+  },
+  "consultation": {
+    "title": "Request a Free Consultation",
+    "subtitle": "Tell us about your investment goals and our team will reach out within 24 hours",
+    "form": {
+      "fullName": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "countryOfResidence": "Country of Residence",
+      "emirate": "Emirate of Interest",
+      "propertyType": "Property Type",
+      "budget": "Approximate Budget",
+      "purpose": "Purpose of Purchase",
+      "purposeOptions": { "investment": "Investment", "residence": "Personal Residence", "holiday_home": "Holiday Home", "golden_visa": "Golden Visa", "undecided": "Not Decided Yet" },
+      "purchaseTimeline": "Expected Purchase Timeline",
+      "timelineOptions": { "immediate": "Immediate (within a month)", "3_months": "Within 3 months", "6_months": "Within 6 months", "exploring": "Just exploring options" },
+      "bedrooms": "Bedrooms Required",
+      "contactMethod": "Preferred Contact Method",
+      "contactMethodOptions": { "phone": "Phone Call", "whatsapp": "WhatsApp", "email": "Email" },
+      "message": "Additional Notes (optional)",
+      "consent": "I agree to the Privacy Policy and allow Altiva Real Estate to contact me regarding this request",
+      "submit": "Submit Consultation Request",
+      "successTitle": "Your Request Has Been Received",
+      "successText": "Thank you for contacting Altiva Real Estate. One of our consultants will reach out to you as soon as possible."
+    }
+  },
+  "about": {
+    "pageTitle": "About Us",
+    "intro": "We are Altiva Real Estate, connecting Kuwaiti investors with the best real estate opportunities in Dubai. Our team combines local expertise with deep knowledge of the Dubai property market, offering carefully studied opportunities and full support from the first consultation through closing the deal.",
+    "founderWord": "A Word From the Founder",
+    "founder": {
+      "name": "Hassan Rashed Al Suwaidi",
+      "title": "Founder & General Manager",
+      "bio1": "Hassan Rashed Al Suwaidi is the Founder and General Manager of Altiva Real Estate, leading its vision to build a trusted investment bridge connecting GCC investors with the UAE real estate market, with a special focus on serving investors from Kuwait.",
+      "bio2": "His vision is grounded in the firm belief that successful real estate investment does not start with presenting properties, but with understanding the investor's goals, studying their needs, carefully analyzing the market, and then selecting opportunities capable of delivering real, sustainable long-term value.",
+      "bio3": "He has extensive experience managing several Kuwaiti companies operating in the UAE, contributing to tangible successes and building close professional relationships with leading Kuwaiti businessmen over nearly 24 years.",
+      "bio4": "Through Altiva Real Estate, he leads the company's expansion between Dubai and Kuwait, placing trust, professionalism, transparency, and quality of advice at the core of its work, with the goal of building long-term relationships with clients and partners and delivering an investment experience that lives up to their expectations."
+    },
+    "teamTitle": "Our Team",
+    "qaisBio": [
+      "Qais Ramadan specializes in business development, investment, and strategic partnerships. A graduate of Business Administration and Management Information Systems, he leads the exploration and development of commercial and investment opportunities at Altiva Group, building relationships with investors, companies, and decision-makers and turning them into actionable, scalable partnerships.",
+      "His experience in media and corporate communications gives him an integrated perspective on markets, institutional positioning, and relationship management. He works to strengthen commercial and investment ties between Kuwait and the United Arab Emirates and to identify promising opportunities that support Gulf economic integration."
+    ],
+    "team": [
+      { "name": "Qais Ramadan", "role": "Development & Investment Manager" },
+      { "name": "Yasmin Shahabi", "role": "Manager's Secretary" },
+      { "name": "Milad", "role": "Accounts Officer" },
+      { "name": "Fatma Hasan", "role": "Sales Consultant" },
+      { "name": "Sarah Al Otaibi", "role": "Sales Consultant" }
+    ]
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "subtitle": "Our team is ready to answer all your questions",
+    "form": {
+      "name": "Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "details": {
+      "address": "Address",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email"
+    }
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "sections": [
+      { "title": "Introduction", "text": "Altiva Real Estate is committed to protecting the privacy of our website visitors and clients. This policy explains how we collect, use, and protect your personal data when you use our website or contact us." },
+      { "title": "Data We Collect", "text": "We may collect your name, phone number, email address, country of residence, and details about your real estate interests (such as emirate, property type, and budget) when you fill out a consultation request form or contact us." },
+      { "title": "How We Use Your Data", "text": "We use your data to contact you about real estate opportunities of interest, provide the consultations you request, and improve our services. We will not share your data with third parties without your consent, except where required by law." },
+      { "title": "Data Protection", "text": "We take appropriate technical and organizational measures to protect your data from unauthorized access, loss, or misuse." },
+      { "title": "Your Rights", "text": "You may, at any time, request access to your data, request that it be updated, or request its deletion by contacting us via the email address shown on the Contact Us page." },
+      { "title": "Contact Us", "text": "For any questions about this Privacy Policy, please contact us at sales@altivaproperties.com." }
+    ]
+  }
+}
