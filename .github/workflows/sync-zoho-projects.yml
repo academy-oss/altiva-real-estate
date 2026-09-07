@@ -24,6 +24,7 @@ jobs:
         env:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
           ZOHO_GRANT_CODE: ${{ secrets.ZOHO_GRANT_CODE }}
           ZOHO_REFRESH_PASSPHRASE: ${{ secrets.ZOHO_REFRESH_PASSPHRASE }}
         run: |
@@ -76,7 +77,6 @@ jobs:
         env:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
-          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
 
       - name: Publish updated project data
         if: steps.credentials.outputs.available == 'true'
