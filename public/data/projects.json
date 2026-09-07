@@ -1,0 +1,143 @@
+[
+  {
+    "id": "7546783000001731006",
+    "zohoRecordId": "7546783000001731006",
+    "slug": "jais-retreats",
+    "title": { "ar": "جيس ريتريتس", "en": "Jais Retreats" },
+    "description": {
+      "ar": "منتجع سكني هادئ عند سفح أعلى قمة جبلية في الإمارات، يوفر بيوت عطلات وشاليهات مطلة على الجبال، مثالية للاستثمار في قطاع الضيافة الجبلية الناشئ.",
+      "en": "A tranquil residential retreat at the foot of the UAE's highest peak, offering mountain-view holiday homes and chalets — ideal for investing in the emerging mountain hospitality sector."
+    },
+    "shortDescription": { "ar": "بيوت عطلات جبلية في رأس الخيمة", "en": "Mountain holiday homes in Ras Al Khaimah" },
+    "emirate": "ras_al_khaimah",
+    "area": { "ar": "جبل جيس", "en": "Jebel Jais" },
+    "developer": { "ar": "RAK Properties", "en": "RAK Properties" },
+    "propertyType": "holiday_home",
+    "priceFrom": 1750000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": ["2", "3"],
+    "areaSqftFrom": 1100,
+    "areaSqftTo": 2200,
+    "paymentPlan": { "ar": "30% عند الحجز، 70% عند التسليم", "en": "30% on booking, 70% on handover" },
+    "handoverDate": "2026-03-31",
+    "handoverLabel": { "ar": "الربع الأول 2026", "en": "Q1 2026" },
+    "coverImage": { "id": "7546783000001731006-cover", "url": "https://academy-oss.github.io/altiva-real-estate/projects/jais-retreats/cover.jpg", "alt": { "ar": "جيس ريتريتس", "en": "Jais Retreats" } },
+    "gallery": [
+      { "id": "7546783000001731006-g1", "url": "https://academy-oss.github.io/altiva-real-estate/projects/jais-retreats/cover.jpg", "alt": { "ar": "جيس ريتريتس", "en": "Jais Retreats" } },
+      { "id": "7546783000001731006-g2", "url": "https://academy-oss.github.io/altiva-real-estate/projects/jais-retreats/bedroom.jpg", "alt": { "ar": "جيس ريتريتس", "en": "Jais Retreats" } },
+      { "id": "7546783000001731006-g3", "url": "https://academy-oss.github.io/altiva-real-estate/projects/jais-retreats/kitchen.jpg", "alt": { "ar": "جيس ريتريتس", "en": "Jais Retreats" } }
+    ],
+    "status": "ready",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-09-07T07:25:55.000Z"
+  },
+  {
+    "id": "7546783000001731007",
+    "zohoRecordId": "7546783000001731007",
+    "slug": "ventana-residences",
+    "title": { "ar": "فنتانا ريزيدنس", "en": "Ventana Residences" },
+    "description": {
+      "ar": "مشروع سكني عصري في وارسان 4 يوفر شققًا استوديو وغرفة نوم واحدة بأسعار تنافسية، مناسب للمستثمرين الباحثين عن عوائد إيجارية مرتفعة.",
+      "en": "A modern residential project in Warsan 4 offering studio and one-bedroom apartments at competitive prices, ideal for investors seeking high rental yields."
+    },
+    "shortDescription": { "ar": "شقق بعوائد إيجارية مرتفعة في وارسان", "en": "High-yield apartments in Warsan" },
+    "emirate": "dubai",
+    "area": { "ar": "وارسان 4", "en": "Warsan 4" },
+    "developer": { "ar": "Object 1 Development", "en": "Object 1 Development" },
+    "propertyType": "apartment",
+    "priceFrom": 550000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": ["studio", "1"],
+    "areaSqftFrom": 380,
+    "areaSqftTo": 750,
+    "paymentPlan": { "ar": "15% عند الحجز، 55% أثناء الإنشاء، 30% عند التسليم", "en": "15% on booking, 55% during construction, 30% on handover" },
+    "handoverDate": "2026-09-30",
+    "handoverLabel": { "ar": "الربع الثالث 2026", "en": "Q3 2026" },
+    "coverImage": { "id": "7546783000001731007-cover", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ventana-residences/cover.jpg", "alt": { "ar": "فنتانا ريزيدنس", "en": "Ventana Residences" } },
+    "gallery": [
+      { "id": "7546783000001731007-g1", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ventana-residences/cover.jpg", "alt": { "ar": "فنتانا ريزيدنس", "en": "Ventana Residences" } },
+      { "id": "7546783000001731007-g2", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ventana-residences/pool.jpg", "alt": { "ar": "فنتانا ريزيدنس", "en": "Ventana Residences" } },
+      { "id": "7546783000001731007-g3", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ventana-residences/lobby.jpg", "alt": { "ar": "فنتانا ريزيدنس", "en": "Ventana Residences" } }
+    ],
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-09-07T07:25:55.000Z"
+  },
+  {
+    "id": "7546783000001731008",
+    "zohoRecordId": "7546783000001731008",
+    "slug": "empire-downtown-jebel-ali",
+    "title": { "ar": "امباير داون تاون جبل علي", "en": "Empire Downtown Jebel Ali" },
+    "description": {
+      "ar": "مشروع سكني متكامل في قلب جبل علي يوفر شققًا جاهزة للتسليم بتصميم عصري وقربًا من المناطق الصناعية والحرة الرئيسية في دبي.",
+      "en": "A fully integrated residential project in the heart of Jebel Ali offering ready-to-move apartments with modern design, close to Dubai's major industrial and free zones."
+    },
+    "shortDescription": { "ar": "شقق جاهزة للتسليم في جبل علي", "en": "Ready-to-move apartments in Jebel Ali" },
+    "emirate": "dubai",
+    "area": { "ar": "جبل علي", "en": "Jebel Ali" },
+    "developer": { "ar": "Empire Development", "en": "Empire Development" },
+    "propertyType": "apartment",
+    "priceFrom": 799777,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": ["1", "2"],
+    "areaSqftFrom": 650,
+    "areaSqftTo": 1150,
+    "paymentPlan": { "ar": "دفعة واحدة أو خطة تقسيط بعد التسليم", "en": "Full payment or post-handover installment plan" },
+    "handoverDate": "2025-12-01",
+    "handoverLabel": { "ar": "جاهز", "en": "Ready" },
+    "coverImage": { "id": "7546783000001731008-cover", "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/cover.jpg", "alt": { "ar": "امباير داون تاون جبل علي", "en": "Empire Downtown Jebel Ali" } },
+    "gallery": [
+      { "id": "7546783000001731008-g1", "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/cover.jpg", "alt": { "ar": "امباير داون تاون جبل علي", "en": "Empire Downtown Jebel Ali" } },
+      { "id": "7546783000001731008-g2", "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/view-2.jpg", "alt": { "ar": "امباير داون تاون جبل علي", "en": "Empire Downtown Jebel Ali" } },
+      { "id": "7546783000001731008-g3", "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/view-3.jpg", "alt": { "ar": "امباير داون تاون جبل علي", "en": "Empire Downtown Jebel Ali" } }
+    ],
+    "status": "ready",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-09-07T07:25:55.000Z"
+  },
+  {
+    "id": "7546783000001731009",
+    "zohoRecordId": "7546783000001731009",
+    "slug": "ayami-residence",
+    "title": { "ar": "أيامي ريزيدنس", "en": "Ayami Residence" },
+    "description": {
+      "ar": "مجمع سكني في ورسان الأولى يضم شققًا بمساحات مدروسة ومرافق مشتركة عصرية، ضمن منطقة تشهد نموًا سكانيًا وتطويريًا متسارعًا.",
+      "en": "A residential complex in Warsan 1 with thoughtfully sized apartments and modern shared amenities, in an area experiencing rapid population and development growth."
+    },
+    "shortDescription": { "ar": "شقق عصرية في ورسان الأولى", "en": "Modern apartments in Warsan 1" },
+    "emirate": "dubai",
+    "area": { "ar": "ورسان الأولى", "en": "Warsan 1" },
+    "developer": { "ar": "Tiger Group", "en": "Tiger Group" },
+    "propertyType": "apartment",
+    "priceFrom": 864000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": ["1", "2", "3"],
+    "areaSqftFrom": 700,
+    "areaSqftTo": 1450,
+    "paymentPlan": { "ar": "20% عند الحجز والباقي على دفعات مرنة", "en": "20% on booking, balance on flexible installments" },
+    "handoverDate": "2027-03-31",
+    "handoverLabel": { "ar": "الربع الأول 2027", "en": "Q1 2027" },
+    "coverImage": { "id": "7546783000001731009-cover", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg", "alt": { "ar": "أيامي ريزيدنس", "en": "Ayami Residence" } },
+    "gallery": [
+      { "id": "7546783000001731009-g1", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg", "alt": { "ar": "أيامي ريزيدنس", "en": "Ayami Residence" } },
+      { "id": "7546783000001731009-g2", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/exterior.jpg", "alt": { "ar": "أيامي ريزيدنس", "en": "Ayami Residence" } },
+      { "id": "7546783000001731009-g3", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/pool.jpg", "alt": { "ar": "أيامي ريزيدنس", "en": "Ayami Residence" } },
+      { "id": "7546783000001731009-g4", "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/lobby.jpg", "alt": { "ar": "أيامي ريزيدنس", "en": "Ayami Residence" } }
+    ],
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-09-07T07:25:55.000Z"
+  }
+]
