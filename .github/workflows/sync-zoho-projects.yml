@@ -16,23 +16,53 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Zoho credentials
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare Zoho credentials
         id: credentials
         env:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
-          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+          ZOHO_GRANT_CODE: ${{ secrets.ZOHO_GRANT_CODE }}
+          ZOHO_REFRESH_PASSPHRASE: ${{ secrets.ZOHO_REFRESH_PASSPHRASE }}
         run: |
-          if [ -n "$ZOHO_CLIENT_ID" ] && [ -n "$ZOHO_CLIENT_SECRET" ] && [ -n "$ZOHO_REFRESH_TOKEN" ]; then
-            echo "available=true" >> "$GITHUB_OUTPUT"
-          else
+          set -euo pipefail
+          if [ -z "$ZOHO_CLIENT_ID" ] || [ -z "$ZOHO_CLIENT_SECRET" ]; then
             echo "available=false" >> "$GITHUB_OUTPUT"
-            echo "Zoho credentials are not configured yet; nothing to sync."
+            echo "Zoho client credentials are not configured yet; nothing to sync."
+            exit 0
           fi
 
-      - name: Checkout
-        if: steps.credentials.outputs.available == 'true'
-        uses: actions/checkout@v4
+          refresh_token="$ZOHO_REFRESH_TOKEN"
+          if [ -z "$refresh_token" ] && [ -f .github/zoho-refresh-token.enc ] && [ -n "$ZOHO_REFRESH_PASSPHRASE" ]; then
+            refresh_token="$(openssl enc -d -aes-256-cbc -pbkdf2 -in .github/zoho-refresh-token.enc -pass env:ZOHO_REFRESH_PASSPHRASE)"
+          fi
+
+          if [ -z "$refresh_token" ] && [ -n "$ZOHO_GRANT_CODE" ] && [ -n "$ZOHO_REFRESH_PASSPHRASE" ]; then
+            token_response="$(curl --fail --silent --show-error --request POST \
+              --data-urlencode "grant_type=authorization_code" \
+              --data-urlencode "code=$ZOHO_GRANT_CODE" \
+              --data-urlencode "client_id=$ZOHO_CLIENT_ID" \
+              --data-urlencode "client_secret=$ZOHO_CLIENT_SECRET" \
+              https://accounts.zoho.com/oauth/v2/token)"
+            refresh_token="$(printf '%s' "$token_response" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("refresh_token", ""))')"
+            if [ -n "$refresh_token" ]; then
+              echo "::add-mask::$refresh_token"
+              printf '%s' "$refresh_token" | openssl enc -aes-256-cbc -pbkdf2 -salt -out .github/zoho-refresh-token.enc -pass env:ZOHO_REFRESH_PASSPHRASE
+              echo "bootstrapped=true" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+          if [ -z "$refresh_token" ]; then
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "A usable Zoho refresh token is not available yet; nothing to sync."
+            exit 0
+          fi
+
+          echo "::add-mask::$refresh_token"
+          echo "ZOHO_REFRESH_TOKEN=$refresh_token" >> "$GITHUB_ENV"
+          echo "available=true" >> "$GITHUB_OUTPUT"
 
       - name: Setup Node
         if: steps.credentials.outputs.available == 'true'
@@ -51,12 +81,12 @@ jobs:
       - name: Publish updated project data
         if: steps.credentials.outputs.available == 'true'
         run: |
-          if git diff --quiet -- public/data/projects.json; then
+          if git diff --quiet -- public/data/projects.json .github/zoho-refresh-token.enc; then
             echo "No project changes to publish."
             exit 0
           fi
           git config user.name "ALTIVA Zoho Sync"
           git config user.email "academy@altivaproperties.com"
-          git add public/data/projects.json
+          git add public/data/projects.json .github/zoho-refresh-token.enc
           git commit -m "Sync published projects from Zoho CRM"
           git push
