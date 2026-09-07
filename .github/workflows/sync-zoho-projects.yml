@@ -67,12 +67,15 @@ jobs:
       - name: Publish updated project data
         if: steps.credentials.outputs.available == 'true'
         run: |
-          if git diff --quiet -- public/data/projects.json public/data/zoho-media; then
+          git config user.name "ALTIVA Zoho Sync"
+          git config user.email "academy@altivaproperties.com"
+          git add public/data/projects.json
+          if [ -d public/data/zoho-media ]; then
+            git add public/data/zoho-media
+          fi
+          if git diff --cached --quiet; then
             echo "No project changes to publish."
             exit 0
           fi
-          git config user.name "ALTIVA Zoho Sync"
-          git config user.email "academy@altivaproperties.com"
-          git add public/data/projects.json public/data/zoho-media
           git commit -m "Sync published projects from Zoho CRM"
           git push
