@@ -3,8 +3,7 @@ import { useTranslation } from "react-i18next";
 import { MapPin, Phone, Mail, MessageCircle, FileText } from "lucide-react";
 import logo from "../../assets/brand/altiva-icon.png";
 import { Container } from "../ui/Container";
-
-const WHATSAPP_NUMBER = "96557775289";
+import { whatsappUrl } from "../../lib/whatsapp";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -68,7 +67,7 @@ export function Footer() {
             </li>
             <li className="flex flex-col items-center gap-2 text-center">
               <MessageCircle size={18} className="shrink-0 text-copper" />
-              <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="hover:text-copper">
+              <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-copper">
                 <bdi dir="ltr">+965 5777 5289</bdi>
               </a>
             </li>
