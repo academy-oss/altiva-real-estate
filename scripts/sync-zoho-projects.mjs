@@ -1,11 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
-const requiredEnvironmentVariables = ["ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_REFRESH_TOKEN"];
-for (const name of requiredEnvironmentVariables) {
-  if (!process.env[name]) throw new Error(`Missing required environment variable: ${name}`);
-}
-
 const accountsUrl = process.env.ZOHO_ACCOUNTS_URL || "https://accounts.zoho.com";
 const apiDomain = process.env.ZOHO_API_DOMAIN || "https://www.zohoapis.com";
 const moduleName = process.env.ZOHO_PROJECTS_MODULE || "Real_Estate_Projects";
@@ -24,20 +19,29 @@ const fields = [
   "Publish_on_Website", "Featured_on_Website", "Created_Time", "Modified_Time"
 ];
 
-const tokenResponse = await fetch(`${accountsUrl}/oauth/v2/token`, {
-  method: "POST",
-  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  body: new URLSearchParams({
-    grant_type: "refresh_token",
-    client_id: process.env.ZOHO_CLIENT_ID,
-    client_secret: process.env.ZOHO_CLIENT_SECRET,
-    refresh_token: process.env.ZOHO_REFRESH_TOKEN,
-  }),
-});
+let accessToken = process.env.ZOHO_ACCESS_TOKEN;
+if (!accessToken) {
+  const requiredEnvironmentVariables = ["ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_REFRESH_TOKEN"];
+  for (const name of requiredEnvironmentVariables) {
+    if (!process.env[name]) throw new Error(`Missing required environment variable: ${name}`);
+  }
 
-if (!tokenResponse.ok) throw new Error(`Zoho token refresh failed: ${tokenResponse.status}`);
-const tokenPayload = await tokenResponse.json();
-if (!tokenPayload.access_token) throw new Error(`Zoho token refresh failed: ${JSON.stringify(tokenPayload)}`);
+  const tokenResponse = await fetch(`${accountsUrl}/oauth/v2/token`, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      grant_type: "refresh_token",
+      client_id: process.env.ZOHO_CLIENT_ID,
+      client_secret: process.env.ZOHO_CLIENT_SECRET,
+      refresh_token: process.env.ZOHO_REFRESH_TOKEN,
+    }),
+  });
+
+  if (!tokenResponse.ok) throw new Error(`Zoho token refresh failed: ${tokenResponse.status}`);
+  const tokenPayload = await tokenResponse.json();
+  if (!tokenPayload.access_token) throw new Error(`Zoho token refresh failed: ${JSON.stringify(tokenPayload)}`);
+  accessToken = tokenPayload.access_token;
+}
 
 const records = [];
 for (let page = 1; ; page += 1) {
@@ -49,7 +53,7 @@ for (let page = 1; ; page += 1) {
   url.searchParams.set("sort_order", "desc");
 
   const response = await fetch(url, {
-    headers: { Authorization: `Zoho-oauthtoken ${tokenPayload.access_token}` },
+    headers: { Authorization: `Zoho-oauthtoken ${accessToken}` },
   });
   if (response.status === 204) break;
   if (!response.ok) throw new Error(`Zoho project fetch failed: ${response.status}`);
@@ -138,7 +142,7 @@ async function downloadFieldFiles(record, fieldName, folderName) {
     const url = new URL(`${apiDomain}/crm/v8/${moduleName}/${record.id}/actions/download_fields_attachment`);
     url.searchParams.set("fields_attachment_id", String(attachmentId));
     const response = await fetch(url, {
-      headers: { Authorization: `Zoho-oauthtoken ${tokenPayload.access_token}` },
+      headers: { Authorization: `Zoho-oauthtoken ${accessToken}` },
     });
     if (!response.ok) {
       console.warn(`Could not download ${fieldName} attachment ${attachmentId} for ${record.id}: ${response.status}`);
