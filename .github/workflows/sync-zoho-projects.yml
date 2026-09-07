@@ -63,6 +63,7 @@ jobs:
         env:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_PUBLIC_BASE_PATH: /
 
       - name: Publish updated project data
         if: steps.credentials.outputs.available == 'true'
