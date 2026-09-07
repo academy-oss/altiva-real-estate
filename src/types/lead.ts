@@ -2,9 +2,8 @@
  * Lead data model
  * ----------------------------------------------------------------------
  * Represents a consultation / contact request submitted through the
- * website. Field names are chosen to map cleanly onto a future Zoho CRM
- * "Leads" module (see src/services/leadsService.ts). No real submission
- * endpoint exists yet — see that service for details on how to wire one up.
+ * website. Field names map onto ALTIVA's Zoho CRM Leads module through the
+ * official Web-to-Lead form configured in src/services/leadsService.ts.
  */
 
 export type PurchasePurpose = "investment" | "residence" | "holiday_home" | "golden_visa" | "undecided";

@@ -2,14 +2,8 @@
  * Project data model
  * ----------------------------------------------------------------------
  * This shape is designed to be a 1:1 mirror of the fields that will
- * eventually live on the "Projects" module inside Zoho CRM. Keeping the
- * frontend type aligned with the future Zoho field list means that once
- * a real Zoho integration is wired up (see src/services/projectsService.ts),
- * no UI or component code needs to change — only the data-fetching layer.
- *
- * NOTE: No real Zoho connection, API keys, or credentials exist in this
- * project. This is purely the data contract + mock data so the rest of
- * the app can be built against a realistic shape.
+ * live on the "Real Estate Projects" module inside Zoho CRM. The scheduled
+ * publisher normalizes CRM records into this shape before the site deploys.
  */
 
 export type LocalizedText = {
@@ -85,10 +79,10 @@ export interface MediaAsset {
  * (see the `zoho*` prefixed fields, and the comment above each group).
  */
 export interface Project {
-  /** Local UUID used purely for React keys / routing before Zoho sync. */
+  /** Stable record ID used for React keys. */
   id: string;
 
-  /** Zoho CRM record id — the CRM is the source of truth once connected. */
+  /** Zoho CRM record id — the CRM is the source of truth. */
   zohoRecordId: string | null;
 
   /** URL-friendly identifier used for the project details route. */
