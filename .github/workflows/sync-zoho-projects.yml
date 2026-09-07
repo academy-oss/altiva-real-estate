@@ -1,0 +1,62 @@
+name: Sync projects from Zoho CRM
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zoho-project-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Zoho credentials
+        id: credentials
+        env:
+          ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
+          ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+        run: |
+          if [ -n "$ZOHO_CLIENT_ID" ] && [ -n "$ZOHO_CLIENT_SECRET" ] && [ -n "$ZOHO_REFRESH_TOKEN" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "Zoho credentials are not configured yet; nothing to sync."
+          fi
+
+      - name: Checkout
+        if: steps.credentials.outputs.available == 'true'
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        if: steps.credentials.outputs.available == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Export published projects from Zoho
+        if: steps.credentials.outputs.available == 'true'
+        run: node scripts/sync-zoho-projects.mjs
+        env:
+          ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
+          ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+
+      - name: Publish updated project data
+        if: steps.credentials.outputs.available == 'true'
+        run: |
+          if git diff --quiet -- public/data/projects.json; then
+            echo "No project changes to publish."
+            exit 0
+          fi
+          git config user.name "ALTIVA Zoho Sync"
+          git config user.email "academy@altivaproperties.com"
+          git add public/data/projects.json
+          git commit -m "Sync published projects from Zoho CRM"
+          git push
