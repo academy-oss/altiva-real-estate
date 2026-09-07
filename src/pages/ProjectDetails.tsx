@@ -10,8 +10,7 @@ import { StatusBadge } from "../components/projects/StatusBadge";
 import { Badge } from "../components/ui/Badge";
 import { LinkButton, AnchorButton } from "../components/ui/Button";
 import { ProjectCard } from "../components/projects/ProjectCard";
-
-const WHATSAPP_NUMBER = "96557775289";
+import { bilingualWhatsAppMessage, whatsappUrl } from "../lib/whatsapp";
 
 export default function ProjectDetails() {
   const { slug } = useParams<{ slug: string }>();
@@ -60,10 +59,9 @@ export default function ProjectDetails() {
   }
 
   const gallery = project.gallery.length > 0 ? project.gallery : [project.coverImage];
-  const message = encodeURIComponent(
-    lang === "ar"
-      ? `مرحبًا، أنا مهتم بمشروع "${project.title.ar}" وأرغب بمعرفة المزيد من التفاصيل.`
-      : `Hello, I'm interested in the "${project.title.en}" project and would like more details.`
+  const message = bilingualWhatsAppMessage(
+    `مرحبًا، أنا مهتم بمشروع "${project.title.ar}" وأرغب بمعرفة المزيد من التفاصيل.`,
+    `Hello, I'm interested in the "${project.title.en}" project and would like more details.`
   );
 
   return (
@@ -165,7 +163,7 @@ export default function ProjectDetails() {
                   {t("projectDetails.requestInfo")}
                 </LinkButton>
                 <AnchorButton
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
+                  href={whatsappUrl(message)}
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="secondary"
