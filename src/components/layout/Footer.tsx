@@ -11,15 +11,15 @@ export function Footer() {
   return (
     <footer className="border-t border-cream/10 bg-navy-deep">
       <Container className="grid gap-12 py-16 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <Link to="/" className="flex items-center gap-2.5">
+        <div className="text-center md:col-span-2 md:text-start">
+          <Link to="/" className="flex items-center justify-center gap-2.5 md:justify-start">
             <img src={logo} alt="ALTIVA" className="h-9 w-auto" />
             <span className="font-display-heading text-2xl font-bold text-copper">
               {t("brand.name")} <span className="text-sm font-normal text-cream/60">{t("brand.tagline")}</span>
             </span>
           </Link>
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">{t("footer.aboutText")}</p>
-          <div className="mt-6 flex items-center gap-3">
+          <p className="mx-auto mt-5 max-w-sm text-sm leading-relaxed text-cream/60 md:mx-0">{t("footer.aboutText")}</p>
+          <div className="mt-6 flex items-center justify-center gap-3 md:justify-start">
             <a
               href="https://www.facebook.com/profile.php?id=61590010035394"
               target="_blank"
@@ -47,7 +47,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="text-center md:text-start">
           <h3 className="font-display-heading text-lg font-bold text-cream">{t("footer.quickLinks")}</h3>
           <ul className="mt-5 space-y-3 text-sm text-cream/70">
             <li><Link to="/" className="hover:text-copper">{t("nav.home")}</Link></li>
