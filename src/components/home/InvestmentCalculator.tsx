@@ -4,6 +4,7 @@ import { Info, MessageCircle } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { AnchorButton } from "../ui/Button";
+import { bilingualWhatsAppMessage, whatsappUrl } from "../../lib/whatsapp";
 
 type CalcType = "villa" | "tower" | "resort";
 
@@ -16,8 +17,6 @@ const YIELD_RATES: Record<CalcType, number> = {
 const MIN_AMOUNT = 50_000;
 const MAX_AMOUNT = 1_000_000;
 
-const WHATSAPP_NUMBER = "96557775289";
-
 export function InvestmentCalculator() {
   const { t, i18n } = useTranslation();
   const [amount, setAmount] = useState(200_000);
@@ -27,10 +26,9 @@ export function InvestmentCalculator() {
 
   const numberFormatter = new Intl.NumberFormat(i18n.language === "ar" ? "ar-KW" : "en-KW");
 
-  const message = encodeURIComponent(
-    i18n.language === "ar"
-      ? `مرحبًا، أرغب بمعرفة المزيد عن فرص الاستثمار في دبي. مبلغ استثماري التقريبي هو ${numberFormatter.format(amount)} د.ك.`
-      : `Hello, I'd like to learn more about investment opportunities in Dubai. My approximate investment amount is KWD ${numberFormatter.format(amount)}.`
+  const message = bilingualWhatsAppMessage(
+    `مرحبًا، أرغب بمعرفة المزيد عن فرص الاستثمار العقاري في دولة الإمارات. مبلغ استثماري التقريبي هو ${new Intl.NumberFormat("ar-KW").format(amount)} د.ك.`,
+    `Hello, I'd like to learn more about real estate investment opportunities in the UAE. My approximate investment amount is KWD ${new Intl.NumberFormat("en-KW").format(amount)}.`
   );
 
   return (
@@ -90,7 +88,7 @@ export function InvestmentCalculator() {
 
           <div className="mt-6 flex justify-center">
             <AnchorButton
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
+              href={whatsappUrl(message)}
               target="_blank"
               rel="noopener noreferrer"
               icon={<MessageCircle size={18} />}

@@ -1,16 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { ChevronDown, MessageCircle } from "lucide-react";
 import { AnchorButton } from "../ui/Button";
-
-const WHATSAPP_NUMBER = "96557775289";
+import { whatsappUrl } from "../../lib/whatsapp";
 
 export function Hero() {
-  const { t, i18n } = useTranslation();
-  const message = encodeURIComponent(
-    i18n.language === "ar"
-      ? "مرحبًا، أرغب بمعرفة المزيد عن أفضل الفرص الاستثمارية المتاحة لدى ألتيفا في دبي."
-      : "Hello, I'd like to learn more about the best investment opportunities available with Altiva in Dubai."
-  );
+  const { t } = useTranslation();
 
   return (
     <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-24">
@@ -28,7 +22,7 @@ export function Hero() {
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-cream/80 sm:text-lg">{t("home.hero.subtitle")}</p>
         <div className="mt-10 flex justify-center">
           <AnchorButton
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
+            href={whatsappUrl()}
             target="_blank"
             rel="noopener noreferrer"
             size="lg"
