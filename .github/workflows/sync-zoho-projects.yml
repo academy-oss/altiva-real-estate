@@ -24,9 +24,7 @@ jobs:
         env:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
-          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
-          ZOHO_GRANT_CODE: ${{ secrets.ZOHO_GRANT_CODE }}
-          ZOHO_REFRESH_PASSPHRASE: ${{ secrets.ZOHO_REFRESH_PASSPHRASE }}
+          ZOHO_ORG_ID: "933341039"
         run: |
           set -euo pipefail
           if [ -z "$ZOHO_CLIENT_ID" ] || [ -z "$ZOHO_CLIENT_SECRET" ]; then
@@ -35,34 +33,22 @@ jobs:
             exit 0
           fi
 
-          refresh_token="$ZOHO_REFRESH_TOKEN"
-          if [ -z "$refresh_token" ] && [ -f .github/zoho-refresh-token.enc ] && [ -n "$ZOHO_REFRESH_PASSPHRASE" ]; then
-            refresh_token="$(openssl enc -d -aes-256-cbc -pbkdf2 -in .github/zoho-refresh-token.enc -pass env:ZOHO_REFRESH_PASSPHRASE)"
+          token_response="$(curl --fail --silent --show-error --request POST \
+            --data-urlencode "grant_type=client_credentials" \
+            --data-urlencode "scope=ZohoCRM.modules.custom.READ" \
+            --data-urlencode "soid=ZohoCRM.$ZOHO_ORG_ID" \
+            --data-urlencode "client_id=$ZOHO_CLIENT_ID" \
+            --data-urlencode "client_secret=$ZOHO_CLIENT_SECRET" \
+            https://accounts.zoho.com/oauth/v2/token)"
+          access_token="$(printf '%s' "$token_response" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("access_token", ""))')"
+          if [ -z "$access_token" ]; then
+            token_error="$(printf '%s' "$token_response" | python3 -c 'import json,sys; data=json.load(sys.stdin); print(data.get("error_description") or data.get("error") or "missing access token")')"
+            echo "::error::Zoho token request failed: $token_error"
+            exit 1
           fi
 
-          if [ -z "$refresh_token" ] && [ -n "$ZOHO_GRANT_CODE" ] && [ -n "$ZOHO_REFRESH_PASSPHRASE" ]; then
-            token_response="$(curl --fail --silent --show-error --request POST \
-              --data-urlencode "grant_type=authorization_code" \
-              --data-urlencode "code=$ZOHO_GRANT_CODE" \
-              --data-urlencode "client_id=$ZOHO_CLIENT_ID" \
-              --data-urlencode "client_secret=$ZOHO_CLIENT_SECRET" \
-              https://accounts.zoho.com/oauth/v2/token)"
-            refresh_token="$(printf '%s' "$token_response" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("refresh_token", ""))')"
-            if [ -n "$refresh_token" ]; then
-              echo "::add-mask::$refresh_token"
-              printf '%s' "$refresh_token" | openssl enc -aes-256-cbc -pbkdf2 -salt -out .github/zoho-refresh-token.enc -pass env:ZOHO_REFRESH_PASSPHRASE
-              echo "bootstrapped=true" >> "$GITHUB_OUTPUT"
-            fi
-          fi
-
-          if [ -z "$refresh_token" ]; then
-            echo "available=false" >> "$GITHUB_OUTPUT"
-            echo "A usable Zoho refresh token is not available yet; nothing to sync."
-            exit 0
-          fi
-
-          echo "::add-mask::$refresh_token"
-          echo "ZOHO_REFRESH_TOKEN=$refresh_token" >> "$GITHUB_ENV"
+          echo "::add-mask::$access_token"
+          echo "ZOHO_ACCESS_TOKEN=$access_token" >> "$GITHUB_ENV"
           echo "available=true" >> "$GITHUB_OUTPUT"
 
       - name: Setup Node
@@ -81,12 +67,12 @@ jobs:
       - name: Publish updated project data
         if: steps.credentials.outputs.available == 'true'
         run: |
-          if git diff --quiet -- public/data/projects.json .github/zoho-refresh-token.enc; then
+          if git diff --quiet -- public/data/projects.json public/data/zoho-media; then
             echo "No project changes to publish."
             exit 0
           fi
           git config user.name "ALTIVA Zoho Sync"
           git config user.email "academy@altivaproperties.com"
-          git add public/data/projects.json .github/zoho-refresh-token.enc
+          git add public/data/projects.json public/data/zoho-media
           git commit -m "Sync published projects from Zoho CRM"
           git push
