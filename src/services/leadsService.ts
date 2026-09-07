@@ -1,9 +1,9 @@
 /**
  * Browser-safe lead submission layer.
  *
- * The website only talks to our own public server endpoint. Zoho OAuth
- * credentials must stay on the server and must never be exposed through a
- * VITE_ variable or sent to the browser.
+ * On static hosting, submissions use an official Zoho Web-to-Lead form. Its
+ * public form keys are safe to embed, while Zoho OAuth credentials remain in
+ * encrypted deployment secrets and are never sent to the browser.
  */
 import type { ConsultationLead, ContactMessage } from "../types/lead";
 
