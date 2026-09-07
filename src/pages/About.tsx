@@ -30,8 +30,8 @@ export default function About() {
           <SectionHeading tone="dark" eyebrow={t("brand.name")} title={t("about.founderWord")} />
           <div className="mx-auto grid max-w-4xl items-center gap-10 sm:grid-cols-[190px_1fr]">
             <div className="mx-auto rounded-3xl bg-gradient-to-br from-copper/35 via-cream to-navy/15 p-2 shadow-xl shadow-navy-deep/10">
-              <div className="h-52 w-40 overflow-hidden rounded-2xl bg-cream sm:h-56 sm:w-44">
-                <img src={publicAsset("team/hassan-alsuwaidi-office.jpg")} alt={t("about.founder.name")} className="h-full w-full object-cover object-top" />
+              <div className="aspect-[1198/1313] w-44 overflow-hidden rounded-2xl bg-cream">
+                <img src={publicAsset("team/hassan-alsuwaidi-founder.png")} alt={t("about.founder.name")} className="h-full w-full object-cover object-top" />
               </div>
             </div>
             <div>
