@@ -1,0 +1,7 @@
+name = "altiva-ai-assistant"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+OPENAI_MODEL = "gpt-5-mini"
+PROJECTS_URL = "https://altivaproperties.com/data/projects.json"

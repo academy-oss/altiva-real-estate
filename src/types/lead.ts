@@ -41,3 +41,18 @@ export interface ContactMessage {
   consentAccepted: boolean;
   submittedAt?: string;
 }
+
+export interface AssistantLead {
+  fullName: string;
+  phone: string;
+  email?: string;
+  budget?: string;
+  emirateOfInterest?: string;
+  propertyType?: string;
+  projectSlug?: string;
+  conversationSummary: string;
+  language: "ar" | "en";
+  consentAccepted: boolean;
+  submittedAt?: string;
+  source?: "ai_assistant";
+}
