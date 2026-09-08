@@ -78,7 +78,8 @@ export default {
         body: JSON.stringify({
           model: env.OPENAI_MODEL || "gpt-5-mini",
           store: false,
-          max_output_tokens: 450,
+          reasoning: { effort: "minimal" },
+          max_output_tokens: 700,
           input: [
             { role: "developer", content: buildInstructions(language, projects) },
             ...history,
