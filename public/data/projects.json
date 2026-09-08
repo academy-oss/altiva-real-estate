@@ -343,5 +343,110 @@
     "isFeatured": true,
     "createdAt": "2026-09-07T07:25:55.000Z",
     "updatedAt": "2026-09-07T07:25:55.000Z"
+  },
+  {
+    "id": "7546783000001762027",
+    "zohoRecordId": "7546783000001762027",
+    "slug": "abjer-tower",
+    "title": {
+      "ar": "برج أبجر",
+      "en": "Abjer Tower"
+    },
+    "description": {
+      "ar": "برج أبجر أصل عقاري قائم ومتعدد الاستخدامات على كورنيش القواسم في رأس الخيمة، يضم 100 شقة من ثلاث غرف و3 وحدات سكنية خاصة ومساحات تجارية ومطاعم ومواقف مستقلة. يتمتع بإطلالة مباشرة على الواجهة المائية ونسبة إشغال سكني أساسية تبلغ 96%، مع فرص لرفع الدخل من إعادة تأجير وتشغيل المساحات التجارية والضيافة.",
+      "en": "Abjer Tower is an operating mixed-use investment asset on Al Qawasim Corniche in Ras Al Khaimah, comprising 100 three-bedroom apartments, three special residential units, commercial and restaurant spaces, and a standalone parking facility. It offers direct waterfront and mangrove views, 96% core residential occupancy, and upside through leasing and repositioning vacant commercial and hospitality areas."
+    },
+    "shortDescription": {
+      "ar": "أصل استثماري قائم على الواجهة المائية في رأس الخيمة",
+      "en": "Operating waterfront investment asset in Ras Al Khaimah"
+    },
+    "emirate": "ras_al_khaimah",
+    "area": {
+      "ar": "كورنيش القواسم",
+      "en": "Al Qawasim Corniche"
+    },
+    "developer": {
+      "ar": "مالك خاص",
+      "en": "مالك خاص"
+    },
+    "propertyType": "commercial_building",
+    "priceFrom": 75000000,
+    "priceTo": 75000000,
+    "currency": "AED",
+    "isPriceEstimated": true,
+    "bedrooms": [],
+    "paymentPlan": {
+      "ar": "",
+      "en": ""
+    },
+    "handoverLabel": {
+      "ar": "جاهز",
+      "en": "Ready"
+    },
+    "coverImage": {
+      "id": "7546783000001762027-cover",
+      "url": "/data/zoho-media/abjer-tower/images/01-PHOTO-2026-06-25-15-39-47.jpg",
+      "alt": {
+        "ar": "برج أبجر",
+        "en": "Abjer Tower"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001762027-g1",
+        "url": "/data/zoho-media/abjer-tower/images/01-PHOTO-2026-06-25-15-39-47.jpg",
+        "alt": {
+          "ar": "برج أبجر",
+          "en": "Abjer Tower"
+        }
+      },
+      {
+        "id": "7546783000001762027-g2",
+        "url": "/data/zoho-media/abjer-tower/images/02-Aerial-View-of-the-RAK-Corniche-ar-19-feb-2020.jpg",
+        "alt": {
+          "ar": "برج أبجر",
+          "en": "Abjer Tower"
+        }
+      },
+      {
+        "id": "7546783000001762027-g3",
+        "url": "/data/zoho-media/abjer-tower/images/03-PHOTO-2026-06-25-15-39-46-6.jpg",
+        "alt": {
+          "ar": "برج أبجر",
+          "en": "Abjer Tower"
+        }
+      },
+      {
+        "id": "7546783000001762027-g4",
+        "url": "/data/zoho-media/abjer-tower/images/04-PHOTO-2026-06-25-15-39-46-5.jpg",
+        "alt": {
+          "ar": "برج أبجر",
+          "en": "Abjer Tower"
+        }
+      },
+      {
+        "id": "7546783000001762027-g5",
+        "url": "/data/zoho-media/abjer-tower/images/05-PHOTO-2026-06-25-15-39-46.jpg",
+        "alt": {
+          "ar": "برج أبجر",
+          "en": "Abjer Tower"
+        }
+      },
+      {
+        "id": "7546783000001762027-g6",
+        "url": "/data/zoho-media/abjer-tower/images/06-PHOTO-2026-06-25-15-39-46-3.jpg",
+        "alt": {
+          "ar": "برج أبجر",
+          "en": "Abjer Tower"
+        }
+      }
+    ],
+    "brochureAr": "/data/zoho-media/abjer-tower/brochures/01-Abjer-Tower-AR-compressed.pdf",
+    "brochureEn": "/data/zoho-media/abjer-tower/brochures/02-Abjer-Tower-EN-compressed.pdf",
+    "status": "ready",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-08T02:06:48.000Z",
+    "updatedAt": "2026-09-08T02:06:48.000Z"
   }
 ]
