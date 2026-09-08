@@ -5,7 +5,7 @@
  * public form keys are safe to embed, while Zoho OAuth credentials remain in
  * encrypted deployment secrets and are never sent to the browser.
  */
-import type { ConsultationLead, ContactMessage } from "../types/lead";
+import type { AssistantLead, ConsultationLead, ContactMessage } from "../types/lead";
 
 const API_BASE_URL = (import.meta.env.VITE_PUBLIC_API_BASE_URL ?? "").replace(/\/$/, "");
 const MOCK_SUBMISSIONS = import.meta.env.DEV && import.meta.env.VITE_ENABLE_MOCK_SUBMISSIONS === "true";
@@ -16,7 +16,7 @@ const ZOHO_WEBFORM_KEYS = {
   actionType: "TGVhZHM=",
 };
 
-async function postLead(path: string, payload: ConsultationLead | ContactMessage): Promise<{ success: true }> {
+async function postLead(path: string, payload: ConsultationLead | ContactMessage | AssistantLead): Promise<{ success: true }> {
   if (MOCK_SUBMISSIONS) return { success: true };
 
   if (API_BASE_URL) {
@@ -33,8 +33,12 @@ async function postLead(path: string, payload: ConsultationLead | ContactMessage
   return submitToZohoWebform(payload);
 }
 
-async function submitToZohoWebform(payload: ConsultationLead | ContactMessage): Promise<{ success: true }> {
-  const formData = "fullName" in payload ? consultationFormData(payload) : contactFormData(payload);
+async function submitToZohoWebform(payload: ConsultationLead | ContactMessage | AssistantLead): Promise<{ success: true }> {
+  const formData = "conversationSummary" in payload
+    ? assistantFormData(payload)
+    : "fullName" in payload
+      ? consultationFormData(payload)
+      : contactFormData(payload);
   formData.set("xnQsjsdp", ZOHO_WEBFORM_KEYS.xnQsjsdp);
   formData.set("xmIwtLD", ZOHO_WEBFORM_KEYS.xmIwtLD);
   formData.set("actionType", ZOHO_WEBFORM_KEYS.actionType);
@@ -90,6 +94,25 @@ function contactFormData(message: ContactMessage): FormData {
   form.set("LEADCF58", "on");
   form.set("LEADCF59", formatZohoDate(message.submittedAt));
   form.set("Description", `${message.subject}\n\n${message.message}`);
+  return form;
+}
+
+function assistantFormData(lead: AssistantLead): FormData {
+  const form = baseFormData(lead.fullName, lead.email ?? "", lead.phone);
+  form.set("LEADCF2", lead.language === "ar" ? "Arabic" : "English");
+  form.set("LEADCF17", "WhatsApp");
+  form.set("LEADCF19", "Consultation");
+  form.set("LEADCF20", "ALTIVA AI Assistant");
+  form.set("LEADCF58", "on");
+  form.set("LEADCF59", formatZohoDate(lead.submittedAt));
+  if (lead.budget) form.set("LEADCF6", mapBudget(lead.budget));
+  if (lead.emirateOfInterest) form.set("LEADCF14", mapEmirate(lead.emirateOfInterest));
+  if (lead.propertyType) form.set("LEADCF9", mapPropertyType(lead.propertyType));
+  if (lead.projectSlug) {
+    form.set("LEADCF3", lead.projectSlug);
+    form.set("LEADCF18", lead.projectSlug);
+  }
+  form.set("Description", `[ALTIVA AI Assistant]\n\n${lead.conversationSummary}`);
   return form;
 }
 
@@ -168,5 +191,13 @@ export async function submitContactMessage(message: ContactMessage): Promise<{ s
   return postLead("/leads/contact", {
     ...message,
     submittedAt: new Date().toISOString(),
+  });
+}
+
+export async function submitAssistantLead(lead: AssistantLead): Promise<{ success: true }> {
+  return postLead("/leads/assistant", {
+    ...lead,
+    submittedAt: new Date().toISOString(),
+    source: "ai_assistant",
   });
 }
