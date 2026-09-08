@@ -5,6 +5,7 @@ import { isRtl } from "../../i18n";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { WhatsAppFloatButton } from "./WhatsAppFloatButton";
+import { AltivaAssistant } from "../assistant/AltivaAssistant";
 
 export function Layout() {
   const { i18n } = useTranslation();
@@ -28,6 +29,7 @@ export function Layout() {
       </main>
       <Footer />
       <WhatsAppFloatButton />
+      <AltivaAssistant />
     </div>
   );
 }
