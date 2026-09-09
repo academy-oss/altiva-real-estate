@@ -350,6 +350,147 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000001834136",
+    "zohoRecordId": "7546783000001834136",
+    "slug": "laya-courtyard",
+    "title": {
+      "ar": "لايا كورتيارد",
+      "en": "Laya Courtyard"
+    },
+    "description": {
+      "ar": "لايا كورتيارد مشروع سكني بنظام التملك الحر في مدينة دبي للاستوديوهات، يتكون من مبنيين أنيقين يقدمان استوديوهات وشققًا من غرفة نوم واحدة بتصاميم عصرية ومنازل ذكية. يتمحور المشروع حول فناء داخلي أخضر ومنسق، ويضم مسبحًا ومسبح أطفال وناديًا داخليًا وسطحًا علويًا وملعب بادل وصالة رياضية ومناطق يوغا وجلوس وألعاب أطفال، مع موقف واحد لكل شقة ومواقف لشحن السيارات الكهربائية.",
+      "en": "Laya Courtyard is a freehold residential development in Dubai Studio City comprising two elegant buildings with modern smart studios and one-bedroom apartments. The community is centered around a leafy landscaped courtyard and offers a swimming pool, kids' pool, indoor clubhouse, sky deck, padel court, gym, outdoor yoga and lounge areas, children's play spaces, one parking space per apartment and dedicated EV parking."
+    },
+    "shortDescription": {
+      "ar": "استوديوهات وشقق غرفة واحدة ذكية حول فناء أخضر في مدينة دبي للاستوديوهات",
+      "en": "Smart studios and one-bedroom homes around a landscaped courtyard in Dubai Studio City"
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "مدينة دبي للاستوديوهات",
+      "en": "Dubai Studio City"
+    },
+    "developer": {
+      "ar": "Laya Developers",
+      "en": "Laya Developers"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 704198,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio",
+      "1"
+    ],
+    "areaSqftFrom": 436.8,
+    "areaSqftTo": 908.8,
+    "paymentPlan": {
+      "ar": "20% عند الحجز، و20% أثناء الإنشاء، و60% عند التسليم",
+      "en": "20% on booking, 20% during construction and 60% on handover"
+    },
+    "handoverDate": "2026-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2026",
+      "en": "Q4 2026"
+    },
+    "coverImage": {
+      "id": "7546783000001834136-cover",
+      "url": "/data/zoho-media/laya-courtyard/images/01-03.jpg",
+      "alt": {
+        "ar": "لايا كورتيارد",
+        "en": "Laya Courtyard"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001834136-g1",
+        "url": "/data/zoho-media/laya-courtyard/images/01-03.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g2",
+        "url": "/data/zoho-media/laya-courtyard/images/02-05.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g3",
+        "url": "/data/zoho-media/laya-courtyard/images/03-07.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g4",
+        "url": "/data/zoho-media/laya-courtyard/images/04-08.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g5",
+        "url": "/data/zoho-media/laya-courtyard/images/05-11.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g6",
+        "url": "/data/zoho-media/laya-courtyard/images/06-12.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g7",
+        "url": "/data/zoho-media/laya-courtyard/images/07-13.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g8",
+        "url": "/data/zoho-media/laya-courtyard/images/08-22.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g9",
+        "url": "/data/zoho-media/laya-courtyard/images/09-23.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      },
+      {
+        "id": "7546783000001834136-g10",
+        "url": "/data/zoho-media/laya-courtyard/images/10-29.jpg",
+        "alt": {
+          "ar": "لايا كورتيارد",
+          "en": "Laya Courtyard"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/laya-courtyard/brochures/01-Laya_Courtyard_Essential_Brochure_EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-09T09:56:57.000Z",
+    "updatedAt": "2026-09-09T10:09:47.000Z"
+  },
+  {
     "id": "7546783000001876003",
     "zohoRecordId": "7546783000001876003",
     "slug": "la-mazzoni",
