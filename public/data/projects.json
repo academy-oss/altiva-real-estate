@@ -350,6 +350,149 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000001834234",
+    "zohoRecordId": "7546783000001834234",
+    "slug": "ramada-residences-by-wyndham",
+    "title": {
+      "ar": "رامادا ريزيدنسز من ويندهام",
+      "en": "Ramada Residences by Wyndham"
+    },
+    "description": {
+      "ar": "رامادا ريزيدنسز من ويندهام مشروع سكني فاخر مفروش بالكامل في المنطقة الثقافية بجزر دبي، يضم مجموعة محدودة من 68 وحدة. يجمع المشروع بين أسلوب الحياة الساحلي والخدمات المستوحاة من الضيافة، مع أكثر من 20 مرفقًا تشمل المسبح اللامتناهي ومسبح الأطفال والجاكوزي والنادي الرياضي والسبا والساونا ومسار الجري ومحاكي الجولف والسينما المفتوحة ومناطق الألعاب والاسترخاء. يسمح بالتأجير قصير المدى، وتكون الوحدات جاهزة للتأجير عند التسليم.",
+      "en": "Ramada Residences by Wyndham is a boutique, fully furnished branded residential development in the Cultural District of Dubai Islands. The project offers just 68 residences across G+2P+8 floors. Homes are rental-ready at handover and short-term rentals are permitted. Residents benefit from hotel-inspired services, Wyndham Rewards privileges and more than 20 lifestyle amenities including infinity and children’s pools, jacuzzi, gym, spa, sauna, jogging track, golf simulator, open theatre, games areas, cabanas and social spaces."
+    },
+    "shortDescription": {
+      "ar": "68 مسكنًا فاخرًا ومفروشًا بالكامل في جزر دبي، مع مرافق خمس نجوم وخدمات ضيافة ومزايا ويندهام وإمكانية التأجير قصير المدى.",
+      "en": "A limited collection of 68 fully furnished branded residences on Dubai Islands with short-term rental flexibility, Wyndham privileges and 20+ lifestyle amenities."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Grovy & G Square Luxe Properties",
+      "en": "Grovy & G Square Luxe Properties"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 2560000,
+    "priceTo": 5105000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 964.35,
+    "areaSqftTo": 1964.32,
+    "paymentPlan": {
+      "ar": "40% أثناء الإنشاء و60% عند التسليم، مع خيارات دفع مرنة حسب الوحدة.",
+      "en": "40% during construction and 60% on handover, with flexible options depending on the unit."
+    },
+    "handoverDate": "2027-09-30",
+    "handoverLabel": {
+      "ar": "الربع الثالث 2027",
+      "en": "Q3 2027"
+    },
+    "coverImage": {
+      "id": "7546783000001834234-cover",
+      "url": "/data/zoho-media/ramada-residences-by-wyndham/images/01-01.jpg",
+      "alt": {
+        "ar": "رامادا ريزيدنسز من ويندهام",
+        "en": "Ramada Residences by Wyndham"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001834234-g1",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/01-01.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g2",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/02-02.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g3",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/03-03.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g4",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/04-04.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g5",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/05-05.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g6",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/06-06.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g7",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/07-07.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g8",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/08-08.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g9",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/09-09.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      },
+      {
+        "id": "7546783000001834234-g10",
+        "url": "/data/zoho-media/ramada-residences-by-wyndham/images/10-10.jpg",
+        "alt": {
+          "ar": "رامادا ريزيدنسز من ويندهام",
+          "en": "Ramada Residences by Wyndham"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/ramada-residences-by-wyndham/brochures/02-Ramada_Residences_Essential_Brochure_EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-09T12:30:33.000Z",
+    "updatedAt": "2026-09-09T12:30:33.000Z"
+  },
+  {
     "id": "7546783000001834175",
     "zohoRecordId": "7546783000001834175",
     "slug": "saas-hills",
