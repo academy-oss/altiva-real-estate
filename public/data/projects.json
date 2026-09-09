@@ -488,11 +488,12 @@
         }
       }
     ],
+    "brochureEn": "/data/zoho-media/saas-hills/brochures/01-SAAS_Hills_Essential_Brochure_EN.pdf",
     "status": "off_plan",
     "publishOnWebsite": true,
     "isFeatured": false,
     "createdAt": "2026-09-09T10:28:54.000Z",
-    "updatedAt": "2026-09-09T10:33:40.000Z"
+    "updatedAt": "2026-09-09T10:47:37.000Z"
   },
   {
     "id": "7546783000001834136",
