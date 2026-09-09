@@ -350,6 +350,151 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000001834175",
+    "zohoRecordId": "7546783000001834175",
+    "slug": "saas-hills",
+    "title": {
+      "ar": "ساس هيلز",
+      "en": "SAAS Hills"
+    },
+    "description": {
+      "ar": "ساس هيلز مشروع سكني فاخر يتكون من برجين في مجمع دبي للعلوم، ويضم 854 وحدة تشمل استوديوهات وشققًا من غرفة إلى خمس غرف وتاون هاوس وسكاي فيلا. تتوفر وحدات مفروشة بالكامل مع مرافق متكاملة تشمل المسابح اللامتناهية والرملية، السينما الداخلية والخارجية، ملاعب البادل والتنس وكرة السلة، مسار الجري، النادي الرياضي، الساونا وغرف البخار، النادي الاجتماعي، مساحات العمل، السبا، مناطق الأطفال وجدار التسلق ومحلات تجارية في الطابق الأرضي.",
+      "en": "SAAS Hills is a premium two-tower residential development in Dubai Science Park, offering 854 units including fully furnished studios, apartments, townhouses and sky villas. Tower A rises B+G+2P+32 and Tower B B+G+2P+34. Residents enjoy resort-style wellness, leisure and work amenities including infinity and sandy pools, indoor and outdoor cinemas, padel, tennis, basketball, a jogging track, gym, sauna, steam rooms, clubhouse, co-working spaces, spa, kids play areas, climbing wall and ground-floor retail."
+    },
+    "shortDescription": {
+      "ar": "برجان سكنيان فاخران في مجمع دبي للعلوم مع وحدات مفروشة ومرافق متكاملة وإطلالات على المسبح ودبي هيلز وبرج خليفة والمرسى.",
+      "en": "A premium twin-tower community in Dubai Science Park with furnished residences, expansive views and a broad collection of wellness, leisure and business amenities."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "مجمع دبي للعلوم",
+      "en": "Dubai Science Park"
+    },
+    "developer": {
+      "ar": "SAAS Properties",
+      "en": "SAAS Properties"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1015663,
+    "priceTo": 10782092,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5+"
+    ],
+    "areaSqftFrom": 480,
+    "areaSqftTo": 5977.95,
+    "paymentPlan": {
+      "ar": "40% أثناء الإنشاء، وتشمل 20% دفعة أولى إضافة إلى 4% رسوم دائرة الأراضي و5,000 درهم رسوم إدارية؛ و60% عند التسليم.",
+      "en": "40% during construction, including 20% down payment plus 4% DLD and AED 5,000 admin fee; 60% on handover."
+    },
+    "handoverDate": "2027-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2027",
+      "en": "Q4 2027"
+    },
+    "coverImage": {
+      "id": "7546783000001834175-cover",
+      "url": "/data/zoho-media/saas-hills/images/01-01.jpg",
+      "alt": {
+        "ar": "ساس هيلز",
+        "en": "SAAS Hills"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001834175-g1",
+        "url": "/data/zoho-media/saas-hills/images/01-01.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g2",
+        "url": "/data/zoho-media/saas-hills/images/02-02.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g3",
+        "url": "/data/zoho-media/saas-hills/images/03-03.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g4",
+        "url": "/data/zoho-media/saas-hills/images/04-04.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g5",
+        "url": "/data/zoho-media/saas-hills/images/05-05.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g6",
+        "url": "/data/zoho-media/saas-hills/images/06-06.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g7",
+        "url": "/data/zoho-media/saas-hills/images/07-07.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g8",
+        "url": "/data/zoho-media/saas-hills/images/08-08.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g9",
+        "url": "/data/zoho-media/saas-hills/images/09-09.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      },
+      {
+        "id": "7546783000001834175-g10",
+        "url": "/data/zoho-media/saas-hills/images/10-10.jpg",
+        "alt": {
+          "ar": "ساس هيلز",
+          "en": "SAAS Hills"
+        }
+      }
+    ],
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-09T10:28:54.000Z",
+    "updatedAt": "2026-09-09T10:33:40.000Z"
+  },
+  {
     "id": "7546783000001834136",
     "zohoRecordId": "7546783000001834136",
     "slug": "laya-courtyard",
