@@ -350,6 +350,292 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000001876003",
+    "zohoRecordId": "7546783000001876003",
+    "slug": "la-mazzoni",
+    "title": {
+      "ar": "لا مازوني",
+      "en": "La Mazzoni"
+    },
+    "description": {
+      "ar": "لا مازوني مشروع سكني فاخر على الواجهة البحرية في جزيرة المرجان برأس الخيمة، يضم شققًا مفروشة من غرفة إلى أربع غرف، ووحدات دوبلكس وبنتهاوس وشاليهات بطابع الفلل. تتميز المساكن بأثاث مخصص من HBA وأجهزة Miele وتشطيبات راقية، مع إطلالات على البحر وجزيرة المرجان ومنتجعات وين. تشمل المرافق مسابح إنفينيتي متدرجة، ومرافق لياقة بمساحة تتجاوز 11,000 قدم مربعة، ومساحات عمل مشتركة، ومناطق أطفال داخلية وخارجية، وصالة سماوية، ومكتبة، ومسارًا للمشي، وسينما خارجية، ومرافق سبا وحدائق منسقة.",
+      "en": "La Mazzoni is a luxury waterfront residential development on Al Marjan Island in Ras Al Khaimah, offering fully furnished one- to four-bedroom apartments, duplexes, penthouses, and villa-style chalets. Residences feature custom furniture by HBA, Miele appliances, premium finishes, and views of the sea, Al Marjan Island, and Wynn Resorts. Amenities include cascading infinity pools, more than 11,000 sq ft of fitness facilities, co-working spaces, indoor and outdoor children's areas, a sky lounge, library, walking trail, outdoor cinema, spa facilities, and landscaped gardens."
+    },
+    "shortDescription": {
+      "ar": "مساكن فاخرة مفروشة بإطلالات بحرية على جزيرة المرجان",
+      "en": "Fully furnished luxury residences with sea views on Al Marjan Island"
+    },
+    "emirate": "ras_al_khaimah",
+    "area": {
+      "ar": "جزيرة المرجان",
+      "en": "Al Marjan Island"
+    },
+    "developer": {
+      "ar": "THE LUXE DEVELOPERS",
+      "en": "THE LUXE DEVELOPERS"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 2100000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 814,
+    "areaSqftTo": 7500,
+    "paymentPlan": {
+      "ar": "60% أثناء الإنشاء، و40% عند التسليم (رسوم حجز 5%)",
+      "en": "60% during construction, 40% on handover (5% booking fee)"
+    },
+    "handoverDate": "2028-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2028",
+      "en": "Q4 2028"
+    },
+    "coverImage": {
+      "id": "7546783000001876003-cover",
+      "url": "/data/zoho-media/la-mazzoni/images/01-gallery-3.jpg",
+      "alt": {
+        "ar": "لا مازوني",
+        "en": "La Mazzoni"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001876003-g1",
+        "url": "/data/zoho-media/la-mazzoni/images/01-gallery-3.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g2",
+        "url": "/data/zoho-media/la-mazzoni/images/02-gallery-5.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g3",
+        "url": "/data/zoho-media/la-mazzoni/images/03-gallery-7.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g4",
+        "url": "/data/zoho-media/la-mazzoni/images/04-gallery-9.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g5",
+        "url": "/data/zoho-media/la-mazzoni/images/05-gallery-12.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g6",
+        "url": "/data/zoho-media/la-mazzoni/images/06-gallery-18.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g7",
+        "url": "/data/zoho-media/la-mazzoni/images/07-gallery-25.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g8",
+        "url": "/data/zoho-media/la-mazzoni/images/08-gallery-34.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g9",
+        "url": "/data/zoho-media/la-mazzoni/images/09-gallery-37.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      },
+      {
+        "id": "7546783000001876003-g10",
+        "url": "/data/zoho-media/la-mazzoni/images/10-gallery-49.jpg",
+        "alt": {
+          "ar": "لا مازوني",
+          "en": "La Mazzoni"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/la-mazzoni/brochures/01-La_Mazzoni_Presentation_Web_EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-09T07:28:06.000Z",
+    "updatedAt": "2026-09-09T09:27:30.000Z"
+  },
+  {
+    "id": "7546783000001866006",
+    "zohoRecordId": "7546783000001866006",
+    "slug": "tresora-by-wadan",
+    "title": {
+      "ar": "تريسورا من وادان",
+      "en": "Tresora by Wadan"
+    },
+    "description": {
+      "ar": "تريسورا من وادان مشروع متعدد الاستخدامات في قرية جميرا الدائرية بدبي، يجمع بين مساكن ذكية المساحات ومكاتب بوتيك ومساحات تجزئة منتقاة. تشمل المجموعة السكنية استوديوهات وشققًا من غرفة وغرفتين وبنتهاوس، مع مخططات مختارة لبنتهاوس من ثلاث غرف. وتضم المرافق مسبحًا وجاكوزي وصالة رياضية مع بيلاتس وعلاجًا بالمغطس البارد وصالة عمل مشتركة ومنطقة ألعاب مائية للأطفال ومنطقة شواء، مع خدمات رقمية عبر تطبيق وادان المدعوم بالذكاء الاصطناعي.",
+      "en": "Tresora by Wadan is a mixed-use development in Jumeirah Village Circle, Dubai, combining smart-sized residences, boutique offices and curated retail. The residential collection includes studios, one- and two-bedroom apartments and penthouses, with selected three-bedroom penthouse layouts. Wellness-led amenities include a swimming pool and Jacuzzi, gym with Pilates, ice-bath therapy, co-working lounge, kids' splash park and BBQ area, supported by the AI-powered Wadan app."
+    },
+    "shortDescription": {
+      "ar": "مساكن ذكية ومكاتب بوتيك ومحلات في JVC بمرافق تركز على العافية",
+      "en": "Smart residences, boutique offices and retail in JVC with wellness-led amenities"
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "قرية جميرا الدائرية (JVC)",
+      "en": "Jumeirah Village Circle (JVC)"
+    },
+    "developer": {
+      "ar": "Wadan Developments",
+      "en": "Wadan Developments"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 763168,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio",
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 454.03,
+    "areaSqftTo": 2749.11,
+    "paymentPlan": {
+      "ar": "40% أثناء الإنشاء و60% عند التسليم؛ يتوفر خيار 50/50 لما بعد التسليم؛ وخصم 15% عند السداد الكامل مقدمًا",
+      "en": "40% during construction and 60% on handover; a 50/50 post-handover option is available; 15% discount for 100% upfront payment"
+    },
+    "handoverDate": "2028-03-31",
+    "handoverLabel": {
+      "ar": "الربع الأول 2028",
+      "en": "Q1 2028"
+    },
+    "coverImage": {
+      "id": "7546783000001866006-cover",
+      "url": "/data/zoho-media/tresora-by-wadan/images/01-gallery-3.jpg",
+      "alt": {
+        "ar": "تريسورا من وادان",
+        "en": "Tresora by Wadan"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001866006-g1",
+        "url": "/data/zoho-media/tresora-by-wadan/images/01-gallery-3.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g2",
+        "url": "/data/zoho-media/tresora-by-wadan/images/02-gallery-4.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g3",
+        "url": "/data/zoho-media/tresora-by-wadan/images/03-gallery-9.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g4",
+        "url": "/data/zoho-media/tresora-by-wadan/images/04-gallery-11.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g5",
+        "url": "/data/zoho-media/tresora-by-wadan/images/05-gallery-13.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g6",
+        "url": "/data/zoho-media/tresora-by-wadan/images/06-gallery-15.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g7",
+        "url": "/data/zoho-media/tresora-by-wadan/images/07-gallery-16.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g8",
+        "url": "/data/zoho-media/tresora-by-wadan/images/08-gallery-17.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g9",
+        "url": "/data/zoho-media/tresora-by-wadan/images/09-gallery-19.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      },
+      {
+        "id": "7546783000001866006-g10",
+        "url": "/data/zoho-media/tresora-by-wadan/images/10-gallery-21.jpg",
+        "alt": {
+          "ar": "تريسورا من وادان",
+          "en": "Tresora by Wadan"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/tresora-by-wadan/brochures/01-Tresora_Brochure_EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-09T09:04:49.000Z",
+    "updatedAt": "2026-09-09T09:21:08.000Z"
+  },
+  {
     "id": "7546783000001762027",
     "zohoRecordId": "7546783000001762027",
     "slug": "abjer-tower",
