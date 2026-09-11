@@ -83,6 +83,12 @@ export function Footer() {
                 <bdi dir="ltr">sales@altivaproperties.com</bdi>
               </a>
             </li>
+            <li className="flex flex-col items-center gap-2 text-center">
+              <Mail size={18} className="shrink-0 text-copper" />
+              <a href="mailto:info@altivaproperties.com" className="hover:text-copper">
+                <bdi dir="ltr">info@altivaproperties.com</bdi>
+              </a>
+            </li>
           </ul>
           <div className="mt-5 space-y-2 text-sm text-cream/70">
             <a
