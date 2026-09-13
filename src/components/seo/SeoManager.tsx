@@ -147,7 +147,7 @@ export function SeoManager() {
   }, [lang, pathname, project]);
 
   useEffect(() => {
-    const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
+    const path = pathname === "/" ? "/" : `${pathname.replace(/\/$/, "")}/`;
     const canonical = `${SITE}${path}`;
     const { title, description } = result.copy;
     document.title = title;
