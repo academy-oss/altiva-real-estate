@@ -6,6 +6,7 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
+    "services": "Services",
     "about": "About Us",
     "contact": "Contact",
     "consultation": "Book a Consultation",
@@ -59,6 +60,7 @@
       "title": "Invest in Dubai from Kuwait, Effortlessly",
       "subtitle": "Selected real estate opportunities with returns starting from 8% annually — backed by more than 23 years of real estate market expertise",
       "ctaPrimary": "Get the Best Opportunities Now",
+      "ctaServices": "Explore Our Services",
       "ctaSecondary": "Discover More"
     },
     "whyDubai": {
@@ -82,14 +84,16 @@
     },
     "services": {
       "title": "Our Services",
-      "subtitle": "End-to-end solutions from consultation to closing",
+      "subtitle": "Everything you need for your UAE property, coordinated in one place",
       "items": [
-        { "title": "Carefully Selected Investment Opportunities", "text": "We screen the market to offer opportunities that fit your financial goals" },
-        { "title": "Property Sale, Purchase & Marketing", "text": "Across all areas of the country" },
-        { "title": "Property Insurance", "text": "Protecting your property investment with confidence" },
-        { "title": "Handling All Transactions", "text": "Easily, quickly, and securely" },
-        { "title": "Direct Access to Top Developers", "text": "Direct partnerships with the largest real estate developers" }
-      ]
+        { "title": "Buy a Property", "text": "We search, compare and negotiate for the right opportunity at the best available price" },
+        { "title": "Sell & Market a Property", "text": "We market your property and connect it with suitable buyers in the UAE" },
+        { "title": "Property Management", "text": "Coordinated property management and professional support for owners" },
+        { "title": "Property Valuation", "text": "Professional guidance to understand value and make informed decisions" },
+        { "title": "Contractors & Consultants", "text": "We connect you with suitable contractors and consultants when you plan to build" },
+        { "title": "End-to-End Real Estate Support", "text": "Tailored support for other real estate needs and related transactions" }
+      ],
+      "cta": "Explore Our Services & Send a Request"
     },
     "stats": {
       "years": "Years of experience in real estate investment and development",
@@ -125,6 +129,87 @@
       "title": "Looking for a real investment opportunity in Dubai?",
       "subtitle": "Our team is ready to help you choose the best opportunities to achieve your financial goals",
       "cta": "Book Your Free Consultation Now"
+    }
+  },
+  "services": {
+    "pageTitle": "End-to-End Real Estate Services in the UAE",
+    "pageSubtitle": "From buying and selling to management, valuation and construction support, ALTIVA coordinates your real estate needs and follows through with you step by step.",
+    "trustLine": "One request goes directly to the ALTIVA team for prompt and attentive follow-up.",
+    "cardsTitle": "How Can We Help?",
+    "cardsSubtitle": "Choose the right service and send the details you have. Our team will contact you to complete the request.",
+    "requestService": "Request This Service",
+    "items": [
+      {
+        "title": "Buy a Property",
+        "text": "We help you identify the right property for your goal and budget across the UAE.",
+        "points": ["Property search and comparison", "Negotiation for the best available price", "Support through the buying steps"]
+      },
+      {
+        "title": "Sell & Market a Property",
+        "text": "We present and market your property professionally to reach suitable buyers.",
+        "points": ["Property and market review", "Marketing plan", "Coordination through completion"]
+      },
+      {
+        "title": "Property Management",
+        "text": "We coordinate property management and owner requirements to help maintain the quality of the asset.",
+        "points": ["Regular follow-up", "Property needs coordination", "Clear owner reporting"]
+      },
+      {
+        "title": "Property Valuation",
+        "text": "We help you access professional value guidance for selling, buying or investment decisions.",
+        "points": ["Property information review", "Market comparison", "Guidance on next steps"]
+      },
+      {
+        "title": "Contractors & Consultants",
+        "text": "We provide suitable contractor and consultant options when you are planning to build or develop.",
+        "points": ["Understanding the project scope", "Suitable provider referrals", "Coordination of discussions and proposals"]
+      },
+      {
+        "title": "Other Real Estate Services",
+        "text": "For a different requirement, share the details and our team will guide you to the right service or provider.",
+        "points": ["Needs assessment", "Transaction coordination", "Tailored follow-up"]
+      }
+    ],
+    "serviceOptions": {
+      "buy_property": "Buy a Property",
+      "sell_property": "Sell or Market a Property",
+      "property_management": "Property Management",
+      "property_valuation": "Property Valuation",
+      "construction_support": "Contractor or Construction Consultant",
+      "other_service": "Other Real Estate Service"
+    },
+    "form": {
+      "title": "Send a Service Request",
+      "subtitle": "Complete the basic details only. You may optionally attach any available documents or images. Your request will go directly to the team for follow-up.",
+      "fullName": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address (optional)",
+      "serviceType": "Service Type",
+      "chooseService": "Choose a service",
+      "emirate": "Emirate",
+      "chooseEmirate": "Choose an emirate",
+      "anyEmirate": "Any Emirate / Not Sure",
+      "propertyType": "Property Type (optional)",
+      "choosePropertyType": "Choose a property type",
+      "budget": "Approximate Budget or Value (optional)",
+      "chooseBudget": "Choose a range",
+      "propertyLocation": "Property Location or Area (optional)",
+      "contactMethod": "Preferred Contact Method",
+      "details": "Additional Details (optional)",
+      "attachments": "Documents or Images (optional)",
+      "attachmentsOptional": "Attachments are optional at this stage",
+      "attachmentsSafety": "Please do not attach bank details, passwords or highly sensitive documents.",
+      "uploadCta": "Click to choose files",
+      "uploadHint": "PDF, JPG or PNG — up to 3 files, 20MB total",
+      "fileCountError": "You can attach up to 3 files.",
+      "fileTypeError": "Only PDF, JPG and PNG files are accepted.",
+      "fileSizeError": "The combined file size must not exceed 20MB.",
+      "emailError": "Please enter a valid email address.",
+      "consent": "I agree that my information and documents may be used to contact me and process this request under the Privacy Policy.",
+      "submit": "Send Request to ALTIVA",
+      "successTitle": "Your Request Has Been Received",
+      "successText": "Thank you. The ALTIVA team will contact you to complete the details.",
+      "newRequest": "Send Another Request"
     }
   },
   "projects": {
@@ -280,8 +365,8 @@
     "lastUpdated": "Last updated",
     "sections": [
       { "title": "Introduction", "text": "Altiva Real Estate is committed to protecting the privacy of our website visitors and clients. This policy explains how we collect, use, and protect your personal data when you use our website or contact us." },
-      { "title": "Data We Collect", "text": "We may collect your name, phone number, email address, country of residence, and details about your real estate interests (such as emirate, property type, and budget) when you fill out a consultation request form or contact us. When you use the Smart Advisor, the conversation text may be processed to provide a relevant answer, so please do not share financial or sensitive personal information in the chat." },
-      { "title": "How We Use Your Data", "text": "We use your data to contact you about real estate opportunities of interest, provide the consultations you request, and improve our services. Contact details entered in the Smart Advisor form are not sent to the ALTIVA team until you explicitly consent. We will not share your data with third parties without your consent, except with technical providers needed to operate the service or where required by law." },
+      { "title": "Data We Collect", "text": "We may collect your name, phone number, email address, country of residence, and details about your real estate interest or service request, such as service type, emirate, property type and budget. You may optionally attach property-related documents or images. Please do not send bank details, passwords or highly sensitive documents. When you use the Smart Advisor, the conversation text may be processed to provide a relevant answer, so please do not share financial or sensitive personal information in the chat." },
+      { "title": "How We Use Your Data", "text": "We use your information and documents to process your service request, contact you, provide the requested advice or coordination, and improve our services. Website requests are recorded in Zoho for managed follow-up. Contact details entered in the Smart Advisor form are not sent to the ALTIVA team until you explicitly consent. We will not share your data with third parties without your consent, except with technical or professional providers needed to deliver the service or where required by law." },
       { "title": "Data Protection", "text": "We take appropriate technical and organizational measures to protect your data from unauthorized access, loss, or misuse." },
       { "title": "Your Rights", "text": "You may, at any time, request access to your data, request that it be updated, or request its deletion by contacting us via the email address shown on the Contact Us page." },
       { "title": "Contact Us", "text": "For any questions about this Privacy Policy, please contact us at sales@altivaproperties.com." }
