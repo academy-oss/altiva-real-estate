@@ -6,6 +6,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { WhatsAppFloatButton } from "./WhatsAppFloatButton";
 import { AltivaAssistant } from "../assistant/AltivaAssistant";
+import { SeoManager } from "../seo/SeoManager";
 
 export function Layout() {
   const { i18n } = useTranslation();
@@ -23,6 +24,7 @@ export function Layout() {
 
   return (
     <div className="flex min-h-screen flex-col bg-navy text-cream">
+      <SeoManager />
       <Header />
       <main className="flex-1">
         <Outlet />
