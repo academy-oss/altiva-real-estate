@@ -6,6 +6,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import Consultation from "./pages/Consultation";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/consultation" element={<Consultation />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Route>
