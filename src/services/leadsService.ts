@@ -5,14 +5,14 @@
  * public form keys are safe to embed, while Zoho OAuth credentials remain in
  * encrypted deployment secrets and are never sent to the browser.
  */
-import type { AssistantLead, ConsultationLead, ContactMessage } from "../types/lead";
+import type { AssistantLead, ConsultationLead, ContactMessage, ServiceRequestLead, ServiceRequestType } from "../types/lead";
 
 const API_BASE_URL = (import.meta.env.VITE_PUBLIC_API_BASE_URL ?? "").replace(/\/$/, "");
 const MOCK_SUBMISSIONS = import.meta.env.DEV && import.meta.env.VITE_ENABLE_MOCK_SUBMISSIONS === "true";
 const ZOHO_WEBFORM_URL = "https://crm.zoho.com/crm/WebToLeadForm";
 const ZOHO_WEBFORM_KEYS = {
-  xnQsjsdp: "ba696dfaaf72513f5d50f41f27f70c795b13d9311545f6bdcf73aeac342a2191",
-  xmIwtLD: "5260bbcc723877dc1ec2006832e9716a0f3a08fe41c1a10761c1d57784f3f03ed8b7ab4883f66c5be60848793ad1dc18",
+  xnQsjsdp: "0dde59618e2cf0833ee701be3ba9a888eaff96079ca0ca1b423042f465dda526",
+  xmIwtLD: "b9d878ac89e39cbcbbf5e65c883ecb765f9571f1876ff3aa3244d75feceba0c424152d22eb743190b126cb49a72869c9",
   actionType: "TGVhZHM=",
 };
 
@@ -39,15 +39,7 @@ async function submitToZohoWebform(payload: ConsultationLead | ContactMessage | 
     : "fullName" in payload
       ? consultationFormData(payload)
       : contactFormData(payload);
-  formData.set("xnQsjsdp", ZOHO_WEBFORM_KEYS.xnQsjsdp);
-  formData.set("xmIwtLD", ZOHO_WEBFORM_KEYS.xmIwtLD);
-  formData.set("actionType", ZOHO_WEBFORM_KEYS.actionType);
-  formData.set("returnURL", "null");
-  formData.set("zc_gad", "");
-  formData.set("aG9uZXlwb3Q", "");
-  formData.set("Lead Source", "Website");
-  formData.set("Lead Status", "New");
-  formData.set("LEADCF12", "Real Estate Lead");
+  addZohoFormKeys(formData);
 
   const response = await fetch(ZOHO_WEBFORM_URL, {
     method: "POST",
@@ -64,6 +56,18 @@ async function submitToZohoWebform(payload: ConsultationLead | ContactMessage | 
   }
 
   return { success: true };
+}
+
+function addZohoFormKeys(formData: FormData) {
+  formData.set("xnQsjsdp", ZOHO_WEBFORM_KEYS.xnQsjsdp);
+  formData.set("xmIwtLD", ZOHO_WEBFORM_KEYS.xmIwtLD);
+  formData.set("actionType", ZOHO_WEBFORM_KEYS.actionType);
+  formData.set("returnURL", "null");
+  formData.set("zc_gad", "");
+  formData.set("aG9uZXlwb3Q", "");
+  formData.set("Lead Source", "Website");
+  formData.set("Lead Status", "New");
+  formData.set("LEADCF12", "Real Estate Lead");
 }
 
 function consultationFormData(lead: ConsultationLead): FormData {
@@ -179,6 +183,17 @@ function mapContactMethod(value: string) {
   return ({ phone: "Phone", whatsapp: "WhatsApp", email: "Email" } as Record<string, string>)[value] ?? "WhatsApp";
 }
 
+function mapServiceRequest(value: ServiceRequestType) {
+  return ({
+    buy_property: "Buy a Property",
+    sell_property: "Sell or Market a Property",
+    property_management: "Property Management",
+    property_valuation: "Property Valuation",
+    construction_support: "Construction / Contractor or Consultant",
+    other_service: "Other Real Estate Service",
+  } as Record<ServiceRequestType, string>)[value];
+}
+
 export async function submitConsultationLead(lead: ConsultationLead): Promise<{ success: true }> {
   return postLead("/leads/consultation", {
     ...lead,
@@ -200,4 +215,41 @@ export async function submitAssistantLead(lead: AssistantLead): Promise<{ succes
     submittedAt: new Date().toISOString(),
     source: "ai_assistant",
   });
+}
+
+export async function submitServiceRequestLead(lead: ServiceRequestLead): Promise<{ success: true }> {
+  if (MOCK_SUBMISSIONS) return { success: true };
+
+  const form = baseFormData(lead.fullName, lead.email ?? "", lead.phone);
+  addZohoFormKeys(form);
+  form.set("LEADCF2", pageLanguage());
+  form.set("LEADCF3", lead.propertyLocation || mapEmirate(lead.emirateOfInterest));
+  form.set("LEADCF14", mapEmirate(lead.emirateOfInterest));
+  form.set("LEADCF17", mapContactMethod(lead.preferredContactMethod));
+  form.set("LEADCF19", "Consultation");
+  form.set("LEADCF20", "ALTIVA Website - Services");
+  form.set("LEADCF21", mapServiceRequest(lead.serviceType));
+  form.set("LEADCF58", "on");
+  form.set("LEADCF59", formatZohoDate(lead.submittedAt));
+  if (lead.propertyType) form.set("LEADCF9", mapPropertyType(lead.propertyType));
+  if (lead.budget) form.set("LEADCF6", mapBudget(lead.budget));
+
+  const description = [
+    "[ALTIVA Website - Services]",
+    `Service: ${mapServiceRequest(lead.serviceType)}`,
+    lead.propertyLocation ? `Property location: ${lead.propertyLocation}` : "",
+    lead.message ? `Details: ${lead.message}` : "",
+  ].filter(Boolean).join("\n");
+  form.set("Description", description);
+  lead.attachments?.forEach((file) => form.append("theFile", file));
+
+  const response = await fetch(ZOHO_WEBFORM_URL, { method: "POST", body: form, cache: "no-cache" });
+  if (!response.ok) throw new Error(`Zoho service request failed with status ${response.status}`);
+  const contentType = response.headers.get("Content-Type") ?? "";
+  const result: unknown = contentType.includes("application/json") ? await response.json() : await response.text();
+  if (typeof result === "object" && result !== null && "actionsubmit" in result) {
+    const action = String((result as { actionsubmit?: unknown }).actionsubmit ?? "");
+    if (["error_msg", "captcha_error"].includes(action)) throw new Error("Zoho rejected the service request");
+  }
+  return { success: true };
 }
