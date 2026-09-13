@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { ChevronDown, MessageCircle } from "lucide-react";
-import { AnchorButton } from "../ui/Button";
+import { AnchorButton, LinkButton } from "../ui/Button";
 import { whatsappUrl } from "../../lib/whatsapp";
 
 export function Hero() {
@@ -20,7 +20,7 @@ export function Hero() {
           {t("home.hero.title")}
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-cream/80 sm:text-lg">{t("home.hero.subtitle")}</p>
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
           <AnchorButton
             href={whatsappUrl()}
             target="_blank"
@@ -30,6 +30,9 @@ export function Hero() {
           >
             {t("home.hero.ctaPrimary")}
           </AnchorButton>
+          <LinkButton to="/services" variant="secondary" size="lg">
+            {t("home.hero.ctaServices")}
+          </LinkButton>
         </div>
       </div>
 
