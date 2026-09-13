@@ -53,6 +53,7 @@ export function Footer() {
             <li><Link to="/" className="hover:text-copper">{t("nav.home")}</Link></li>
             <li><Link to="/about" className="hover:text-copper">{t("nav.about")}</Link></li>
             <li><Link to="/projects" className="hover:text-copper">{t("nav.projects")}</Link></li>
+            <li><Link to="/services" className="hover:text-copper">{t("nav.services")}</Link></li>
             <li><Link to="/consultation" className="hover:text-copper">{t("nav.consultation")}</Link></li>
             <li><Link to="/privacy" className="hover:text-copper">{t("nav.privacy")}</Link></li>
           </ul>
