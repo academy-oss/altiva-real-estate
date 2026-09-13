@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Sparkles, Home as HomeIcon, ShieldCheck, CheckCircle2, Building2 } from "lucide-react";
+import { BadgeDollarSign, Building2, ClipboardCheck, HardHat, KeyRound, Search } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
+import { LinkButton } from "../ui/Button";
 
-const ICONS = [Sparkles, HomeIcon, ShieldCheck, CheckCircle2, Building2];
+const ICONS = [Search, BadgeDollarSign, KeyRound, ClipboardCheck, HardHat, Building2];
 
 export function ServicesSection() {
   const { t } = useTranslation();
@@ -27,6 +28,9 @@ export function ServicesSection() {
               </div>
             );
           })}
+        </div>
+        <div className="mt-10 text-center">
+          <LinkButton to="/services" size="lg">{t("home.services.cta")}</LinkButton>
         </div>
       </Container>
     </section>
