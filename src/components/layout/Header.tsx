@@ -33,6 +33,7 @@ export function Header() {
     { to: "/", label: t("nav.home") },
     { to: "/about", label: t("nav.about") },
     { to: "/projects", label: t("nav.projects") },
+    { to: "/services", label: t("nav.services") },
     { to: "/contact", label: t("nav.contact") },
   ];
 
