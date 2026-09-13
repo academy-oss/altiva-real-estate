@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://altivaproperties.com/sitemap.xml
