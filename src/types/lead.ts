@@ -9,6 +9,13 @@
 export type PurchasePurpose = "investment" | "residence" | "holiday_home" | "golden_visa" | "undecided";
 export type PurchaseTimeline = "immediate" | "3_months" | "6_months" | "exploring";
 export type PreferredContactMethod = "phone" | "whatsapp" | "email";
+export type ServiceRequestType =
+  | "buy_property"
+  | "sell_property"
+  | "property_management"
+  | "property_valuation"
+  | "construction_support"
+  | "other_service";
 
 export interface ConsultationLead {
   fullName: string;
@@ -40,6 +47,23 @@ export interface ContactMessage {
   message: string;
   consentAccepted: boolean;
   submittedAt?: string;
+}
+
+export interface ServiceRequestLead {
+  fullName: string;
+  phone: string;
+  email?: string;
+  serviceType: ServiceRequestType;
+  emirateOfInterest: string;
+  propertyType?: string;
+  budget?: string;
+  propertyLocation?: string;
+  preferredContactMethod: PreferredContactMethod;
+  message?: string;
+  attachments?: File[];
+  consentAccepted: boolean;
+  submittedAt?: string;
+  source?: "website_services_form";
 }
 
 export interface AssistantLead {
