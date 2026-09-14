@@ -9,6 +9,11 @@ export async function askAltivaAssistant(
   history: AssistantMessage[],
   projects: Project[],
 ): Promise<AssistantAnswer> {
+  const normalized = normalize(message);
+  if (detectService(normalized) || asksForContact(normalized)) {
+    return buildLocalAnswer(message, language, projects);
+  }
+
   if (ASSISTANT_API_URL) {
     try {
       const payload: AssistantRequest = { message, language, history: history.slice(-8) };
@@ -64,10 +69,7 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
     };
   }
 
-  if (hasAny(normalized, [
-    "تواصل", "اتصل", "موظف", "مستشار", "رقم", "هاتف", "واتساب", "ايميل", "بريد", "عنوان", "موقع المكتب", "وين مكتبكم",
-    "call", "contact", "advisor", "agent", "phone", "number", "whatsapp", "email", "address", "office location",
-  ])) {
+  if (asksForContact(normalized)) {
     return {
       reply: language === "ar"
         ? "واتساب ALTIVA: +965 5777 5289، وهاتف المكتب: +965 2220035. البريد الإلكتروني: sales@altivaproperties.com أو info@altivaproperties.com. العنوان: مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت. ويمكنك أيضًا الضغط على «طلب تواصل من مستشار» أسفل المحادثة."
@@ -123,6 +125,13 @@ function detectService(value: string): ServiceId | undefined {
   if (hasAny(value, ["مقاول", "مقاولين", "استشاري", "استشاريين", "بناء", "contractor", "consultant", "construction"])) return "contractors";
   if (hasAny(value, ["خدمه عقاريه", "طلب عقاري", "real estate service"])) return "other";
   return undefined;
+}
+
+function asksForContact(value: string): boolean {
+  return hasAny(value, [
+    "تواصل", "اتصل", "موظف", "مستشار", "رقم", "هاتف", "واتساب", "ايميل", "بريد", "عنوان", "موقع المكتب", "وين مكتبكم",
+    "call", "contact", "advisor", "agent", "phone", "number", "whatsapp", "email", "address", "office location",
+  ]);
 }
 
 function serviceReply(service: ServiceId, language: AssistantLanguage): string {
