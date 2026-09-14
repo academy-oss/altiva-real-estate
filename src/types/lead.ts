@@ -66,18 +66,6 @@ export interface ServiceRequestLead {
   source?: "website_services_form";
 }
 
-export interface GuideLead {
-  fullName: string;
-  phone: string;
-  purpose: PurchasePurpose;
-  consentAccepted: boolean;
-  contactRequested: boolean;
-  language: "ar" | "en";
-  campaign?: string;
-  source?: "investor_guide_2026";
-  submittedAt?: string;
-}
-
 export interface AssistantLead {
   fullName: string;
   phone: string;
@@ -91,4 +79,16 @@ export interface AssistantLead {
   consentAccepted: boolean;
   submittedAt?: string;
   source?: "ai_assistant";
+}
+
+export interface GuideLead {
+  fullName: string;
+  phone: string;
+  purpose: PurchasePurpose;
+  consentAccepted: boolean;
+  contactRequested: boolean;
+  language: "ar" | "en";
+  campaign?: string;
+  submittedAt?: string;
+  source: "investor_guide_2026";
 }
