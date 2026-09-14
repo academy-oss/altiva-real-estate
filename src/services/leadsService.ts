@@ -5,7 +5,7 @@
  * public form keys are safe to embed, while Zoho OAuth credentials remain in
  * encrypted deployment secrets and are never sent to the browser.
  */
-import type { AssistantLead, ConsultationLead, ContactMessage, ServiceRequestLead, ServiceRequestType } from "../types/lead";
+import type { AssistantLead, ConsultationLead, ContactMessage, GuideLead, ServiceRequestLead, ServiceRequestType } from "../types/lead";
 
 const API_BASE_URL = (import.meta.env.VITE_PUBLIC_API_BASE_URL ?? "").replace(/\/$/, "");
 const MOCK_SUBMISSIONS = import.meta.env.DEV && import.meta.env.VITE_ENABLE_MOCK_SUBMISSIONS === "true";
@@ -15,6 +15,12 @@ const ZOHO_WEBFORM_KEYS = {
   xmIwtLD: "b9d878ac89e39cbcbbf5e65c883ecb765f9571f1876ff3aa3244d75feceba0c424152d22eb743190b126cb49a72869c9",
   actionType: "TGVhZHM=",
 };
+const GUIDE_WEBFORM_KEYS = {
+  xnQsjsdp: "d919fddb3997cfea295aaf6cd535acbf8a80ede0840a329fe64dafec9180c61b",
+  xmIwtLD: "1a12f8061063c2dde17c5318ac8d64d3e8ccc92bda6c66fee7c84abb6ca59abf969cce984495a3e55b3c7021a7a35bbc",
+  actionType: "TGVhZHM=",
+};
+const GUIDE_PDF_URL = "https://altivaproperties.com/downloads/altiva-investor-guide-dubai-2026-ar.pdf";
 
 async function postLead(path: string, payload: ConsultationLead | ContactMessage | AssistantLead): Promise<{ success: true }> {
   if (MOCK_SUBMISSIONS) return { success: true };
@@ -68,6 +74,93 @@ function addZohoFormKeys(formData: FormData) {
   formData.set("Lead Source", "Website");
   formData.set("Lead Status", "New");
   formData.set("LEADCF12", "Real Estate Lead");
+}
+
+function guideFormData(lead: GuideLead): FormData {
+  const form = baseFormData(lead.fullName, "", lead.phone);
+  form.set("LEADCF16", mapPurpose(lead.purpose));
+  if (lead.contactRequested) form.set("LEADCF17", "WhatsApp");
+  form.set("LEADCF20", `Investor Guide 2026 | Follow-up: ${lead.contactRequested ? "Yes" : "No"} | ${lead.campaign || "direct"}`.slice(0, 255));
+  form.set("LEADCF58", "on");
+  form.set("LEADCF59", formatZohoDate(lead.submittedAt));
+  form.set("Lead Source", campaignLeadSource(lead.campaign));
+  return form;
+}
+
+function campaignLeadSource(campaign?: string) {
+  const value = campaign?.toLowerCase() ?? "";
+  if (value.includes("instagram")) return "Instagram";
+  if (value.includes("whatsapp")) return "WhatsApp";
+  return "Website";
+}
+
+function submitGuideToZoho(lead: GuideLead): Promise<{ success: true }> {
+  if (!lead.consentAccepted) return Promise.reject(new Error("Guide consent is required"));
+
+  const formData = guideFormData(lead);
+  formData.set("xnQsjsdp", GUIDE_WEBFORM_KEYS.xnQsjsdp);
+  formData.set("xmIwtLD", GUIDE_WEBFORM_KEYS.xmIwtLD);
+  formData.set("actionType", GUIDE_WEBFORM_KEYS.actionType);
+  formData.set("returnURL", GUIDE_PDF_URL);
+  formData.set("zc_gad", "");
+  formData.set("aG9uZXlwb3Q", "");
+  formData.set("Lead Status", "New");
+
+  return new Promise((resolve, reject) => {
+    const frameName = `altiva-guide-${Date.now()}`;
+    const frame = document.createElement("iframe");
+    frame.name = frameName;
+    frame.title = "ALTIVA guide request";
+    frame.hidden = true;
+
+    const form = document.createElement("form");
+    form.method = "POST";
+    form.action = ZOHO_WEBFORM_URL;
+    form.target = frameName;
+    form.acceptCharset = "UTF-8";
+    form.hidden = true;
+
+    for (const [name, value] of formData.entries()) {
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = name;
+      input.value = String(value);
+      form.appendChild(input);
+    }
+
+    let settled = false;
+    let frameLoaded = false;
+    const finish = (result: "success" | "error", error?: unknown) => {
+      if (settled) return;
+      settled = true;
+      window.setTimeout(() => {
+        form.remove();
+        frame.remove();
+      }, 1000);
+      if (result === "success") resolve({ success: true });
+      else reject(error instanceof Error ? error : new Error("Guide submission failed"));
+    };
+    const fallback = window.setTimeout(() => finish("error", new Error("Guide submission timed out")), 8000);
+
+    frame.addEventListener("load", () => {
+      if (!frameLoaded) {
+        frameLoaded = true;
+        try {
+          form.submit();
+        } catch (error) {
+          window.clearTimeout(fallback);
+          finish("error", error);
+        }
+        return;
+      }
+
+      window.clearTimeout(fallback);
+      finish("success");
+    });
+
+    document.body.append(frame, form);
+    frame.src = "about:blank";
+  });
 }
 
 function consultationFormData(lead: ConsultationLead): FormData {
@@ -214,6 +307,13 @@ export async function submitAssistantLead(lead: AssistantLead): Promise<{ succes
     ...lead,
     submittedAt: new Date().toISOString(),
     source: "ai_assistant",
+  });
+}
+
+export async function submitGuideLead(lead: Omit<GuideLead, "submittedAt">): Promise<{ success: true }> {
+  return submitGuideToZoho({
+    ...lead,
+    submittedAt: new Date().toISOString(),
   });
 }
 
