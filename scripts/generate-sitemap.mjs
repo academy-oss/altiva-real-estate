@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const SITE_URL = "https://altivaproperties.com";
-const STATIC_PATHS = ["/", "/projects/", "/services/", "/about/", "/contact/", "/consultation/", "/privacy/"];
+const STATIC_PATHS = ["/", "/projects/", "/services/", "/about/", "/contact/", "/consultation/", "/privacy/", "/guide/dubai-investor-2026/"];
 
 const projects = JSON.parse(await readFile(new URL("../public/data/projects.json", import.meta.url), "utf8"));
 const urls = [
