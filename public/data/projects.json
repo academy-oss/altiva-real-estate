@@ -1,5 +1,92 @@
 [
   {
+    "id": "7546783000001731008",
+    "zohoRecordId": "7546783000001731008",
+    "slug": "empire-downtown-jebel-ali",
+    "title": {
+      "ar": "امباير داون تاون جبل علي",
+      "en": "Empire Downtown Jebel Ali"
+    },
+    "description": {
+      "ar": "مشروع سكني في داون تاون جبل علي يضم 116 شقة من الاستوديو حتى ثلاث غرف، مع مسبح خارجي ونادٍ رياضي وساونا وتراس للجلوس، ويتميز بقربه من محطة المترو وشارع الشيخ زايد.",
+      "en": "A residential development in Downtown Jebel Ali comprising 116 apartments from studios to three-bedroom homes, with an outdoor pool, indoor gym, male and female saunas, and an outdoor sitting terrace, conveniently located near the metro and Sheikh Zayed Road."
+    },
+    "shortDescription": {
+      "ar": "شقق جاهزة للتسليم في جبل علي",
+      "en": "Ready-to-move apartments in Jebel Ali"
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جبل علي",
+      "en": "Jebel Ali"
+    },
+    "developer": {
+      "ar": "Empire Development",
+      "en": "Empire Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 799777,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio",
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 650,
+    "areaSqftTo": 1150,
+    "paymentPlan": {
+      "ar": "دفعة واحدة أو خطة تقسيط بعد التسليم",
+      "en": "Full payment or post-handover installment plan"
+    },
+    "handoverDate": "2025-12-01",
+    "handoverLabel": {
+      "ar": "جاهز",
+      "en": "Ready"
+    },
+    "coverImage": {
+      "id": "7546783000001731008-cover",
+      "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/cover.jpg",
+      "alt": {
+        "ar": "امباير داون تاون جبل علي",
+        "en": "Empire Downtown Jebel Ali"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001731008-g1",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/cover.jpg",
+        "alt": {
+          "ar": "امباير داون تاون جبل علي",
+          "en": "Empire Downtown Jebel Ali"
+        }
+      },
+      {
+        "id": "7546783000001731008-g2",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/view-2.jpg",
+        "alt": {
+          "ar": "امباير داون تاون جبل علي",
+          "en": "Empire Downtown Jebel Ali"
+        }
+      },
+      {
+        "id": "7546783000001731008-g3",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/view-3.jpg",
+        "alt": {
+          "ar": "امباير داون تاون جبل علي",
+          "en": "Empire Downtown Jebel Ali"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/empire-downtown-jebel-ali/brochures/02-Empire-Downtown-Jebel-Ali-EN-Fact-Sheet.pdf",
+    "status": "ready",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-09-14T16:07:56.000Z"
+  },
+  {
     "id": "7546783000001731007",
     "zohoRecordId": "7546783000001731007",
     "slug": "ventana-residences",
@@ -83,91 +170,6 @@
     "isFeatured": true,
     "createdAt": "2026-09-07T07:25:55.000Z",
     "updatedAt": "2026-09-08T19:02:14.000Z"
-  },
-  {
-    "id": "7546783000001731008",
-    "zohoRecordId": "7546783000001731008",
-    "slug": "empire-downtown-jebel-ali",
-    "title": {
-      "ar": "امباير داون تاون جبل علي",
-      "en": "Empire Downtown Jebel Ali"
-    },
-    "description": {
-      "ar": "مشروع سكني متكامل في قلب جبل علي يوفر شققًا جاهزة للتسليم بتصميم عصري وقربًا من المناطق الصناعية والحرة الرئيسية في دبي.",
-      "en": "A fully integrated residential project in the heart of Jebel Ali offering ready-to-move apartments with modern design, close to Dubai's major industrial and free zones."
-    },
-    "shortDescription": {
-      "ar": "شقق جاهزة للتسليم في جبل علي",
-      "en": "Ready-to-move apartments in Jebel Ali"
-    },
-    "emirate": "dubai",
-    "area": {
-      "ar": "جبل علي",
-      "en": "Jebel Ali"
-    },
-    "developer": {
-      "ar": "Empire Development",
-      "en": "Empire Development"
-    },
-    "propertyType": "apartment",
-    "priceFrom": 799777,
-    "currency": "AED",
-    "isPriceEstimated": false,
-    "bedrooms": [
-      "1",
-      "2"
-    ],
-    "areaSqftFrom": 650,
-    "areaSqftTo": 1150,
-    "paymentPlan": {
-      "ar": "دفعة واحدة أو خطة تقسيط بعد التسليم",
-      "en": "Full payment or post-handover installment plan"
-    },
-    "handoverDate": "2025-12-01",
-    "handoverLabel": {
-      "ar": "جاهز",
-      "en": "Ready"
-    },
-    "coverImage": {
-      "id": "7546783000001731008-cover",
-      "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/cover.jpg",
-      "alt": {
-        "ar": "امباير داون تاون جبل علي",
-        "en": "Empire Downtown Jebel Ali"
-      }
-    },
-    "gallery": [
-      {
-        "id": "7546783000001731008-g1",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/cover.jpg",
-        "alt": {
-          "ar": "امباير داون تاون جبل علي",
-          "en": "Empire Downtown Jebel Ali"
-        }
-      },
-      {
-        "id": "7546783000001731008-g2",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/view-2.jpg",
-        "alt": {
-          "ar": "امباير داون تاون جبل علي",
-          "en": "Empire Downtown Jebel Ali"
-        }
-      },
-      {
-        "id": "7546783000001731008-g3",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/empire-downtown-jebel-ali/view-3.jpg",
-        "alt": {
-          "ar": "امباير داون تاون جبل علي",
-          "en": "Empire Downtown Jebel Ali"
-        }
-      }
-    ],
-    "brochureEn": "/data/zoho-media/empire-downtown-jebel-ali/brochures/01-Empire-Downtown-Jebel-Ali-EN-Floor-Plans.pdf",
-    "status": "ready",
-    "publishOnWebsite": true,
-    "isFeatured": true,
-    "createdAt": "2026-09-07T07:25:55.000Z",
-    "updatedAt": "2026-09-08T18:24:36.000Z"
   },
   {
     "id": "7546783000001731009",
