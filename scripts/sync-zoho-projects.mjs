@@ -165,7 +165,9 @@ function findBrochure(files, language) {
   const arPattern = /(^|[-_\s])(ar|arabic)([-_.\s]|$)|[\u0600-\u06ff]/i;
   const enPattern = /(^|[-_\s])(en|english)([-_.\s]|$)/i;
   if (language === "ar") return files.find((file) => arPattern.test(file.name));
-  return files.find((file) => enPattern.test(file.name)) || (files.length === 1 && !arPattern.test(files[0].name) ? files[0] : undefined);
+  const englishFiles = files.filter((file) => enPattern.test(file.name));
+  const preferredFactSheet = englishFiles.find((file) => /fact[-_\s]*sheet/i.test(file.name));
+  return preferredFactSheet || englishFiles[0] || (files.length === 1 && !arPattern.test(files[0].name) ? files[0] : undefined);
 }
 
 function normalizeBasePath(value) {
