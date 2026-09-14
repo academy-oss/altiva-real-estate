@@ -45,6 +45,15 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
     };
   }
 
+  const service = detectService(normalized);
+  if (service) {
+    return {
+      reply: serviceReply(service, language),
+      projectSlugs: [],
+      source: "local",
+    };
+  }
+
   if (hasAny(normalized, ["عائد", "ارباح", "ربح", "roi", "return", "yield"])) {
     return {
       reply: language === "ar"
@@ -55,11 +64,14 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
     };
   }
 
-  if (hasAny(normalized, ["تواصل", "اتصل", "موظف", "مستشار", "call", "contact", "advisor", "agent"])) {
+  if (hasAny(normalized, [
+    "تواصل", "اتصل", "موظف", "مستشار", "رقم", "هاتف", "واتساب", "ايميل", "بريد", "عنوان", "موقع المكتب", "وين مكتبكم",
+    "call", "contact", "advisor", "agent", "phone", "number", "whatsapp", "email", "address", "office location",
+  ])) {
     return {
       reply: language === "ar"
-        ? "بكل سرور. اضغط «طلب تواصل من مستشار» أسفل المحادثة، وبعد موافقتك ستصل بياناتك إلى فريق ALTIVA عبر Zoho."
-        : "Of course. Select “Request an advisor call” below. After you consent, your details will be sent to the ALTIVA team through Zoho.",
+        ? "واتساب ALTIVA: +965 5777 5289، وهاتف المكتب: +965 2220035. البريد الإلكتروني: sales@altivaproperties.com أو info@altivaproperties.com. العنوان: مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت. ويمكنك أيضًا الضغط على «طلب تواصل من مستشار» أسفل المحادثة."
+        : "ALTIVA WhatsApp: +965 5777 5289. Office phone: +965 2220035. Email: sales@altivaproperties.com or info@altivaproperties.com. Address: Al Salhiya Complex, Gate 5, Second Floor, Kuwait. You can also select “Request an advisor call” below.",
       projectSlugs: [],
       source: "local",
     };
@@ -93,11 +105,59 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
 
   return {
     reply: language === "ar"
-      ? "أهلاً بك. أستطيع مساعدتك في معرفة المشاريع والأسعار والمواقع، أو ترشيح فرص مناسبة حسب الميزانية والإمارة ونوع العقار. مثال: «أبحث عن شقة في دبي بميزانية مليون درهم»."
-      : "Welcome. I can answer questions about projects, prices, and locations, or recommend options by budget, emirate, and property type. For example: “I'm looking for a Dubai apartment with a budget of AED 1 million.”",
+      ? "أهلاً بك. أستطيع مساعدتك في مشاريع ALTIVA وخدماتها العقارية، ومنها الشراء والبيع وإدارة العقارات والتثمين وتوفير المقاولين والاستشاريين، كما أستطيع تزويدك ببيانات التواصل الرسمية. ما الذي تحتاجه؟"
+      : "Welcome. I can help with ALTIVA's projects and real estate services, including buying, selling, property management, valuation, and contractor or consultant coordination. I can also provide ALTIVA's official contact details. How can I help?",
     projectSlugs: [],
     source: "local",
   };
+}
+
+type ServiceId = "all" | "buy" | "sell" | "management" | "valuation" | "contractors" | "other";
+
+function detectService(value: string): ServiceId | undefined {
+  if (hasAny(value, ["خدماتكم", "خدمات", "ماذا تقدمون", "شو تقدمون", "ما تقدمون", "what services", "services", "what do you offer"])) return "all";
+  if (hasAny(value, ["شراء عقار", "اشتري عقار", "ابغي اشتري", "ابي اشتري", "buy property", "buying property", "purchase property"])) return "buy";
+  if (hasAny(value, ["بيع عقار", "ابيع عقار", "تسويق عقار", "اعرض عقاري", "sell property", "selling property", "market my property"])) return "sell";
+  if (hasAny(value, ["اداره عقار", "اداره العقارات", "تديرون العقار", "property management", "manage my property"])) return "management";
+  if (hasAny(value, ["تثمين", "تقييم عقار", "قيمه عقار", "valuation", "property value", "value my property"])) return "valuation";
+  if (hasAny(value, ["مقاول", "مقاولين", "استشاري", "استشاريين", "بناء", "contractor", "consultant", "construction"])) return "contractors";
+  if (hasAny(value, ["خدمه عقاريه", "طلب عقاري", "real estate service"])) return "other";
+  return undefined;
+}
+
+function serviceReply(service: ServiceId, language: AssistantLanguage): string {
+  if (service === "all") {
+    return language === "ar"
+      ? "تقدم ALTIVA خدمات شراء العقارات وبيعها وتسويقها، وإدارة العقارات، وتثمين العقار، وتوفير خيارات مناسبة من المقاولين والاستشاريين للبناء والتطوير، إلى جانب تنسيق الاحتياجات العقارية الأخرى. يمكنك إرسال طلبك من صفحة «خدماتنا» أو الضغط على «طلب تواصل من مستشار»."
+      : "ALTIVA offers property purchase support, property sales and marketing, property management, property valuation, suitable contractor and consultant options for construction or development, and coordination of other real estate needs. You can submit a request through the Services page or select “Request an advisor call.”";
+  }
+  const replies: Record<Exclude<ServiceId, "all">, { ar: string; en: string }> = {
+    buy: {
+      ar: "نساعدك على تحديد العقار الأنسب لهدفك وميزانيتك في مختلف إمارات الدولة، مع مقارنة الفرص والتفاوض على أفضل سعر متاح ومتابعة خطوات الشراء. التفاصيل والأسعار النهائية يؤكدها مستشار ALTIVA.",
+      en: "We help identify suitable UAE properties for your goals and budget, compare opportunities, negotiate the best available price, and follow the purchase process. Final details and pricing are confirmed by an ALTIVA advisor.",
+    },
+    sell: {
+      ar: "نتولى دراسة عقارك والسوق، وإعداد خطة تسويقه، والوصول إلى المشترين المناسبين، والتنسيق حتى إتمام البيع. أرسل تفاصيل الطلب من صفحة «خدماتنا» ليتواصل معك الفريق.",
+      en: "We review your property and the market, prepare a marketing plan, reach suitable buyers, and coordinate through completion of the sale. Submit the details through the Services page and our team will contact you.",
+    },
+    management: {
+      ar: "ننسق إدارة العقار ومتابعة احتياجات المالك بما يحافظ على جودة الأصل العقاري، مع متابعة دورية وتقارير واضحة. النطاق التفصيلي والرسوم يؤكدهما مستشار ALTIVA بعد مراجعة العقار.",
+      en: "We coordinate property management and owner requirements to help maintain the asset's quality, with regular follow-up and clear reporting. Detailed scope and fees are confirmed by an ALTIVA advisor after reviewing the property.",
+    },
+    valuation: {
+      ar: "نساعدك في الوصول إلى تقدير مهني لقيمة العقار عبر مراجعة بياناته ومقارنات السوق، لدعم قرار البيع أو الشراء أو الاستثمار. يحدد مستشار ALTIVA نطاق التثمين المطلوب بعد مراجعة التفاصيل.",
+      en: "We help you obtain a professional property value estimate through property-data review and market comparisons to support a sale, purchase, or investment decision. An ALTIVA advisor will confirm the required valuation scope after reviewing the details.",
+    },
+    contractors: {
+      ar: "نوفر خيارات مناسبة من المقاولين والاستشاريين عند التخطيط للبناء أو التطوير، بعد فهم نطاق المشروع، ثم ننسق التواصل والعروض. الاختيار النهائي والنطاق والتكلفة تخضع لمراجعة العميل والجهة المقدمة للخدمة.",
+      en: "We provide suitable contractor and consultant options for construction or development after understanding the project scope, then coordinate introductions and proposals. Final selection, scope, and cost remain subject to review by the client and service provider.",
+    },
+    other: {
+      ar: "ندرس احتياجك العقاري وننسق الطلب ونوجهك إلى الخدمة أو الجهة المناسبة مع متابعة مخصصة. اذكر نوع احتياجك أو أرسل الطلب من صفحة «خدماتنا» ليتواصل معك الفريق.",
+      en: "We review your real estate requirement, coordinate the request, and direct you to a suitable service or party with dedicated follow-up. Describe what you need or submit it through the Services page for our team to contact you.",
+    },
+  };
+  return replies[service][language];
 }
 
 function projectDetails(project: Project, language: AssistantLanguage): string {
