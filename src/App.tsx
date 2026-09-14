@@ -9,10 +9,12 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
+import InvestorGuide from "./pages/InvestorGuide";
 
 function App() {
   return (
     <Routes>
+      <Route path="/guide/dubai-investor-2026" element={<InvestorGuide />} />
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
