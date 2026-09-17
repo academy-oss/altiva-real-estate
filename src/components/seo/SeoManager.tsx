@@ -77,7 +77,7 @@ function structuredData(url: string, seo: Copy, lang: "ar" | "en", project: Proj
     url: `${SITE}/`,
     logo: `${SITE}/favicon.png`,
     image: DEFAULT_IMAGE,
-    telephone: ["+965 5777 5289", "+965 2220035"],
+    telephone: ["+965 5777 5289", "+965 22200355"],
     email: ["info@altivaproperties.com", "sales@altivaproperties.com"],
     address: { "@type": "PostalAddress", streetAddress: "Al Salhiya Complex, Gate 5, Second Floor", addressLocality: "Kuwait City", addressCountry: "KW" },
     areaServed: ["United Arab Emirates", "Kuwait"],
