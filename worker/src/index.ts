@@ -104,12 +104,13 @@ const ALTIVA_SERVICES = [
 
 const ALTIVA_CONTACT = {
   whatsapp: "+965 5777 5289",
-  officePhone: "+965 2220035",
+  officePhone: "+965 22200355",
   emails: ["sales@altivaproperties.com", "info@altivaproperties.com"],
   address: {
     ar: "مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت",
     en: "Al Salhiya Complex, Gate 5, Second Floor, Kuwait",
   },
+  mapUrl: "https://www.google.com/maps/search/Salhiyah%2BComplex%2BAl%2BKuwayt%2C%2BJibla%2C%2BAl%2BAsimah%2BGovernate%2BKuwait",
   contactPage: "https://altivaproperties.com/contact",
   servicesPage: "https://altivaproperties.com/services",
 } as const;
@@ -231,6 +232,7 @@ Hard rules:
 - Do not describe a valuation as government-approved, legally binding, or certified unless that claim is explicitly confirmed in the official service data.
 - Do not guarantee the lowest purchase price, a sale, a contractor's work, or an investment outcome.
 - When asked how to contact ALTIVA, clearly distinguish the WhatsApp number from the office phone number and provide the official emails. Do not mention internal systems such as Zoho unless the visitor specifically asks.
+- When asked for ALTIVA's office address, place, map, location, or directions, provide the official office address and the official Google Maps URL from the contact details. Never substitute a different location.
 
 Official ALTIVA services:
 ${JSON.stringify(ALTIVA_SERVICES)}
