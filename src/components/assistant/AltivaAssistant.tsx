@@ -11,6 +11,23 @@ import type { AssistantLanguage, AssistantMessage } from "../../types/assistant"
 
 type UiMessage = AssistantMessage & { id: number; projectSlugs?: string[] };
 
+function renderMessageContent(content: string) {
+  return content.split(/(https:\/\/[^\s]+)/g).map((part, index) => {
+    if (!part.startsWith("https://")) return part;
+    return (
+      <a
+        key={`${part}-${index}`}
+        href={part}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-bold text-gold-dark underline underline-offset-2"
+      >
+        {part.includes("google.com/maps") ? "Google Maps" : part}
+      </a>
+    );
+  });
+}
+
 type LeadForm = {
   fullName: string;
   phone: string;
@@ -267,7 +284,7 @@ export function AltivaAssistant() {
                 {messages.map((message) => (
                   <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
                     <div className={message.role === "user" ? "assistant-bubble-user" : "assistant-bubble-bot"}>
-                      <p className="whitespace-pre-line">{message.content}</p>
+                      <p className="whitespace-pre-line">{renderMessageContent(message.content)}</p>
                       {message.projectSlugs?.map((slug) => {
                         const project = projectMap.get(slug);
                         if (!project) return null;
