@@ -2,7 +2,7 @@ import type { Project } from "../types/project";
 import type { AssistantAnswer, AssistantLanguage, AssistantMessage, AssistantRequest } from "../types/assistant";
 
 const ASSISTANT_API_URL = (import.meta.env?.VITE_ASSISTANT_API_URL ?? "").trim();
-const ALTIVA_MAP_URL = "https://www.google.com/maps/search/Salhiyah%2BComplex%2BAl%2BKuwayt%2C%2BJibla%2C%2BAl%2BAsimah%2BGovernate%2BKuwait";
+const ALTIVA_MAP_URL = "https://www.google.com/maps/place/Altiva+Real+Estate/data=!4m2!3m1!1s0x0:0xf8a6fd89282df909";
 
 export async function askAltivaAssistant(
   message: string,
