@@ -74,8 +74,8 @@ export function Footer() {
             </li>
             <li className="flex flex-col items-center gap-2 text-center">
               <Phone size={18} className="shrink-0 text-copper" />
-              <a href="tel:+9652220035" className="hover:text-copper">
-                <bdi dir="ltr">+965 2220035</bdi>
+              <a href="tel:+96522200355" className="hover:text-copper">
+                <bdi dir="ltr">+965 22200355</bdi>
               </a>
             </li>
             <li className="flex flex-col items-center gap-2 text-center">
