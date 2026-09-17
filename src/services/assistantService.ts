@@ -2,6 +2,7 @@ import type { Project } from "../types/project";
 import type { AssistantAnswer, AssistantLanguage, AssistantMessage, AssistantRequest } from "../types/assistant";
 
 const ASSISTANT_API_URL = (import.meta.env?.VITE_ASSISTANT_API_URL ?? "").trim();
+const ALTIVA_MAP_URL = "https://www.google.com/maps/search/Salhiyah%2BComplex%2BAl%2BKuwayt%2C%2BJibla%2C%2BAl%2BAsimah%2BGovernate%2BKuwait";
 
 export async function askAltivaAssistant(
   message: string,
@@ -59,6 +60,16 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
     };
   }
 
+  if (asksForOfficeLocation(normalized)) {
+    return {
+      reply: language === "ar"
+        ? `مكتب ALTIVA في مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت.\nفتح الموقع على Google Maps:\n${ALTIVA_MAP_URL}`
+        : `ALTIVA's office is at Al Salhiya Complex, Gate 5, Second Floor, Kuwait.\nOpen the location on Google Maps:\n${ALTIVA_MAP_URL}`,
+      projectSlugs: [],
+      source: "local",
+    };
+  }
+
   if (hasAny(normalized, ["عائد", "ارباح", "ربح", "roi", "return", "yield"])) {
     return {
       reply: language === "ar"
@@ -72,8 +83,8 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
   if (asksForContact(normalized)) {
     return {
       reply: language === "ar"
-        ? "واتساب ALTIVA: +965 5777 5289، وهاتف المكتب: +965 2220035. البريد الإلكتروني: sales@altivaproperties.com أو info@altivaproperties.com. العنوان: مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت. ويمكنك أيضًا الضغط على «طلب تواصل من مستشار» أسفل المحادثة."
-        : "ALTIVA WhatsApp: +965 5777 5289. Office phone: +965 2220035. Email: sales@altivaproperties.com or info@altivaproperties.com. Address: Al Salhiya Complex, Gate 5, Second Floor, Kuwait. You can also select “Request an advisor call” below.",
+        ? `واتساب ALTIVA: +965 5777 5289، وهاتف المكتب: +965 22200355. البريد الإلكتروني: sales@altivaproperties.com أو info@altivaproperties.com. العنوان: مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت.\nالموقع على Google Maps: ${ALTIVA_MAP_URL}\nويمكنك أيضًا الضغط على «طلب تواصل من مستشار» أسفل المحادثة.`
+        : `ALTIVA WhatsApp: +965 5777 5289. Office phone: +965 22200355. Email: sales@altivaproperties.com or info@altivaproperties.com. Address: Al Salhiya Complex, Gate 5, Second Floor, Kuwait.\nGoogle Maps: ${ALTIVA_MAP_URL}\nYou can also select “Request an advisor call” below.`,
       projectSlugs: [],
       source: "local",
     };
@@ -129,8 +140,15 @@ function detectService(value: string): ServiceId | undefined {
 
 function asksForContact(value: string): boolean {
   return hasAny(value, [
-    "تواصل", "اتصل", "موظف", "مستشار", "رقم", "هاتف", "واتساب", "ايميل", "بريد", "عنوان", "موقع المكتب", "وين مكتبكم",
+    "تواصل", "اتصل", "موظف", "مستشار", "رقم", "هاتف", "واتساب", "ايميل", "بريد", "عنوان", "موقع المكتب", "وين مكتبكم", "مكانكم", "موقعكم", "لوكيشن",
     "call", "contact", "advisor", "agent", "phone", "number", "whatsapp", "email", "address", "office location",
+  ]);
+}
+
+function asksForOfficeLocation(value: string): boolean {
+  return hasAny(value, [
+    "عنوانكم", "العنوان", "عنوان المكتب", "موقع المكتب", "وين مكتبكم", "وين موقعكم", "وين مكانكم", "مكانكم", "موقعكم", "لوكيشن", "الخريطه", "خريطه", "اتجاهات",
+    "office address", "office location", "where is your office", "where are you located", "location map", "google maps", "directions",
   ]);
 }
 
