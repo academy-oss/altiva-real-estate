@@ -110,7 +110,7 @@ const ALTIVA_CONTACT = {
     ar: "مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت",
     en: "Al Salhiya Complex, Gate 5, Second Floor, Kuwait",
   },
-  mapUrl: "https://www.google.com/maps/search/Salhiyah%2BComplex%2BAl%2BKuwayt%2C%2BJibla%2C%2BAl%2BAsimah%2BGovernate%2BKuwait",
+  mapUrl: "https://www.google.com/maps/place/Altiva+Real+Estate/data=!4m2!3m1!1s0x0:0xf8a6fd89282df909",
   contactPage: "https://altivaproperties.com/contact",
   servicesPage: "https://altivaproperties.com/services",
 } as const;
