@@ -1,5 +1,99 @@
 [
   {
+    "id": "7546783000001731009",
+    "zohoRecordId": "7546783000001731009",
+    "slug": "ayami-residence",
+    "title": {
+      "ar": "أيامي ريزيدنس",
+      "en": "Ayami Residence"
+    },
+    "description": {
+      "ar": "مجمع سكني في ورسان الأولى يضم شققًا بمساحات مدروسة ومرافق مشتركة عصرية، ضمن منطقة تشهد نموًا سكانيًا وتطويريًا متسارعًا. العرض الحالي: غرفة واحدة من 888,888 درهم، وغرفتان من 1.1 مليون درهم، مع إمكانية الحجز بدفعة 5% فقط.",
+      "en": "A residential complex in Warsan 1 with thoughtfully sized apartments and modern shared amenities, in an area experiencing rapid population and development growth. Current offer: 1-bedroom from AED 888,888 and 2-bedroom from AED 1.1M, with reservation from just 5%."
+    },
+    "shortDescription": {
+      "ar": "غرفة واحدة من 888,888 درهم، وغرفتان من 1.1 مليون، واحجز بـ5% فقط.",
+      "en": "1BR from AED 888,888; 2BR from AED 1.1M; reserve with 5%."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "ورسان الأولى",
+      "en": "Warsan 1"
+    },
+    "developer": {
+      "ar": "Tiger Group",
+      "en": "Tiger Group"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 888888,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 700,
+    "areaSqftTo": 1450,
+    "paymentPlan": {
+      "ar": "احجز بـ5% فقط، والباقي وفق خطة الدفع الحالية للمطور.",
+      "en": "5% on booking; remaining balance per the developer's current payment plan."
+    },
+    "handoverDate": "2027-03-31",
+    "handoverLabel": {
+      "ar": "الربع الأول 2027",
+      "en": "Q1 2027"
+    },
+    "coverImage": {
+      "id": "7546783000001731009-cover",
+      "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
+      "alt": {
+        "ar": "أيامي ريزيدنس",
+        "en": "Ayami Residence"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001731009-g1",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g2",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/exterior.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g3",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/pool.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g4",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/lobby.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/ayami-residence/brochures/01-Ayami-Residence-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-09-18T08:12:21.000Z"
+  },
+  {
     "id": "7546783000001731008",
     "zohoRecordId": "7546783000001731008",
     "slug": "empire-downtown-jebel-ali",
@@ -172,100 +266,6 @@
     "updatedAt": "2026-09-08T19:02:14.000Z"
   },
   {
-    "id": "7546783000001731009",
-    "zohoRecordId": "7546783000001731009",
-    "slug": "ayami-residence",
-    "title": {
-      "ar": "أيامي ريزيدنس",
-      "en": "Ayami Residence"
-    },
-    "description": {
-      "ar": "مجمع سكني في ورسان الأولى يضم شققًا بمساحات مدروسة ومرافق مشتركة عصرية، ضمن منطقة تشهد نموًا سكانيًا وتطويريًا متسارعًا.",
-      "en": "A residential complex in Warsan 1 with thoughtfully sized apartments and modern shared amenities, in an area experiencing rapid population and development growth."
-    },
-    "shortDescription": {
-      "ar": "شقق عصرية في ورسان الأولى",
-      "en": "Modern apartments in Warsan 1"
-    },
-    "emirate": "dubai",
-    "area": {
-      "ar": "ورسان الأولى",
-      "en": "Warsan 1"
-    },
-    "developer": {
-      "ar": "Tiger Group",
-      "en": "Tiger Group"
-    },
-    "propertyType": "apartment",
-    "priceFrom": 864000,
-    "currency": "AED",
-    "isPriceEstimated": false,
-    "bedrooms": [
-      "1",
-      "2",
-      "3"
-    ],
-    "areaSqftFrom": 700,
-    "areaSqftTo": 1450,
-    "paymentPlan": {
-      "ar": "20% عند الحجز والباقي على دفعات مرنة",
-      "en": "20% on booking, balance on flexible installments"
-    },
-    "handoverDate": "2027-03-31",
-    "handoverLabel": {
-      "ar": "الربع الأول 2027",
-      "en": "Q1 2027"
-    },
-    "coverImage": {
-      "id": "7546783000001731009-cover",
-      "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
-      "alt": {
-        "ar": "أيامي ريزيدنس",
-        "en": "Ayami Residence"
-      }
-    },
-    "gallery": [
-      {
-        "id": "7546783000001731009-g1",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g2",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/exterior.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g3",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/pool.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g4",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/lobby.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      }
-    ],
-    "brochureEn": "/data/zoho-media/ayami-residence/brochures/01-Ayami-Residence-EN.pdf",
-    "status": "off_plan",
-    "publishOnWebsite": true,
-    "isFeatured": true,
-    "createdAt": "2026-09-07T07:25:55.000Z",
-    "updatedAt": "2026-09-08T18:19:10.000Z"
-  },
-  {
     "id": "7546783000001731006",
     "zohoRecordId": "7546783000001731006",
     "slug": "jais-retreats",
@@ -350,6 +350,91 @@
     "isFeatured": true,
     "createdAt": "2026-09-07T07:25:55.000Z",
     "updatedAt": "2026-09-08T17:59:53.000Z"
+  },
+  {
+    "id": "7546783000002186001",
+    "zohoRecordId": "7546783000002186001",
+    "slug": "aquora-by-casa-vista",
+    "title": {
+      "ar": "أكورا من كازا فيستا",
+      "en": "Aquora by Casa Vista"
+    },
+    "description": {
+      "ar": "مشروع سكني فاخر على الواجهة البحرية في جزر دبي من تطوير كازا فيستا، يضم شققًا ودوبلكسات من غرفة إلى ثلاث غرف، ومجموعة عافية وأكثر من 20 مرفقًا موزعة على مساحة 25,000 قدم مربعة.",
+      "en": "A luxury waterfront residential development on Dubai Islands by Casa Vista Development, offering one- to three-bedroom simplex and duplex residences, a dedicated wellness collection, and more than 20 amenities across 25,000 sq ft."
+    },
+    "shortDescription": {
+      "ar": "مساكن فاخرة على الواجهة البحرية في جزر دبي مع أكثر من 20 مرفقًا.",
+      "en": "Luxury waterfront residences on Dubai Islands with 20+ lifestyle and wellness amenities."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Casa Vista Development",
+      "en": "Casa Vista Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1905222,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 701,
+    "areaSqftTo": 4025,
+    "paymentPlan": {
+      "ar": "35% أثناء الإنشاء و65% عند التسليم",
+      "en": "35% during construction and 65% on handover"
+    },
+    "handoverDate": "2028-03-31",
+    "handoverLabel": {
+      "ar": "الربع الأول 2028",
+      "en": "Q1 2028"
+    },
+    "coverImage": {
+      "id": "7546783000002186001-cover",
+      "url": "/data/zoho-media/aquora-by-casa-vista/images/01-EXTERIOR-1.jpg",
+      "alt": {
+        "ar": "أكورا من كازا فيستا",
+        "en": "Aquora by Casa Vista"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002186001-g1",
+        "url": "/data/zoho-media/aquora-by-casa-vista/images/01-EXTERIOR-1.jpg",
+        "alt": {
+          "ar": "أكورا من كازا فيستا",
+          "en": "Aquora by Casa Vista"
+        }
+      },
+      {
+        "id": "7546783000002186001-g2",
+        "url": "/data/zoho-media/aquora-by-casa-vista/images/02-EXTERIOR-2.jpg",
+        "alt": {
+          "ar": "أكورا من كازا فيستا",
+          "en": "Aquora by Casa Vista"
+        }
+      },
+      {
+        "id": "7546783000002186001-g3",
+        "url": "/data/zoho-media/aquora-by-casa-vista/images/03-EXTERIOR-4.jpg",
+        "alt": {
+          "ar": "أكورا من كازا فيستا",
+          "en": "Aquora by Casa Vista"
+        }
+      }
+    ],
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-18T08:08:18.000Z",
+    "updatedAt": "2026-09-18T08:08:18.000Z"
   },
   {
     "id": "7546783000001876003",
