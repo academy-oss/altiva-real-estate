@@ -430,11 +430,12 @@
         }
       }
     ],
+    "brochureEn": "/data/zoho-media/aquora-by-casa-vista/brochures/01-Aquora-Project-Brochure-EN.pdf",
     "status": "off_plan",
     "publishOnWebsite": true,
     "isFeatured": false,
     "createdAt": "2026-09-18T08:08:18.000Z",
-    "updatedAt": "2026-09-18T08:08:18.000Z"
+    "updatedAt": "2026-09-18T08:21:20.000Z"
   },
   {
     "id": "7546783000001876003",
