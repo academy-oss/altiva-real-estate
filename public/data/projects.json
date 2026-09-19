@@ -352,6 +352,225 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000002232028",
+    "zohoRecordId": "7546783000002232028",
+    "slug": "dawn-at-o1ne-district",
+    "title": {
+      "ar": "داون في أو ون ديستريكت",
+      "en": "DAWN at O1NE District"
+    },
+    "description": {
+      "ar": "داون هو أول مبنى ضمن مشروع أو ون ديستريكت التجاري في موتور سيتي دبي، ويقدم مكاتب فئة A بمواصفات عصرية وموقع مميز بجوار حلبة دبي أوتودروم. يتكون المشروع من طابق أرضي و18 طابقًا، ويضم 70 مكتبًا فقط بمساحات تبدأ من 1,960 وتصل إلى 5,350 قدمًا مربعة، وتبدأ الأسعار من 5 ملايين درهم. خطة الدفع 50% أثناء الإنشاء و50% عند الإنجاز، مع تسليم متوقع في الربع الأول 2030، وتطبق ضريبة قيمة مضافة بنسبة 5% وفق الأنظمة الإماراتية.",
+      "en": "DAWN is the first building within O1NE District, a Grade A commercial development in Dubai Motor City next to Dubai Autodrome. The G+18 project offers only 70 premium offices ranging from 1,960 to 5,350 sq. ft., with prices starting from AED 5 million. The payment plan is 50% during construction and 50% on completion, with expected handover in Q1 2030. A 5% VAT applies in accordance with UAE regulations."
+    },
+    "shortDescription": {
+      "ar": "مكاتب تجارية فئة A في موتور سيتي بمخزون محدود وخطة دفع 50/50 وتسليم متوقع في الربع الأول 2030.",
+      "en": "Grade A commercial offices in Dubai Motor City with limited inventory, a 50/50 payment plan and expected Q1 2030 completion."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "موتور سيتي",
+      "en": "Motor City"
+    },
+    "developer": {
+      "ar": "AVENEW Development",
+      "en": "AVENEW Development"
+    },
+    "propertyType": "office",
+    "priceFrom": 5000000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [],
+    "areaSqftFrom": 1960,
+    "areaSqftTo": 5350,
+    "paymentPlan": {
+      "ar": "50% أثناء الإنشاء و50% عند الإنجاز",
+      "en": "50% during construction and 50% on completion"
+    },
+    "handoverDate": "2030-03-31",
+    "handoverLabel": {
+      "ar": "الربع الأول 2030",
+      "en": "Q1 2030"
+    },
+    "coverImage": {
+      "id": "7546783000002232028-cover",
+      "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S090_FINAL_Large.webp",
+      "alt": {
+        "ar": "داون في أو ون ديستريكت",
+        "en": "DAWN at O1NE District"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002232028-g1",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S090_FINAL_Large.webp",
+        "alt": {
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
+        }
+      },
+      {
+        "id": "7546783000002232028-g2",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S220_FINAL_Large.jpg",
+        "alt": {
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
+        }
+      },
+      {
+        "id": "7546783000002232028-g3",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S111_FINAL_Large.jpg",
+        "alt": {
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
+        }
+      },
+      {
+        "id": "7546783000002232028-g4",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S170-5.jpg",
+        "alt": {
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
+        }
+      },
+      {
+        "id": "7546783000002232028-g5",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S010_FINAL_Large.webp",
+        "alt": {
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
+        }
+      }
+    ],
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-19T18:18:57.000Z",
+    "updatedAt": "2026-09-19T18:18:57.000Z"
+  },
+  {
+    "id": "7546783000002232023",
+    "zohoRecordId": "7546783000002232023",
+    "slug": "loom-at-avenew-888",
+    "title": {
+      "ar": "لوم في أفينيو 888",
+      "en": "LOOM at AVENEW 888"
+    },
+    "description": {
+      "ar": "لوم هو المرحلة الثانية ضمن مجتمع أفينيو 888 في دبي الجنوب، ويقدم شققًا من غرفة إلى ثلاث غرف ودوبلكس بتصميم معاصر ومساحات خضراء واسعة. تبدأ أسعار غرفة واحدة من 1,050,000 درهم، وغرفتين من 1,380,000 درهم، وثلاث غرف من 2,000,000 درهم. يضم المشروع مسابح للكبار والأطفال، جيم داخلي وخارجي، مضمار جري، ملعب كرة سلة، مساحات عمل مشتركة، مكتبة، مسرحًا خارجيًا، مناطق ألعاب، حديقة للحيوانات الأليفة ومرافق تجزئة ومطاعم.",
+      "en": "LOOM is Phase 2 of the AVENEW 888 community in Dubai South, offering contemporary 1-, 2- and 3-bedroom apartments and duplexes. One-bedroom homes start from AED 1,050,000, two-bedroom homes from AED 1,380,000 and three-bedroom homes from AED 2,000,000. Amenities include adult and kids pools, indoor and outdoor gyms, jogging track, half basketball court, coworking and study lounges, library, amphitheatre, kids play zones, dog park, landscaped gardens, retail and dining."
+    },
+    "shortDescription": {
+      "ar": "مجتمع سكني حديث في دبي الجنوب يوفر شققًا ودوبلكس من غرفة إلى ثلاث غرف، بخطة دفع 50/50 وتسليم متوقع في الربع الثاني 2028.",
+      "en": "Contemporary 1-3 bedroom apartments and duplexes in Dubai South with a 50/50 payment plan and expected Q2 2028 handover."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "دبي الجنوب",
+      "en": "Dubai South"
+    },
+    "developer": {
+      "ar": "AVENEW Development",
+      "en": "AVENEW Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1050000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [],
+    "areaSqftFrom": 625,
+    "areaSqftTo": 2313,
+    "paymentPlan": {
+      "ar": "50% أثناء الإنشاء و50% عند التسليم",
+      "en": "50% during construction and 50% on handover"
+    },
+    "handoverDate": "2028-06-30",
+    "handoverLabel": {
+      "ar": "الربع الثاني 2028",
+      "en": "Q2 2028"
+    },
+    "coverImage": {
+      "id": "7546783000002232023-cover",
+      "url": "https://avenewdevelopment.ae/assets/landing-pages/image-1.webp",
+      "alt": {
+        "ar": "لوم في أفينيو 888",
+        "en": "LOOM at AVENEW 888"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002232023-g1",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-1.webp",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      },
+      {
+        "id": "7546783000002232023-g2",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-2.webp",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      },
+      {
+        "id": "7546783000002232023-g3",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-3.jpg",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      },
+      {
+        "id": "7546783000002232023-g4",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-4.jpg",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      },
+      {
+        "id": "7546783000002232023-g5",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-5.jpg",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      },
+      {
+        "id": "7546783000002232023-g6",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-6.webp",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      },
+      {
+        "id": "7546783000002232023-g7",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-7.webp",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      },
+      {
+        "id": "7546783000002232023-g8",
+        "url": "https://avenewdevelopment.ae/assets/landing-pages/image-8.jpg",
+        "alt": {
+          "ar": "لوم في أفينيو 888",
+          "en": "LOOM at AVENEW 888"
+        }
+      }
+    ],
+    "brochureEn": "https://avenewdevelopment.ae/static/projects/888/download/LOOM_Digital_Brochure.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-19T18:15:59.000Z",
+    "updatedAt": "2026-09-19T18:15:59.000Z"
+  },
+  {
     "id": "7546783000002186001",
     "zohoRecordId": "7546783000002186001",
     "slug": "aquora-by-casa-vista",
@@ -435,7 +654,7 @@
     "publishOnWebsite": true,
     "isFeatured": false,
     "createdAt": "2026-09-18T08:08:18.000Z",
-    "updatedAt": "2026-09-18T08:21:20.000Z"
+    "updatedAt": "2026-09-19T17:43:24.000Z"
   },
   {
     "id": "7546783000001876003",
