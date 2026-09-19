@@ -352,90 +352,101 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
-    "id": "7546783000002186001",
-    "zohoRecordId": "7546783000002186001",
-    "slug": "aquora-by-casa-vista",
+    "id": "7546783000002232028",
+    "zohoRecordId": "7546783000002232028",
+    "slug": "dawn-at-o1ne-district",
     "title": {
-      "ar": "أكورا من كازا فيستا",
-      "en": "Aquora by Casa Vista"
+      "ar": "داون في أو ون ديستريكت",
+      "en": "DAWN at O1NE District"
     },
     "description": {
-      "ar": "مشروع سكني فاخر على الواجهة البحرية في جزر دبي من تطوير كازا فيستا، يضم شققًا ودوبلكسات من غرفة إلى ثلاث غرف، ومجموعة عافية وأكثر من 20 مرفقًا موزعة على مساحة 25,000 قدم مربعة.",
-      "en": "A luxury waterfront residential development on Dubai Islands by Casa Vista Development, offering one- to three-bedroom simplex and duplex residences, a dedicated wellness collection, and more than 20 amenities across 25,000 sq ft."
+      "ar": "داون هو أول مبنى ضمن مشروع أو ون ديستريكت التجاري في موتور سيتي دبي، ويقدم مكاتب فئة A بمواصفات عصرية وموقع مميز بجوار حلبة دبي أوتودروم. يتكون المشروع من طابق أرضي و18 طابقًا، ويضم 70 مكتبًا فقط بمساحات تبدأ من 1,960 وتصل إلى 5,350 قدمًا مربعة، وتبدأ الأسعار من 5 ملايين درهم. خطة الدفع 50% أثناء الإنشاء و50% عند الإنجاز، مع تسليم متوقع في الربع الأول 2030، وتطبق ضريبة قيمة مضافة بنسبة 5% وفق الأنظمة الإماراتية.",
+      "en": "DAWN is the first building within O1NE District, a Grade A commercial development in Dubai Motor City next to Dubai Autodrome. The G+18 project offers only 70 premium offices ranging from 1,960 to 5,350 sq. ft., with prices starting from AED 5 million. The payment plan is 50% during construction and 50% on completion, with expected handover in Q1 2030. A 5% VAT applies in accordance with UAE regulations."
     },
     "shortDescription": {
-      "ar": "مساكن فاخرة على الواجهة البحرية في جزر دبي مع أكثر من 20 مرفقًا.",
-      "en": "Luxury waterfront residences on Dubai Islands with 20+ lifestyle and wellness amenities."
+      "ar": "مكاتب تجارية فئة A في موتور سيتي بمخزون محدود وخطة دفع 50/50 وتسليم متوقع في الربع الأول 2030.",
+      "en": "Grade A commercial offices in Dubai Motor City with limited inventory, a 50/50 payment plan and expected Q1 2030 completion."
     },
     "emirate": "dubai",
     "area": {
-      "ar": "جزر دبي",
-      "en": "Dubai Islands"
+      "ar": "موتور سيتي",
+      "en": "Motor City"
     },
     "developer": {
-      "ar": "Casa Vista Development",
-      "en": "Casa Vista Development"
+      "ar": "AVENEW Development",
+      "en": "AVENEW Development"
     },
-    "propertyType": "apartment",
-    "priceFrom": 1905222,
+    "propertyType": "office",
+    "priceFrom": 5000000,
     "currency": "AED",
     "isPriceEstimated": false,
-    "bedrooms": [
-      "1",
-      "2",
-      "3"
-    ],
-    "areaSqftFrom": 701,
-    "areaSqftTo": 4025,
+    "bedrooms": [],
+    "areaSqftFrom": 1960,
+    "areaSqftTo": 5350,
     "paymentPlan": {
-      "ar": "35% أثناء الإنشاء و65% عند التسليم",
-      "en": "35% during construction and 65% on handover"
+      "ar": "50% أثناء الإنشاء و50% عند الإنجاز",
+      "en": "50% during construction and 50% on completion"
     },
-    "handoverDate": "2028-03-31",
+    "handoverDate": "2030-03-31",
     "handoverLabel": {
-      "ar": "الربع الأول 2028",
-      "en": "Q1 2028"
+      "ar": "الربع الأول 2030",
+      "en": "Q1 2030"
     },
     "coverImage": {
-      "id": "7546783000002186001-cover",
-      "url": "/data/zoho-media/aquora-by-casa-vista/images/01-EXTERIOR-1.jpg",
+      "id": "7546783000002232028-cover",
+      "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S090_FINAL_Large.webp",
       "alt": {
-        "ar": "أكورا من كازا فيستا",
-        "en": "Aquora by Casa Vista"
+        "ar": "داون في أو ون ديستريكت",
+        "en": "DAWN at O1NE District"
       }
     },
     "gallery": [
       {
-        "id": "7546783000002186001-g1",
-        "url": "/data/zoho-media/aquora-by-casa-vista/images/01-EXTERIOR-1.jpg",
+        "id": "7546783000002232028-g1",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S090_FINAL_Large.webp",
         "alt": {
-          "ar": "أكورا من كازا فيستا",
-          "en": "Aquora by Casa Vista"
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
         }
       },
       {
-        "id": "7546783000002186001-g2",
-        "url": "/data/zoho-media/aquora-by-casa-vista/images/02-EXTERIOR-2.jpg",
+        "id": "7546783000002232028-g2",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S220_FINAL_Large.jpg",
         "alt": {
-          "ar": "أكورا من كازا فيستا",
-          "en": "Aquora by Casa Vista"
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
         }
       },
       {
-        "id": "7546783000002186001-g3",
-        "url": "/data/zoho-media/aquora-by-casa-vista/images/03-EXTERIOR-4.jpg",
+        "id": "7546783000002232028-g3",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S111_FINAL_Large.jpg",
         "alt": {
-          "ar": "أكورا من كازا فيستا",
-          "en": "Aquora by Casa Vista"
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
+        }
+      },
+      {
+        "id": "7546783000002232028-g4",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S170-5.jpg",
+        "alt": {
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
+        }
+      },
+      {
+        "id": "7546783000002232028-g5",
+        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S010_FINAL_Large.webp",
+        "alt": {
+          "ar": "داون في أو ون ديستريكت",
+          "en": "DAWN at O1NE District"
         }
       }
     ],
-    "brochureEn": "/data/zoho-media/aquora-by-casa-vista/brochures/01-Aquora-Project-Brochure-EN.pdf",
     "status": "off_plan",
     "publishOnWebsite": true,
     "isFeatured": false,
-    "createdAt": "2026-09-18T08:08:18.000Z",
-    "updatedAt": "2026-09-19T18:31:23.000Z"
+    "createdAt": "2026-09-19T18:18:57.000Z",
+    "updatedAt": "2026-09-19T18:37:22.000Z"
   },
   {
     "id": "7546783000002232023",
@@ -561,104 +572,93 @@
     "publishOnWebsite": true,
     "isFeatured": false,
     "createdAt": "2026-09-19T18:15:59.000Z",
-    "updatedAt": "2026-09-19T18:27:26.000Z"
+    "updatedAt": "2026-09-19T18:34:38.000Z"
   },
   {
-    "id": "7546783000002232028",
-    "zohoRecordId": "7546783000002232028",
-    "slug": "dawn-at-o1ne-district",
+    "id": "7546783000002186001",
+    "zohoRecordId": "7546783000002186001",
+    "slug": "aquora-by-casa-vista",
     "title": {
-      "ar": "داون في أو ون ديستريكت",
-      "en": "DAWN at O1NE District"
+      "ar": "أكورا من كازا فيستا",
+      "en": "Aquora by Casa Vista"
     },
     "description": {
-      "ar": "داون هو أول مبنى ضمن مشروع أو ون ديستريكت التجاري في موتور سيتي دبي، ويقدم مكاتب فئة A بمواصفات عصرية وموقع مميز بجوار حلبة دبي أوتودروم. يتكون المشروع من طابق أرضي و18 طابقًا، ويضم 70 مكتبًا فقط بمساحات تبدأ من 1,960 وتصل إلى 5,350 قدمًا مربعة، وتبدأ الأسعار من 5 ملايين درهم. خطة الدفع 50% أثناء الإنشاء و50% عند الإنجاز، مع تسليم متوقع في الربع الأول 2030، وتطبق ضريبة قيمة مضافة بنسبة 5% وفق الأنظمة الإماراتية.",
-      "en": "DAWN is the first building within O1NE District, a Grade A commercial development in Dubai Motor City next to Dubai Autodrome. The G+18 project offers only 70 premium offices ranging from 1,960 to 5,350 sq. ft., with prices starting from AED 5 million. The payment plan is 50% during construction and 50% on completion, with expected handover in Q1 2030. A 5% VAT applies in accordance with UAE regulations."
+      "ar": "مشروع سكني فاخر على الواجهة البحرية في جزر دبي من تطوير كازا فيستا، يضم شققًا ودوبلكسات من غرفة إلى ثلاث غرف، ومجموعة عافية وأكثر من 20 مرفقًا موزعة على مساحة 25,000 قدم مربعة.",
+      "en": "A luxury waterfront residential development on Dubai Islands by Casa Vista Development, offering one- to three-bedroom simplex and duplex residences, a dedicated wellness collection, and more than 20 amenities across 25,000 sq ft."
     },
     "shortDescription": {
-      "ar": "مكاتب تجارية فئة A في موتور سيتي بمخزون محدود وخطة دفع 50/50 وتسليم متوقع في الربع الأول 2030.",
-      "en": "Grade A commercial offices in Dubai Motor City with limited inventory, a 50/50 payment plan and expected Q1 2030 completion."
+      "ar": "مساكن فاخرة على الواجهة البحرية في جزر دبي مع أكثر من 20 مرفقًا.",
+      "en": "Luxury waterfront residences on Dubai Islands with 20+ lifestyle and wellness amenities."
     },
     "emirate": "dubai",
     "area": {
-      "ar": "موتور سيتي",
-      "en": "Motor City"
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
     },
     "developer": {
-      "ar": "AVENEW Development",
-      "en": "AVENEW Development"
+      "ar": "Casa Vista Development",
+      "en": "Casa Vista Development"
     },
-    "propertyType": "office",
-    "priceFrom": 5000000,
+    "propertyType": "apartment",
+    "priceFrom": 1905222,
     "currency": "AED",
     "isPriceEstimated": false,
-    "bedrooms": [],
-    "areaSqftFrom": 1960,
-    "areaSqftTo": 5350,
+    "bedrooms": [
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 701,
+    "areaSqftTo": 4025,
     "paymentPlan": {
-      "ar": "50% أثناء الإنشاء و50% عند الإنجاز",
-      "en": "50% during construction and 50% on completion"
+      "ar": "35% أثناء الإنشاء و65% عند التسليم",
+      "en": "35% during construction and 65% on handover"
     },
-    "handoverDate": "2030-03-31",
+    "handoverDate": "2028-03-31",
     "handoverLabel": {
-      "ar": "الربع الأول 2030",
-      "en": "Q1 2030"
+      "ar": "الربع الأول 2028",
+      "en": "Q1 2028"
     },
     "coverImage": {
-      "id": "7546783000002232028-cover",
-      "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S090_FINAL_Large.webp",
+      "id": "7546783000002186001-cover",
+      "url": "/data/zoho-media/aquora-by-casa-vista/images/01-EXTERIOR-1.jpg",
       "alt": {
-        "ar": "داون في أو ون ديستريكت",
-        "en": "DAWN at O1NE District"
+        "ar": "أكورا من كازا فيستا",
+        "en": "Aquora by Casa Vista"
       }
     },
     "gallery": [
       {
-        "id": "7546783000002232028-g1",
-        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S090_FINAL_Large.webp",
+        "id": "7546783000002186001-g1",
+        "url": "/data/zoho-media/aquora-by-casa-vista/images/01-EXTERIOR-1.jpg",
         "alt": {
-          "ar": "داون في أو ون ديستريكت",
-          "en": "DAWN at O1NE District"
+          "ar": "أكورا من كازا فيستا",
+          "en": "Aquora by Casa Vista"
         }
       },
       {
-        "id": "7546783000002232028-g2",
-        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S220_FINAL_Large.jpg",
+        "id": "7546783000002186001-g2",
+        "url": "/data/zoho-media/aquora-by-casa-vista/images/02-EXTERIOR-2.jpg",
         "alt": {
-          "ar": "داون في أو ون ديستريكت",
-          "en": "DAWN at O1NE District"
+          "ar": "أكورا من كازا فيستا",
+          "en": "Aquora by Casa Vista"
         }
       },
       {
-        "id": "7546783000002232028-g3",
-        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S111_FINAL_Large.jpg",
+        "id": "7546783000002186001-g3",
+        "url": "/data/zoho-media/aquora-by-casa-vista/images/03-EXTERIOR-4.jpg",
         "alt": {
-          "ar": "داون في أو ون ديستريكت",
-          "en": "DAWN at O1NE District"
-        }
-      },
-      {
-        "id": "7546783000002232028-g4",
-        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S170-5.jpg",
-        "alt": {
-          "ar": "داون في أو ون ديستريكت",
-          "en": "DAWN at O1NE District"
-        }
-      },
-      {
-        "id": "7546783000002232028-g5",
-        "url": "https://avenewdevelopment.ae/static/projects/district/images/AZ001_S010_FINAL_Large.webp",
-        "alt": {
-          "ar": "داون في أو ون ديستريكت",
-          "en": "DAWN at O1NE District"
+          "ar": "أكورا من كازا فيستا",
+          "en": "Aquora by Casa Vista"
         }
       }
     ],
+    "brochureEn": "/data/zoho-media/aquora-by-casa-vista/brochures/01-Aquora-Project-Brochure-EN.pdf",
     "status": "off_plan",
     "publishOnWebsite": true,
     "isFeatured": false,
-    "createdAt": "2026-09-19T18:18:57.000Z",
-    "updatedAt": "2026-09-19T18:18:57.000Z"
+    "createdAt": "2026-09-18T08:08:18.000Z",
+    "updatedAt": "2026-09-19T18:32:28.000Z"
   },
   {
     "id": "7546783000001876003",
