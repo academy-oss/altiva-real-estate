@@ -352,6 +352,580 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000002446007",
+    "zohoRecordId": "7546783000002446007",
+    "slug": "luzora-residences",
+    "title": {
+      "ar": "لوزورا ريزيدنسز",
+      "en": "LuzOra"
+    },
+    "description": {
+      "ar": "لوزورا ريزيدنسز من ديا للتطوير مشروع سكني على الواجهة البحرية في جزر دبي، يجمع بين العمارة العصرية وتقنيات المنزل الذكي ومرافق مستوحاة من المنتجعات ضمن 108 وحدات.",
+      "en": "LuzOra Residences by DIA Developments is a waterfront residential project on Dubai Islands, combining modern architecture, smart-home features and resort-inspired amenities across 108 residences."
+    },
+    "shortDescription": {
+      "ar": "مساكن ذكية على الواجهة البحرية في جزر دبي بمرافق مستوحاة من المنتجعات.",
+      "en": "Smart waterfront residences on Dubai Islands with resort-inspired amenities."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "DIA Developments",
+      "en": "DIA Developments"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1767178,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "4"
+    ],
+    "areaSqftFrom": 575.76,
+    "areaSqftTo": 2920.89,
+    "paymentPlan": {
+      "ar": "20% عند الحجز، 40% أثناء الإنشاء، و40% عند التسليم.",
+      "en": "20% on booking, 40% during construction and 40% on handover."
+    },
+    "handoverDate": "2027-06-30",
+    "handoverLabel": {
+      "ar": "الربع الثاني 2027",
+      "en": "Q2 2027"
+    },
+    "coverImage": {
+      "id": "7546783000002446007-cover",
+      "url": "/data/zoho-media/luzora-residences/images/01-00-cover.jpg",
+      "alt": {
+        "ar": "لوزورا ريزيدنسز",
+        "en": "LuzOra"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002446007-g1",
+        "url": "/data/zoho-media/luzora-residences/images/01-00-cover.jpg",
+        "alt": {
+          "ar": "لوزورا ريزيدنسز",
+          "en": "LuzOra"
+        }
+      },
+      {
+        "id": "7546783000002446007-g2",
+        "url": "/data/zoho-media/luzora-residences/images/02-page-2.jpg",
+        "alt": {
+          "ar": "لوزورا ريزيدنسز",
+          "en": "LuzOra"
+        }
+      },
+      {
+        "id": "7546783000002446007-g3",
+        "url": "/data/zoho-media/luzora-residences/images/03-page-4.jpg",
+        "alt": {
+          "ar": "لوزورا ريزيدنسز",
+          "en": "LuzOra"
+        }
+      },
+      {
+        "id": "7546783000002446007-g4",
+        "url": "/data/zoho-media/luzora-residences/images/04-page-9.jpg",
+        "alt": {
+          "ar": "لوزورا ريزيدنسز",
+          "en": "LuzOra"
+        }
+      },
+      {
+        "id": "7546783000002446007-g5",
+        "url": "/data/zoho-media/luzora-residences/images/05-page-10.jpg",
+        "alt": {
+          "ar": "لوزورا ريزيدنسز",
+          "en": "LuzOra"
+        }
+      },
+      {
+        "id": "7546783000002446007-g6",
+        "url": "/data/zoho-media/luzora-residences/images/06-page-13.jpg",
+        "alt": {
+          "ar": "لوزورا ريزيدنسز",
+          "en": "LuzOra"
+        }
+      },
+      {
+        "id": "7546783000002446007-g7",
+        "url": "/data/zoho-media/luzora-residences/images/07-page-18.jpg",
+        "alt": {
+          "ar": "لوزورا ريزيدنسز",
+          "en": "LuzOra"
+        }
+      }
+    ],
+    "brochureEn": "https://drive.google.com/file/d/1HhA1RNUL8j76HZmdQVinG217z3vH9R7E/view",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-23T11:07:12.000Z",
+    "updatedAt": "2026-09-24T06:00:02.000Z"
+  },
+  {
+    "id": "7546783000002446006",
+    "zohoRecordId": "7546783000002446006",
+    "slug": "113-residences",
+    "title": {
+      "ar": "113 ريزيدنسز من إيمان",
+      "en": "113 Residences"
+    },
+    "description": {
+      "ar": "113 ريزيدنسز من إيمان مجموعة سكنية بوتيكية في الصفوح، تتميز بخطوط معمارية انسيابية وتراسات واسعة وتشطيبات من فيرساتشي سيراميكس ومرافق متكاملة للرفاهية والاستجمام.",
+      "en": "113 Residences by Iman is a boutique collection in Al Sufouh, defined by fluid architecture, expansive terraces, Versace Ceramics surfaces and carefully curated wellness and leisure amenities."
+    },
+    "shortDescription": {
+      "ar": "مساكن بوتيكية فاخرة بتشطيبات فيرساتشي سيراميكس في الصفوح.",
+      "en": "Boutique luxury residences with Versace Ceramics finishes in Al Sufouh."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "الصفوح",
+      "en": "Al Sufouh"
+    },
+    "developer": {
+      "ar": "Iman Developers",
+      "en": "Iman Developers"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1800000,
+    "priceTo": 5440000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 689,
+    "areaSqftTo": 3250,
+    "paymentPlan": {
+      "ar": "20% عند الحجز، 10% خلال 90 يومًا، 10% عند إنجاز 40% من البناء، و60% عند الإنجاز.",
+      "en": "20% on booking, 10% within 90 days, 10% at 40% construction and 60% on completion."
+    },
+    "handoverDate": "2029-06-30",
+    "handoverLabel": {
+      "ar": "الربع الثاني 2029",
+      "en": "Q2 2029"
+    },
+    "coverImage": {
+      "id": "7546783000002446006-cover",
+      "url": "/data/zoho-media/113-residences/images/01-00-cover.jpg",
+      "alt": {
+        "ar": "113 ريزيدنسز من إيمان",
+        "en": "113 Residences"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002446006-g1",
+        "url": "/data/zoho-media/113-residences/images/01-00-cover.jpg",
+        "alt": {
+          "ar": "113 ريزيدنسز من إيمان",
+          "en": "113 Residences"
+        }
+      },
+      {
+        "id": "7546783000002446006-g2",
+        "url": "/data/zoho-media/113-residences/images/02-page-8.jpg",
+        "alt": {
+          "ar": "113 ريزيدنسز من إيمان",
+          "en": "113 Residences"
+        }
+      },
+      {
+        "id": "7546783000002446006-g3",
+        "url": "/data/zoho-media/113-residences/images/03-page-11.jpg",
+        "alt": {
+          "ar": "113 ريزيدنسز من إيمان",
+          "en": "113 Residences"
+        }
+      },
+      {
+        "id": "7546783000002446006-g4",
+        "url": "/data/zoho-media/113-residences/images/04-page-13.jpg",
+        "alt": {
+          "ar": "113 ريزيدنسز من إيمان",
+          "en": "113 Residences"
+        }
+      },
+      {
+        "id": "7546783000002446006-g5",
+        "url": "/data/zoho-media/113-residences/images/05-page-15.jpg",
+        "alt": {
+          "ar": "113 ريزيدنسز من إيمان",
+          "en": "113 Residences"
+        }
+      },
+      {
+        "id": "7546783000002446006-g6",
+        "url": "/data/zoho-media/113-residences/images/06-page-17.jpg",
+        "alt": {
+          "ar": "113 ريزيدنسز من إيمان",
+          "en": "113 Residences"
+        }
+      },
+      {
+        "id": "7546783000002446006-g7",
+        "url": "/data/zoho-media/113-residences/images/07-page-20.jpg",
+        "alt": {
+          "ar": "113 ريزيدنسز من إيمان",
+          "en": "113 Residences"
+        }
+      }
+    ],
+    "brochureEn": "https://drive.google.com/file/d/1vvsvZn4H4u1kn3BxatykDAharjSJq7VL/view",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-23T11:07:12.000Z",
+    "updatedAt": "2026-09-24T06:00:00.000Z"
+  },
+  {
+    "id": "7546783000002446005",
+    "zohoRecordId": "7546783000002446005",
+    "slug": "oceano",
+    "title": {
+      "ar": "أوشيانو من ذا لوكس",
+      "en": "Oceano"
+    },
+    "description": {
+      "ar": "أوشيانو مشروع سكني فائق الفخامة على الواجهة البحرية في الجزيرة الرابعة من جزيرة المرجان، ويضم برجين بتصميم نحتي وشاطئًا خاصًا وشققًا وبنتهاوس دوبلكس وفلل سماوية.",
+      "en": "Oceano is an ultra-luxury beachfront development on Island 4 of Al Marjan Island, featuring sculptural twin towers, a private beach and residences ranging from apartments to duplex penthouses and sky villas."
+    },
+    "shortDescription": {
+      "ar": "مساكن فائقة الفخامة مع شاطئ خاص في جزيرة المرجان.",
+      "en": "Ultra-luxury beachfront residences with private beach access on Al Marjan Island."
+    },
+    "emirate": "ras_al_khaimah",
+    "area": {
+      "ar": "جزيرة المرجان",
+      "en": "Al Marjan Island"
+    },
+    "developer": {
+      "ar": "THE LUXE DEVELOPERS",
+      "en": "THE LUXE DEVELOPERS"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 5313702,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 690,
+    "areaSqftTo": 7847,
+    "paymentPlan": {
+      "ar": "5% عند الحجز، 65% أثناء الإنشاء، و30% عند التسليم.",
+      "en": "5% on booking, 65% during construction and 30% on handover."
+    },
+    "handoverDate": "2026-09-30",
+    "handoverLabel": {
+      "ar": "الربع الثالث 2026",
+      "en": "Q3 2026"
+    },
+    "coverImage": {
+      "id": "7546783000002446005-cover",
+      "url": "/data/zoho-media/oceano/images/01-00-cover.jpg",
+      "alt": {
+        "ar": "أوشيانو من ذا لوكس",
+        "en": "Oceano"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002446005-g1",
+        "url": "/data/zoho-media/oceano/images/01-00-cover.jpg",
+        "alt": {
+          "ar": "أوشيانو من ذا لوكس",
+          "en": "Oceano"
+        }
+      },
+      {
+        "id": "7546783000002446005-g2",
+        "url": "/data/zoho-media/oceano/images/02-page-5.jpg",
+        "alt": {
+          "ar": "أوشيانو من ذا لوكس",
+          "en": "Oceano"
+        }
+      },
+      {
+        "id": "7546783000002446005-g3",
+        "url": "/data/zoho-media/oceano/images/03-page-6.jpg",
+        "alt": {
+          "ar": "أوشيانو من ذا لوكس",
+          "en": "Oceano"
+        }
+      },
+      {
+        "id": "7546783000002446005-g4",
+        "url": "/data/zoho-media/oceano/images/04-page-8.jpg",
+        "alt": {
+          "ar": "أوشيانو من ذا لوكس",
+          "en": "Oceano"
+        }
+      },
+      {
+        "id": "7546783000002446005-g5",
+        "url": "/data/zoho-media/oceano/images/05-page-12.jpg",
+        "alt": {
+          "ar": "أوشيانو من ذا لوكس",
+          "en": "Oceano"
+        }
+      },
+      {
+        "id": "7546783000002446005-g6",
+        "url": "/data/zoho-media/oceano/images/06-page-15.jpg",
+        "alt": {
+          "ar": "أوشيانو من ذا لوكس",
+          "en": "Oceano"
+        }
+      }
+    ],
+    "brochureEn": "https://drive.google.com/file/d/10B9RmFhN6IOf35BYPbLL0LMsAJwG8XWn/view",
+    "status": "sold_out",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-23T11:07:12.000Z",
+    "updatedAt": "2026-09-24T05:59:59.000Z"
+  },
+  {
+    "id": "7546783000002446004",
+    "zohoRecordId": "7546783000002446004",
+    "slug": "weston-by-wadan",
+    "title": {
+      "ar": "وستون من وادان",
+      "en": "Weston"
+    },
+    "description": {
+      "ar": "وستون من وادان هو برج سكني مفروش بالكامل في مجمع دبي لاند ريزيدنس، يقدم مخططات ذكية وطابقين متكاملين للمرافق العصرية.",
+      "en": "Weston by Wadan is a fully furnished residential tower in Dubai Land Residence Complex, offering smart layouts and two dedicated amenity levels for contemporary city living."
+    },
+    "shortDescription": {
+      "ar": "شقق مفروشة بمخططات ذكية ومرافق متكاملة في دبي لاند ريزيدنس.",
+      "en": "Fully furnished apartments with smart layouts and resort-style amenities in DLRC."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "مجمع دبي لاند ريزيدنس",
+      "en": "Dubai Land Residence Complex (DLRC)"
+    },
+    "developer": {
+      "ar": "Wadan Developments",
+      "en": "Wadan Developments"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 656847,
+    "priceTo": 2025933,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio",
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 429.27,
+    "areaSqftTo": 2058.27,
+    "paymentPlan": {
+      "ar": "15% عند الحجز، 30% أثناء الإنشاء، 5% عند التسليم، و50% خلال ثلاث سنوات بعد التسليم.",
+      "en": "15% on booking, 30% during construction, 5% on handover and 50% over three years post-handover."
+    },
+    "handoverDate": "2028-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2028",
+      "en": "Q4 2028"
+    },
+    "coverImage": {
+      "id": "7546783000002446004-cover",
+      "url": "/data/zoho-media/weston-by-wadan/images/01-00-cover.jpg",
+      "alt": {
+        "ar": "وستون من وادان",
+        "en": "Weston"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002446004-g1",
+        "url": "/data/zoho-media/weston-by-wadan/images/01-00-cover.jpg",
+        "alt": {
+          "ar": "وستون من وادان",
+          "en": "Weston"
+        }
+      },
+      {
+        "id": "7546783000002446004-g2",
+        "url": "/data/zoho-media/weston-by-wadan/images/02-page-4.jpg",
+        "alt": {
+          "ar": "وستون من وادان",
+          "en": "Weston"
+        }
+      },
+      {
+        "id": "7546783000002446004-g3",
+        "url": "/data/zoho-media/weston-by-wadan/images/03-page-6.jpg",
+        "alt": {
+          "ar": "وستون من وادان",
+          "en": "Weston"
+        }
+      },
+      {
+        "id": "7546783000002446004-g4",
+        "url": "/data/zoho-media/weston-by-wadan/images/04-page-9.jpg",
+        "alt": {
+          "ar": "وستون من وادان",
+          "en": "Weston"
+        }
+      },
+      {
+        "id": "7546783000002446004-g5",
+        "url": "/data/zoho-media/weston-by-wadan/images/05-page-12.jpg",
+        "alt": {
+          "ar": "وستون من وادان",
+          "en": "Weston"
+        }
+      },
+      {
+        "id": "7546783000002446004-g6",
+        "url": "/data/zoho-media/weston-by-wadan/images/06-page-20.jpg",
+        "alt": {
+          "ar": "وستون من وادان",
+          "en": "Weston"
+        }
+      }
+    ],
+    "brochureEn": "https://drive.google.com/file/d/1rO2u5MsszhnqoHHOAfnCOhXRSSDQ89sO/view",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-23T11:07:12.000Z",
+    "updatedAt": "2026-09-24T05:59:57.000Z"
+  },
+  {
+    "id": "7546783000002446003",
+    "zohoRecordId": "7546783000002446003",
+    "slug": "aqua-arc",
+    "title": {
+      "ar": "أكوا آرك من بي إن دبليو",
+      "en": "Aqua Arc"
+    },
+    "description": {
+      "ar": "مشروع سكني فاخر مستوحى من حركة البحر، يقع على جزيرة المرجان في رأس الخيمة ويجمع بين الإطلالات البحرية والتصميم المعماري المتموج والمرافق المتكاملة.",
+      "en": "A water-inspired luxury residential development on Al Marjan Island, combining wave-like architecture, sea views and a curated collection of resort-style amenities."
+    },
+    "shortDescription": {
+      "ar": "حياة ساحلية فاخرة بإطلالات بحرية على جزيرة المرجان.",
+      "en": "Luxury coastal living with panoramic sea views on Al Marjan Island."
+    },
+    "emirate": "ras_al_khaimah",
+    "area": {
+      "ar": "جزيرة المرجان",
+      "en": "Al Marjan Island"
+    },
+    "developer": {
+      "ar": "BNW Developments",
+      "en": "BNW Developments"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 3409599,
+    "priceTo": 8558998,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio",
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 543.15,
+    "areaSqftTo": 8660.97,
+    "paymentPlan": {
+      "ar": "10% عند الحجز، 40% أثناء الإنشاء، و50% عند الإنجاز.",
+      "en": "10% on booking, 40% during construction and 50% on completion."
+    },
+    "handoverDate": "2027-09-30",
+    "handoverLabel": {
+      "ar": "الربع الثالث 2027",
+      "en": "Q3 2027"
+    },
+    "coverImage": {
+      "id": "7546783000002446003-cover",
+      "url": "/data/zoho-media/aqua-arc/images/01-00-cover.jpg",
+      "alt": {
+        "ar": "أكوا آرك من بي إن دبليو",
+        "en": "Aqua Arc"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002446003-g1",
+        "url": "/data/zoho-media/aqua-arc/images/01-00-cover.jpg",
+        "alt": {
+          "ar": "أكوا آرك من بي إن دبليو",
+          "en": "Aqua Arc"
+        }
+      },
+      {
+        "id": "7546783000002446003-g2",
+        "url": "/data/zoho-media/aqua-arc/images/02-page-7.jpg",
+        "alt": {
+          "ar": "أكوا آرك من بي إن دبليو",
+          "en": "Aqua Arc"
+        }
+      },
+      {
+        "id": "7546783000002446003-g3",
+        "url": "/data/zoho-media/aqua-arc/images/03-page-11.jpg",
+        "alt": {
+          "ar": "أكوا آرك من بي إن دبليو",
+          "en": "Aqua Arc"
+        }
+      },
+      {
+        "id": "7546783000002446003-g4",
+        "url": "/data/zoho-media/aqua-arc/images/04-page-15.jpg",
+        "alt": {
+          "ar": "أكوا آرك من بي إن دبليو",
+          "en": "Aqua Arc"
+        }
+      },
+      {
+        "id": "7546783000002446003-g5",
+        "url": "/data/zoho-media/aqua-arc/images/05-page-19.jpg",
+        "alt": {
+          "ar": "أكوا آرك من بي إن دبليو",
+          "en": "Aqua Arc"
+        }
+      },
+      {
+        "id": "7546783000002446003-g6",
+        "url": "/data/zoho-media/aqua-arc/images/06-page-3.jpg",
+        "alt": {
+          "ar": "أكوا آرك من بي إن دبليو",
+          "en": "Aqua Arc"
+        }
+      }
+    ],
+    "brochureAr": "https://drive.google.com/file/d/1ZPdD9QqUShZhYZL5aWr1DUY_RfFOBFAp/view",
+    "brochureEn": "https://drive.google.com/file/d/1F2ohnFxwHCKdRu3jQzi48Ta1DLSUKULJ/view",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-23T11:07:12.000Z",
+    "updatedAt": "2026-09-24T05:59:56.000Z"
+  },
+  {
     "id": "7546783000002232028",
     "zohoRecordId": "7546783000002232028",
     "slug": "dawn-at-o1ne-district",
