@@ -352,6 +352,397 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000002538003",
+    "zohoRecordId": "7546783000002538003",
+    "slug": "hq-by-rove",
+    "title": {
+      "ar": "إتش كيو باي روف",
+      "en": "HQ by Rove"
+    },
+    "description": {
+      "ar": "مشروع مكاتب تجارية في مراسي باي يقدّم مساحات عمل بتصاميم متنوعة تشمل Simplex Edge وAla Carte وPenthouse Loft وLoft Edge.",
+      "en": "A commercial office development in Marasi Bay offering varied workspace formats including Simplex Edge, Ala Carte, Penthouse Loft and Loft Edge."
+    },
+    "shortDescription": {
+      "ar": "مكاتب تجارية مميزة في مراسي باي بمساحات وخيارات تصميم متعددة.",
+      "en": "Premium commercial offices in Marasi Bay with multiple workspace formats."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "مراسي باي، الخليج التجاري",
+      "en": "Marasi Bay, Business Bay"
+    },
+    "developer": {
+      "ar": "IRTH Development",
+      "en": "IRTH Development"
+    },
+    "propertyType": "office",
+    "priceFrom": 8234409,
+    "priceTo": 31935140,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [],
+    "areaSqftFrom": 1615,
+    "areaSqftTo": 6324,
+    "paymentPlan": {
+      "ar": "50% أثناء الإنشاء و50% عند الإنجاز.",
+      "en": "50% during construction and 50% on completion."
+    },
+    "handoverDate": "2029-06-30",
+    "handoverLabel": {
+      "ar": "الربع الثاني 2029",
+      "en": "Q2 2029"
+    },
+    "coverImage": {
+      "id": "7546783000002538003-cover",
+      "url": "https://cdn.pickyassist.com/media_gallery/image/507718_1790415357_01-cover.jpg",
+      "alt": {
+        "ar": "إتش كيو باي روف",
+        "en": "HQ by Rove"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002538003-g1",
+        "url": "https://cdn.pickyassist.com/media_gallery/image/507718_1790415357_01-cover.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g2",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_aerial_final_2025-09-11.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g3",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_arrival_final_2025-09-08.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g4",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_canal_final_2025-09-11.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g5",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_reception-entrance_final_2025-09-11.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g6",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_simplex-loft_final_2025-09-11.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g7",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_corner-loft_final_2025-09-11.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g8",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_communal-area-1_final_2025-09-11.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      },
+      {
+        "id": "7546783000002538003-g9",
+        "url": "https://assets.irth.ae/marketing-assets/4.HQ%20by%20Rove/Renders/Branded/rove-hq_rooftop_final_2025-09-11.jpg",
+        "alt": {
+          "ar": "إتش كيو باي روف",
+          "en": "HQ by Rove"
+        }
+      }
+    ],
+    "brochureEn": "https://drive.google.com/file/d/1wMBXZnbkt6f5iFFGQ_P4HgxgcyikX-Oa/view",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-26T09:16:22.000Z",
+    "updatedAt": "2026-09-26T09:39:09.000Z"
+  },
+  {
+    "id": "7546783000002538001",
+    "zohoRecordId": "7546783000002538001",
+    "slug": "rove-home-dubai-marina",
+    "title": {
+      "ar": "روف هوم دبي مارينا",
+      "en": "Rove Home Dubai Marina"
+    },
+    "description": {
+      "ar": "مجموعة محدودة من شقق اللوفت السكنية في دبي مارينا، تضم وحدات من غرفة وغرفتين بإطلالات على المارينا وأفق المدينة.",
+      "en": "A limited collection of residential loft apartments in Dubai Marina, with one- and two-bedroom homes overlooking the marina and city skyline."
+    },
+    "shortDescription": {
+      "ar": "شقق لوفت من غرفة وغرفتين في قلب دبي مارينا بإطلالات مميزة.",
+      "en": "One- and two-bedroom loft apartments in the heart of Dubai Marina."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "دبي مارينا",
+      "en": "Dubai Marina"
+    },
+    "developer": {
+      "ar": "IRTH Development",
+      "en": "IRTH Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 4470000,
+    "priceTo": 5900000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2"
+    ],
+    "areaSqftFrom": 1095,
+    "areaSqftTo": 1512,
+    "paymentPlan": {
+      "ar": "50% أثناء الإنشاء و50% عند الإنجاز.",
+      "en": "50% during construction and 50% on completion."
+    },
+    "handoverDate": "2027-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2027",
+      "en": "Q4 2027"
+    },
+    "coverImage": {
+      "id": "7546783000002538001-cover",
+      "url": "https://cdn.pickyassist.com/media_gallery/image/507718_1790415482_01-cover.jpg",
+      "alt": {
+        "ar": "روف هوم دبي مارينا",
+        "en": "Rove Home Dubai Marina"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002538001-g1",
+        "url": "https://cdn.pickyassist.com/media_gallery/image/507718_1790415482_01-cover.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g2",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/01%20Birds%20View.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g3",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/02%20Exterior%20Shot.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g4",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/07%20Pool%20Render.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g5",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/10%20GF%20-%20Entrance%20Lobby.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g6",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/13%20L5%20-%20GYM.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g7",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/40%20One%20Bed%20Loft%20-%20Type%20A%20%26%20B.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g8",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/46%20Two%20Bed%20Loft.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      },
+      {
+        "id": "7546783000002538001-g9",
+        "url": "https://assets.irth.ae/marketing-assets/3.Rove%20Home%20Dubai%20Marina/1.Renders/Still/Branded/17%20Indoor%20Pool.jpg",
+        "alt": {
+          "ar": "روف هوم دبي مارينا",
+          "en": "Rove Home Dubai Marina"
+        }
+      }
+    ],
+    "brochureEn": "https://drive.google.com/file/d/1daBJ__qFCir2PcmaZBCrhNJHquFXQb3B/view",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-26T09:16:22.000Z",
+    "updatedAt": "2026-09-26T09:39:02.000Z"
+  },
+  {
+    "id": "7546783000002538002",
+    "zohoRecordId": "7546783000002538002",
+    "slug": "rove-home-marasi-drive",
+    "title": {
+      "ar": "روف هوم مراسي درايف",
+      "en": "Rove Home Marasi Drive"
+    },
+    "description": {
+      "ar": "مشروع سكني في مراسي درايف بالخليج التجاري، تتوفر فيه آخر الوحدات من غرفة وغرفتين بإطلالات على القناة والحديقة.",
+      "en": "A residential development on Marasi Drive in Business Bay, with the last available one- and two-bedroom apartments overlooking the canal and park."
+    },
+    "shortDescription": {
+      "ar": "شقق من غرفة وغرفتين في مراسي درايف بإطلالات على القناة والحديقة.",
+      "en": "One- and two-bedroom apartments on Marasi Drive with canal and park views."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "مراسي درايف، الخليج التجاري",
+      "en": "Marasi Drive, Business Bay"
+    },
+    "developer": {
+      "ar": "IRTH Development",
+      "en": "IRTH Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 2294899,
+    "priceTo": 3125848,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2"
+    ],
+    "areaSqftFrom": 608,
+    "areaSqftTo": 1058,
+    "paymentPlan": {
+      "ar": "50% أثناء الإنشاء و50% عند الإنجاز.",
+      "en": "50% during construction and 50% on completion."
+    },
+    "handoverDate": "2027-06-30",
+    "handoverLabel": {
+      "ar": "الربع الثاني 2027",
+      "en": "Q2 2027"
+    },
+    "coverImage": {
+      "id": "7546783000002538002-cover",
+      "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_01_Facade_A_EF.jpg",
+      "alt": {
+        "ar": "روف هوم مراسي درايف",
+        "en": "Rove Home Marasi Drive"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000002538002-g1",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_01_Facade_A_EF.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      },
+      {
+        "id": "7546783000002538002-g2",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_03_Facade_C_EF.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      },
+      {
+        "id": "7546783000002538002-g3",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_10_Podium_EF3.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      },
+      {
+        "id": "7546783000002538002-g4",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_11_TopView_AmenitiesFront_EF2.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      },
+      {
+        "id": "7546783000002538002-g5",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_15_1BED_TypeC_EF.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      },
+      {
+        "id": "7546783000002538002-g6",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_17_2BED_TypeB_EF.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      },
+      {
+        "id": "7546783000002538002-g7",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_31_Lobby_EF_01.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      },
+      {
+        "id": "7546783000002538002-g8",
+        "url": "https://assets.irth.ae/marketing-assets/2.Rove%20Home%20Marasi%20Drive/Renders/Images/Branded/RV2_37_Podium_Pool_A_EF.jpg",
+        "alt": {
+          "ar": "روف هوم مراسي درايف",
+          "en": "Rove Home Marasi Drive"
+        }
+      }
+    ],
+    "brochureEn": "https://drive.google.com/file/d/1daBJ__qFCir2PcmaZBCrhNJHquFXQb3B/view",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-09-26T09:16:22.000Z",
+    "updatedAt": "2026-09-26T09:16:22.000Z"
+  },
+  {
     "id": "7546783000002446007",
     "zohoRecordId": "7546783000002446007",
     "slug": "luzora-residences",
