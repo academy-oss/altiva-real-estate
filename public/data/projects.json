@@ -352,6 +352,130 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000003118002",
+    "zohoRecordId": "7546783000003118002",
+    "slug": "al-ghuwair-building",
+    "title": {
+      "ar": "بناية الغوير",
+      "en": "Al Ghuwair Building"
+    },
+    "description": {
+      "ar": "بناية سكنية وتجارية جاهزة للبيع في منطقة الغوير بحي الغرب في الشارقة. تتكون من 7 طوابق سكنية تضم 35 استوديو، بواقع 5 استوديوهات في كل طابق، إضافة إلى 4 محلات تجارية في الطابق الأرضي ومصعد واحد. يبلغ الدخل السنوي الحالي 466,000 درهم بعائد إجمالي قدره 7.17%، بينما يصل الدخل السنوي المتوقع إلى 500,000 درهم بعائد إجمالي متوقع قدره 7.69% قبل المصاريف والرسوم.",
+      "en": "A ready residential and commercial building for sale in Al Ghuwair, Al Gharb, Sharjah. The property comprises seven residential floors with 35 studios—five per floor—plus four ground-floor retail shops and one elevator. Current annual income is AED 466,000, representing a 7.17% gross yield, while expected annual income is AED 500,000 with a projected 7.69% gross yield before expenses and fees."
+    },
+    "shortDescription": {
+      "ar": "بناية جاهزة في الغوير بالشارقة تضم 35 استوديو و4 محلات، بسعر 6.5 مليون درهم.",
+      "en": "Ready building in Al Ghuwair, Sharjah with 35 studios and four shops, offered at AED 6.5M."
+    },
+    "emirate": "sharjah",
+    "area": {
+      "ar": "الغوير، حي الغرب",
+      "en": "Al Ghuwair, Al Gharb"
+    },
+    "developer": {
+      "ar": "مالك خاص",
+      "en": "مالك خاص"
+    },
+    "propertyType": "residential_building",
+    "priceFrom": 6500000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio"
+    ],
+    "areaSqftFrom": 2315,
+    "areaSqftTo": 2315,
+    "paymentPlan": {
+      "ar": "تواصل مع ألتيفا لمعرفة شروط الشراء.",
+      "en": "Contact ALTIVA for purchase terms."
+    },
+    "handoverLabel": {
+      "ar": "جاهز",
+      "en": "Ready"
+    },
+    "coverImage": {
+      "id": "7546783000003118002-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/01-al-ghuwair-cover.jpg",
+      "alt": {
+        "ar": "بناية الغوير",
+        "en": "Al Ghuwair Building"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003118002-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/01-al-ghuwair-cover.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      },
+      {
+        "id": "7546783000003118002-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/02-al-ghuwair-blue-hour.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      },
+      {
+        "id": "7546783000003118002-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/03-al-ghuwair-front.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      },
+      {
+        "id": "7546783000003118002-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/04-al-ghuwair-side.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      },
+      {
+        "id": "7546783000003118002-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/05-al-ghuwair-corridor.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      },
+      {
+        "id": "7546783000003118002-g6",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/06-al-ghuwair-studio.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      },
+      {
+        "id": "7546783000003118002-g7",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/07-al-ghuwair-kitchen.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      },
+      {
+        "id": "7546783000003118002-g8",
+        "url": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/08-al-ghuwair-bathroom.jpg",
+        "alt": {
+          "ar": "بناية الغوير",
+          "en": "Al Ghuwair Building"
+        }
+      }
+    ],
+    "brochureAr": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/Al-Ghuwair-Investment-Memorandum-AR-EN.pdf",
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/al-ghuwair-building/images/Al-Ghuwair-Investment-Memorandum-AR-EN.pdf",
+    "status": "ready",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T07:30:25.000Z",
+    "updatedAt": "2026-10-22T07:30:25.000Z"
+  },
+  {
     "id": "7546783000002538003",
     "zohoRecordId": "7546783000002538003",
     "slug": "hq-by-rove",
