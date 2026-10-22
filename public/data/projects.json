@@ -352,6 +352,96 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000003122001",
+    "zohoRecordId": "7546783000003122001",
+    "slug": "al-mamourah-building",
+    "title": {
+      "ar": "بناية المعمورة",
+      "en": "Al Mamourah Building"
+    },
+    "description": {
+      "ar": "بناية سكنية وتجارية جاهزة للبيع في منطقة المعمورة في رأس الخيمة، مشغولة بالكامل بحسب الإفادة. تضم 5 شقق سكنية و4 محلات تجارية، وتبلغ مساحة الأرض 330.58 مترًا مربعًا تقريبًا. إجمالي الإيجارات السنوية المعلن 152,000 درهم، منها 112,000 درهم للشقق و40,000 درهم للمحلات، بما يعادل عائدًا إجماليًا تقريبيًا قدره 6.91% قبل المصاريف والرسوم. سنة البناء المعلنة 2025، ولا توجد التزامات على البناية بحسب الإفادة. مبالغ الإيجار وفترتها بحاجة إلى تأكيد نهائي.",
+      "en": "A ready residential and commercial building for sale in Al Mamourah, Ras Al Khaimah, reported as fully occupied. It comprises 5 residential apartments and 4 retail shops on a land area of approximately 330.58 sq m. The stated annual rental income is AED 152,000, including AED 112,000 from the apartments and AED 40,000 from the shops, representing an approximate gross yield of 6.91% before expenses and fees. The reported construction year is 2025, with no disclosed building liabilities. Rental amounts and periods remain subject to final confirmation."
+    },
+    "shortDescription": {
+      "ar": "",
+      "en": ""
+    },
+    "emirate": "ras_al_khaimah",
+    "area": {
+      "ar": "المعمورة",
+      "en": "Al Mamourah"
+    },
+    "developer": {
+      "ar": "مالك خاص",
+      "en": "مالك خاص"
+    },
+    "propertyType": "residential_building",
+    "priceFrom": 2200000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [],
+    "areaSqftFrom": 3558,
+    "areaSqftTo": 3558,
+    "paymentPlan": {
+      "ar": "",
+      "en": ""
+    },
+    "handoverLabel": {
+      "ar": "جاهز",
+      "en": "Ready"
+    },
+    "coverImage": {
+      "id": "7546783000003122001-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/01-mamourah-cover.jpg",
+      "alt": {
+        "ar": "بناية المعمورة",
+        "en": "Al Mamourah Building"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003122001-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/01-mamourah-cover.jpg",
+        "alt": {
+          "ar": "بناية المعمورة",
+          "en": "Al Mamourah Building"
+        }
+      },
+      {
+        "id": "7546783000003122001-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/02-mamourah-front.jpg",
+        "alt": {
+          "ar": "بناية المعمورة",
+          "en": "Al Mamourah Building"
+        }
+      },
+      {
+        "id": "7546783000003122001-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/03-mamourah-corner.jpg",
+        "alt": {
+          "ar": "بناية المعمورة",
+          "en": "Al Mamourah Building"
+        }
+      },
+      {
+        "id": "7546783000003122001-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/04-mamourah-shops.jpg",
+        "alt": {
+          "ar": "بناية المعمورة",
+          "en": "Al Mamourah Building"
+        }
+      }
+    ],
+    "brochureAr": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/ALTIVA-Mamourah-Updated.pdf",
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/ALTIVA-Mamourah-Updated.pdf",
+    "status": "ready",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T08:52:46.000Z",
+    "updatedAt": "2026-10-22T08:52:46.000Z"
+  },
+  {
     "id": "7546783000003118002",
     "zohoRecordId": "7546783000003118002",
     "slug": "al-ghuwair-building",
