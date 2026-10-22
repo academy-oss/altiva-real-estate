@@ -423,14 +423,6 @@
           "ar": "بناية المعمورة",
           "en": "Al Mamourah Building"
         }
-      },
-      {
-        "id": "7546783000003122001-g4",
-        "url": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/04-mamourah-shops.jpg",
-        "alt": {
-          "ar": "بناية المعمورة",
-          "en": "Al Mamourah Building"
-        }
       }
     ],
     "brochureAr": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/ALTIVA-Mamourah-Updated.pdf",
@@ -439,7 +431,7 @@
     "publishOnWebsite": true,
     "isFeatured": false,
     "createdAt": "2026-10-22T08:52:46.000Z",
-    "updatedAt": "2026-10-22T08:52:46.000Z"
+    "updatedAt": "2026-10-22T09:00:16.000Z"
   },
   {
     "id": "7546783000003118002",
