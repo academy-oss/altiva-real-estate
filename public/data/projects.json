@@ -1,5 +1,118 @@
 [
   {
+    "id": "7546783000003131001",
+    "zohoRecordId": "7546783000003131001",
+    "slug": "villa-del-garda",
+    "title": {
+      "ar": "فيلا ديل غاردا",
+      "en": "Villa del Garda"
+    },
+    "description": {
+      "ar": "فيلا ديل غاردا مشروع بوتيك يضم 134 وحدة سكنية فاخرة مفروشة ومخدومة بالكامل في الصف الأول على المارينا في جزر دبي. يقدم المشروع شققًا ودوبلكس ووحدة سكنية حصرية من خمس غرف، مع إطلالات على المارينا وخدمات بمستوى فندقي وأسلوب حياة راقٍ على الواجهة البحرية. تشمل المرافق مسابح ومساحات للاسترخاء والعافية وخدمات اختيارية بإدارة Mr. Eight Hotel Management.",
+      "en": "Villa del Garda is a boutique collection of only 134 fully furnished and serviced branded residences on the first row of the marina at Dubai Islands. The development offers apartments, duplexes and an exclusive five-bedroom residence, with marina views, hotel-style services and a curated waterfront lifestyle. Residents benefit from landscaped leisure spaces, swimming pools, wellness facilities and optional à la carte services managed by Mr. Eight Hotel Management."
+    },
+    "shortDescription": {
+      "ar": "وحدات فاخرة مفروشة ومخدومة بالكامل من غرفة إلى خمس غرف بإطلالات المارينا في جزر دبي.",
+      "en": "Fully furnished and serviced 1–5 bedroom branded residences with marina views at Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 2520000,
+    "priceTo": 45600000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "areaSqftFrom": 600,
+    "areaSqftTo": 9099,
+    "paymentPlan": {
+      "ar": "35% أثناء الإنشاء و65% عند التسليم",
+      "en": "35% during construction and 65% on handover"
+    },
+    "handoverDate": "2028-03-31",
+    "handoverLabel": {
+      "ar": "الربع الأول 2028",
+      "en": "Q1 2028"
+    },
+    "coverImage": {
+      "id": "7546783000003131001-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-del-garda/images/01-villa-del-garda-exterior.jpg",
+      "alt": {
+        "ar": "فيلا ديل غاردا",
+        "en": "Villa del Garda"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003131001-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-garda/images/01-villa-del-garda-exterior.jpg",
+        "alt": {
+          "ar": "فيلا ديل غاردا",
+          "en": "Villa del Garda"
+        }
+      },
+      {
+        "id": "7546783000003131001-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-garda/images/02-villa-del-garda-lobby.jpg",
+        "alt": {
+          "ar": "فيلا ديل غاردا",
+          "en": "Villa del Garda"
+        }
+      },
+      {
+        "id": "7546783000003131001-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-garda/images/03-villa-del-garda-gym.jpg",
+        "alt": {
+          "ar": "فيلا ديل غاردا",
+          "en": "Villa del Garda"
+        }
+      },
+      {
+        "id": "7546783000003131001-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-garda/images/04-villa-del-garda-pool.jpg",
+        "alt": {
+          "ar": "فيلا ديل غاردا",
+          "en": "Villa del Garda"
+        }
+      },
+      {
+        "id": "7546783000003131001-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-garda/images/05-villa-del-garda-residence.jpg",
+        "alt": {
+          "ar": "فيلا ديل غاردا",
+          "en": "Villa del Garda"
+        }
+      },
+      {
+        "id": "7546783000003131001-g6",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-garda/images/06-villa-del-garda-sky-terrace.jpg",
+        "alt": {
+          "ar": "فيلا ديل غاردا",
+          "en": "Villa del Garda"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-del-garda/brochures/Villa-del-Garda-Brochure-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-10-22T11:36:41.000Z",
+    "updatedAt": "2026-10-22T12:08:13.000Z"
+  },
+  {
     "id": "7546783000001731009",
     "zohoRecordId": "7546783000001731009",
     "slug": "ayami-residence",
@@ -426,12 +539,12 @@
       }
     ],
     "brochureAr": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/ALTIVA-Mamourah-Updated.pdf",
-    "brochureEn": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/images/ALTIVA-Mamourah-Updated.pdf",
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/al-mamourah-building/brochures/ALTIVA-Al-Mamourah-Building-EN.pdf",
     "status": "ready",
     "publishOnWebsite": true,
     "isFeatured": false,
     "createdAt": "2026-10-22T08:52:46.000Z",
-    "updatedAt": "2026-10-22T09:00:16.000Z"
+    "updatedAt": "2026-10-22T11:32:59.000Z"
   },
   {
     "id": "7546783000003118002",
