@@ -465,6 +465,315 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000003142003",
+    "zohoRecordId": "7546783000003142003",
+    "slug": "villa-dell-arte",
+    "title": {
+      "ar": "فيلا ديل آرتي",
+      "en": "Villa dell'ARTE"
+    },
+    "description": {
+      "ar": "فيلا ديل آرتي مشروع سكني بوتيكي بالقرب من المارينا في جزر دبي. يجمع المبنى بين طابق أرضي وطابقين للنادي وثمانية طوابق سكنية، ويقدم شققًا ودوبلكس من غرفة إلى أربع غرف نوم، مع تصاميم داخلية عصرية ومرافق ترفيهية بطابع منتجعي ومسبح مميز على السطح.",
+      "en": "Villa dell'ARTE is a boutique residential development near the marina at Dubai Islands. The building combines a ground level, two club floors and eight residential levels, offering one- to four-bedroom apartments and duplexes with contemporary interiors, resort-style leisure spaces and a distinctive rooftop pool."
+    },
+    "shortDescription": {
+      "ar": "شقق ودوبلكس بوتيكية من غرفة إلى أربع غرف قرب المارينا في جزر دبي.",
+      "en": "Boutique one- to four-bedroom apartments and duplexes near the marina on Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1911000,
+    "priceTo": 6835000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 681,
+    "areaSqftTo": 4204,
+    "paymentPlan": {
+      "ar": "حجز بقيمة 100,000 درهم؛ 20% إضافة إلى 4% رسوم دائرة الأراضي والرسوم الإدارية عند توقيع عقد البيع؛ 5% بعد 6 أشهر؛ 5% عند إنجاز 20%؛ 5% عند إنجاز 50%؛ 5% عند إنجاز 75%؛ و60% عند الإنجاز.",
+      "en": "AED 100,000 booking; 20% plus 4% DLD and admin fee on SPA signing; 5% after 6 months; 5% at 20% construction; 5% at 50% construction; 5% at 75% construction; and 60% on completion."
+    },
+    "handoverLabel": {
+      "ar": "",
+      "en": ""
+    },
+    "coverImage": {
+      "id": "7546783000003142003-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/01-villa-dell-arte.jpg",
+      "alt": {
+        "ar": "فيلا ديل آرتي",
+        "en": "Villa dell'ARTE"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003142003-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/01-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/02-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/03-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/04-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/05-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/01-villa-dell-arte-key-facts-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T18:12:48.000Z",
+    "updatedAt": "2026-10-22T18:12:48.000Z"
+  },
+  {
+    "id": "7546783000003142002",
+    "zohoRecordId": "7546783000003142002",
+    "slug": "villa-del-gavi",
+    "title": {
+      "ar": "فيلا ديل غافي",
+      "en": "Villa del GAVI"
+    },
+    "description": {
+      "ar": "فيلا ديل غافي مشروع سكني في الصف الأول على الواجهة البحرية في جزر دبي، ويضم 87 وحدة ضمن مبنى من طابق أرضي وطابقي بوديوم و12 طابقًا سكنيًا. تشمل المجموعة وحدات من غرفتين وثلاث وأربع غرف نوم، وبعضها بغرفة خادمة، مع مساحات رحبة وإطلالات ساحلية مباشرة.",
+      "en": "Villa del GAVI is a first-line waterfront development on Dubai Islands with 87 residences across a ground level, two podiums and 12 residential floors. The collection includes two-, three- and four-bedroom homes, selected residences with maid rooms, generous internal areas and direct coastal views."
+    },
+    "shortDescription": {
+      "ar": "مجموعة من 87 وحدة سكنية من غرفتين إلى أربع غرف على الواجهة البحرية في جزر دبي.",
+      "en": "A collection of 87 two- to four-bedroom waterfront residences on Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 3659000,
+    "priceTo": 9525000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 1015.37,
+    "areaSqftTo": 4574.59,
+    "paymentPlan": {
+      "ar": "35/65: حجز بقيمة 100,000 درهم؛ 20% إضافة إلى 4% رسوم دائرة الأراضي و5,000 درهم رسوم إدارية؛ 5% بعد 6 أشهر؛ 5% عند إنجاز 20%؛ 5% عند إنجاز 75%؛ و65% عند التسليم.",
+      "en": "35/65: AED 100,000 booking; 20% plus 4% DLD and AED 5,000 admin fee; 5% after 6 months; 5% at 20% construction; 5% at 75% construction; and 65% on handover."
+    },
+    "handoverLabel": {
+      "ar": "",
+      "en": ""
+    },
+    "coverImage": {
+      "id": "7546783000003142002-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/01-villa-del-gavi.jpg",
+      "alt": {
+        "ar": "فيلا ديل غافي",
+        "en": "Villa del GAVI"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003142002-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/01-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/02-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/03-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/04-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/05-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/01-villa-del-gavi-fact-sheet-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T18:12:48.000Z",
+    "updatedAt": "2026-10-22T18:12:48.000Z"
+  },
+  {
+    "id": "7546783000003142001",
+    "zohoRecordId": "7546783000003142001",
+    "slug": "villa-del-divos",
+    "title": {
+      "ar": "فيلا ديل ديفوس",
+      "en": "Villa del DIVOS"
+    },
+    "description": {
+      "ar": "فيلا ديل ديفوس مجموعة حصرية من 108 وحدات سكنية بعلامة تجارية في جزر دبي، ضمن مبنى يضم طابقًا أرضيًا وطابقي بوديوم و12 طابقًا سكنيًا. يقدم المشروع شققًا من غرفة إلى أربع غرف نوم، إضافة إلى سكاي مانشن من خمس غرف، مع مساحات رحبة وأسلوب حياة راقٍ على الواجهة البحرية.",
+      "en": "Villa del DIVOS is an exclusive collection of 108 branded residences on Dubai Islands, arranged across a ground level, two podiums and 12 residential floors. The project offers one- to four-bedroom apartments and a five-bedroom Sky Mansion, with generous layouts, waterfront living and a curated set of lifestyle amenities."
+    },
+    "shortDescription": {
+      "ar": "108 وحدات سكنية فاخرة من غرفة إلى خمس غرف على الواجهة البحرية في جزر دبي.",
+      "en": "108 branded waterfront residences from one to five bedrooms on Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 2200000,
+    "priceTo": 28000000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "areaSqftFrom": 666,
+    "areaSqftTo": 7072,
+    "paymentPlan": {
+      "ar": "35/65: حجز بقيمة 50,000 درهم؛ 20% إضافة إلى 4% رسوم دائرة الأراضي؛ 5% بعد 6 أشهر؛ 5% عند إنجاز 20%؛ 5% عند إنجاز 75%؛ و65% عند التسليم.",
+      "en": "35/65: AED 50,000 booking; 20% plus 4% DLD; 5% after 6 months; 5% at 20% construction; 5% at 75% construction; and 65% on handover."
+    },
+    "handoverLabel": {
+      "ar": "",
+      "en": ""
+    },
+    "coverImage": {
+      "id": "7546783000003142001-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/01-villa-del-divos.jpg",
+      "alt": {
+        "ar": "فيلا ديل ديفوس",
+        "en": "Villa del DIVOS"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003142001-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/01-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/02-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/03-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/04-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/05-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/01-villa-del-divos-fact-sheet-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T18:12:48.000Z",
+    "updatedAt": "2026-10-22T18:12:48.000Z"
+  },
+  {
     "id": "7546783000003133003",
     "zohoRecordId": "7546783000003133003",
     "slug": "the-wow-tower",
