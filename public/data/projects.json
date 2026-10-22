@@ -465,6 +465,419 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000003133003",
+    "zohoRecordId": "7546783000003133003",
+    "slug": "the-wow-tower",
+    "title": {
+      "ar": "برج ذا واو",
+      "en": "The WOW Tower"
+    },
+    "description": {
+      "ar": "برج ذا واو معلم متعدد الاستخدامات من 46 طابقًا في مجمع دبي لاند ريزيدنس، ويجمع في وجهة واحدة بين الأجنحة السكنية الخاصة، والمكاتب، ومحلات التجزئة في الطابق الأرضي، ومجموعة واسعة من مرافق أسلوب الحياة. تبدأ أسعار الوحدات السكنية من 709,000 درهم للأجنحة، و1,084,000 درهم لغرفة نوم واحدة، و1,883,000 درهم لغرفتين. تبدأ المكاتب من 2,025,000 درهم، بينما تبدأ الطوابق المكتبية الكاملة من 82,757,000 درهم. يوفر البرج مداخل منفصلة للسكن والأعمال، وإطلالات بانورامية، وحدائق ومرافق عمل مشترك وعافية وسينما خاصة.",
+      "en": "The WOW Tower is a 46-floor mixed-use landmark in Dubai Land Residence Complex (DLRC), combining private residential suites, business suites, ground-floor retail and extensive lifestyle amenities in one vertically integrated destination. Residential prices start from AED 709,000 for suites, AED 1,084,000 for one-bedroom units and AED 1,883,000 for two-bedroom units. Office units start from AED 2,025,000, while full office floors start from AED 82,757,000. The tower includes separate residential and commercial entrances, panoramic views, landscaped park amenities, coworking, wellness facilities and a private cinema."
+    },
+    "shortDescription": {
+      "ar": "معلم متعدد الاستخدامات في دبي لاند يجمع السكن والمكاتب والتجزئة والمرافق البانورامية.",
+      "en": "A mixed-use landmark in DLRC with residences, business suites, retail and panoramic lifestyle amenities."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "مجمع دبي لاند ريزيدنس",
+      "en": "Dubai Land Residence Complex (DLRC)"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 709000,
+    "priceTo": 111805000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "studio",
+      "1",
+      "2"
+    ],
+    "areaSqftFrom": 377,
+    "areaSqftTo": 55898,
+    "paymentPlan": {
+      "ar": "60/40 مع خطة سداد لمدة 18 شهرًا بعد التسليم: حجز 70,000 درهم؛ 20% مع 4% رسوم دائرة الأراضي والرسوم الإدارية عند توقيع عقد البيع؛ 5% خلال 6 أشهر؛ 5% بعد 12 شهرًا؛ 10% عند إنجاز 30%؛ 10% عند إنجاز 75%؛ 10% عند التسليم؛ و40% خلال 18 شهرًا بعد التسليم.",
+      "en": "60/40 with an 18-month post-handover plan: AED 70,000 booking; 20% plus 4% DLD and admin fee on SPA signing; 5% within 6 months; 5% after 12 months; 10% at 30% construction; 10% at 75% construction; 10% on handover; 40% over 18 months after handover."
+    },
+    "handoverDate": "2029-09-30",
+    "handoverLabel": {
+      "ar": "الربع الثالث 2029",
+      "en": "Q3 2029"
+    },
+    "coverImage": {
+      "id": "7546783000003133003-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/the-wow-tower/images/01-the-wow-tower.jpg",
+      "alt": {
+        "ar": "برج ذا واو",
+        "en": "The WOW Tower"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003133003-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/the-wow-tower/images/01-the-wow-tower.jpg",
+        "alt": {
+          "ar": "برج ذا واو",
+          "en": "The WOW Tower"
+        }
+      },
+      {
+        "id": "7546783000003133003-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/the-wow-tower/images/02-the-wow-tower.jpg",
+        "alt": {
+          "ar": "برج ذا واو",
+          "en": "The WOW Tower"
+        }
+      },
+      {
+        "id": "7546783000003133003-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/the-wow-tower/images/03-the-wow-tower.jpg",
+        "alt": {
+          "ar": "برج ذا واو",
+          "en": "The WOW Tower"
+        }
+      },
+      {
+        "id": "7546783000003133003-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/the-wow-tower/images/04-the-wow-tower.jpg",
+        "alt": {
+          "ar": "برج ذا واو",
+          "en": "The WOW Tower"
+        }
+      },
+      {
+        "id": "7546783000003133003-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/the-wow-tower/images/05-the-wow-tower.jpg",
+        "alt": {
+          "ar": "برج ذا واو",
+          "en": "The WOW Tower"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/the-wow-tower/brochures/03-the-wow-tower-residential-brochure-EN-web.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T12:53:51.000Z",
+    "updatedAt": "2026-10-22T13:07:48.000Z"
+  },
+  {
+    "id": "7546783000003133001",
+    "zohoRecordId": "7546783000003133001",
+    "slug": "le-chateau-pietrus",
+    "title": {
+      "ar": "لو شاتو بيتروس",
+      "en": "Le Château Piétrus"
+    },
+    "description": {
+      "ar": "لو شاتو بيتروس مجموعة محدودة من الوحدات السكنية الفاخرة المفروشة بالكامل في الصف الأول على المارينا بجزر دبي. يجمع المشروع بين إطلالات البحر المفتوح والمارينا والحدائق، مع وصول خاص للقوارب ومطعم فرنسي وحديقة خاصة على البوديوم. تتوفر وحدات من غرفتين وثلاث وأربع غرف نوم، والتسليم المتوقع في الربع الثالث من 2028.",
+      "en": "Le Chateau Pietrus is a limited collection of fully furnished branded residences in a first-row marina setting on Dubai Islands. The development combines open sea, marina and park views with private boat access, a French brasserie and a private podium garden. The available residences comprise two-, three- and four-bedroom apartments, with handover scheduled for Q3 2028."
+    },
+    "shortDescription": {
+      "ar": "وحدات سكنية فاخرة مفروشة بالكامل على واجهة المارينا في جزر دبي بإطلالات بحرية وحدائق.",
+      "en": "Fully furnished marina-front branded residences on Dubai Islands with sea, marina and park views."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 3940000,
+    "priceTo": 28149000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 1010,
+    "areaSqftTo": 6892,
+    "paymentPlan": {
+      "ar": "35/65: حجز بقيمة 100,000 درهم؛ 20% مع 4% رسوم دائرة الأراضي و5,000 درهم رسوم إدارية؛ 5% خلال 6 أشهر؛ 5% عند إنجاز 20% من البناء؛ 5% عند إنجاز 75%؛ و65% عند التسليم.",
+      "en": "35/65: AED 100,000 booking; 20% plus 4% DLD and AED 5,000 admin fee; 5% within 6 months; 5% at 20% construction; 5% at 75% construction; 65% on handover."
+    },
+    "handoverDate": "2028-09-30",
+    "handoverLabel": {
+      "ar": "الربع الثالث 2028",
+      "en": "Q3 2028"
+    },
+    "coverImage": {
+      "id": "7546783000003133001-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/le-chateau-pietrus/images/01-le-chateau-pietrus.jpg",
+      "alt": {
+        "ar": "لو شاتو بيتروس",
+        "en": "Le Château Piétrus"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003133001-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/le-chateau-pietrus/images/01-le-chateau-pietrus.jpg",
+        "alt": {
+          "ar": "لو شاتو بيتروس",
+          "en": "Le Château Piétrus"
+        }
+      },
+      {
+        "id": "7546783000003133001-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/le-chateau-pietrus/images/02-le-chateau-pietrus.jpg",
+        "alt": {
+          "ar": "لو شاتو بيتروس",
+          "en": "Le Château Piétrus"
+        }
+      },
+      {
+        "id": "7546783000003133001-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/le-chateau-pietrus/images/03-le-chateau-pietrus.jpg",
+        "alt": {
+          "ar": "لو شاتو بيتروس",
+          "en": "Le Château Piétrus"
+        }
+      },
+      {
+        "id": "7546783000003133001-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/le-chateau-pietrus/images/04-le-chateau-pietrus.jpg",
+        "alt": {
+          "ar": "لو شاتو بيتروس",
+          "en": "Le Château Piétrus"
+        }
+      },
+      {
+        "id": "7546783000003133001-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/le-chateau-pietrus/images/05-le-chateau-pietrus.jpg",
+        "alt": {
+          "ar": "لو شاتو بيتروس",
+          "en": "Le Château Piétrus"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/le-chateau-pietrus/brochures/01-le-chateau-pietrus-brochure-EN-web.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T12:53:51.000Z",
+    "updatedAt": "2026-10-22T13:07:46.000Z"
+  },
+  {
+    "id": "7546783000003133002",
+    "zohoRecordId": "7546783000003133002",
+    "slug": "villa-del-brunello",
+    "title": {
+      "ar": "فيلا ديل برونيللو",
+      "en": "Villa del Brunello"
+    },
+    "description": {
+      "ar": "فيلا ديل برونيللو مشروع سكني بوتيكي على الواجهة البحرية في جزر دبي، ويضم مجموعة خاصة من 69 وحدة. يوفر المشروع شققًا من غرفة إلى أربع غرف نوم، ووحدات دوبلكس وبنتهاوس، مع عمارة عصرية وإطلالات بحرية وتجربة سكنية راقية. بدأ الإنشاء في أغسطس 2026، والتسليم المتوقع في الربع الرابع من 2027.",
+      "en": "Villa del Brunello is a boutique beachfront development on Dubai Islands comprising a private collection of 69 residences. The project offers one- to four-bedroom apartments, duplexes and penthouses, with contemporary architecture, seafront views and a curated residential experience. Construction began in August 2026 and handover is scheduled for Q4 2027."
+    },
+    "shortDescription": {
+      "ar": "مجموعة خاصة من 69 شقة ودوبلكس وبنتهاوس على الواجهة البحرية في جزر دبي.",
+      "en": "A private collection of 69 beachfront apartments, duplexes and penthouses on Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 2690000,
+    "priceTo": 26000000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 638,
+    "areaSqftTo": 4619,
+    "paymentPlan": {
+      "ar": "25/75: 10% عند الحجز؛ 10% خلال 3 أشهر؛ 5% خلال 6 أشهر؛ و75% عند الإنجاز في الربع الرابع من 2027. إضافة إلى 4% رسوم دائرة الأراضي و5,000 درهم رسوم إدارية.",
+      "en": "25/75: 10% on booking; 10% within 3 months; 5% within 6 months; 75% on completion in Q4 2027. Plus 4% DLD fee and AED 5,000 admin fee."
+    },
+    "handoverDate": "2027-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2027",
+      "en": "Q4 2027"
+    },
+    "coverImage": {
+      "id": "7546783000003133002-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-del-brunello/images/01-villa-del-brunello.jpg",
+      "alt": {
+        "ar": "فيلا ديل برونيللو",
+        "en": "Villa del Brunello"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003133002-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-brunello/images/01-villa-del-brunello.jpg",
+        "alt": {
+          "ar": "فيلا ديل برونيللو",
+          "en": "Villa del Brunello"
+        }
+      },
+      {
+        "id": "7546783000003133002-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-brunello/images/02-villa-del-brunello.jpg",
+        "alt": {
+          "ar": "فيلا ديل برونيللو",
+          "en": "Villa del Brunello"
+        }
+      },
+      {
+        "id": "7546783000003133002-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-brunello/images/03-villa-del-brunello.jpg",
+        "alt": {
+          "ar": "فيلا ديل برونيللو",
+          "en": "Villa del Brunello"
+        }
+      },
+      {
+        "id": "7546783000003133002-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-brunello/images/04-villa-del-brunello.jpg",
+        "alt": {
+          "ar": "فيلا ديل برونيللو",
+          "en": "Villa del Brunello"
+        }
+      },
+      {
+        "id": "7546783000003133002-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-brunello/images/05-villa-del-brunello.jpg",
+        "alt": {
+          "ar": "فيلا ديل برونيللو",
+          "en": "Villa del Brunello"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-del-brunello/brochures/01-villa-del-brunello-brochure-EN-web.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T12:53:51.000Z",
+    "updatedAt": "2026-10-22T13:07:43.000Z"
+  },
+  {
+    "id": "7546783000003133004",
+    "zohoRecordId": "7546783000003133004",
+    "slug": "interstellar-tower",
+    "title": {
+      "ar": "برج إنترستيلر",
+      "en": "Interstellar Tower"
+    },
+    "description": {
+      "ar": "برج إنترستيلر وجهة متعددة الاستخدامات في قرية جميرا المثلث، وتجمع في مشروع عصري واحد بين الوحدات السكنية، والمكاتب من الفئة الأولى، ومحلات التجزئة في الطابق الأرضي. تضم المجموعة السكنية شققًا من غرفة وغرفتين وثلاث غرف نوم، إضافة إلى وحدات غاردن هومز. تبدأ أسعار غرفة النوم الواحدة من 1,120,000 درهم، وغرفتين من 1,631,000 درهم، وثلاث غرف من 2,557,000 درهم. تبدأ المكاتب من 2,977,000 درهم، ومحلات التجزئة من 3,878,000 درهم. يتكون المبنى من طابق أرضي وخمسة طوابق مواقف و24 طابقًا علويًا، ومن المتوقع التسليم في الربع الثالث من 2028.",
+      "en": "Interstellar Tower is a mixed-use destination in Jumeirah Village Triangle (JVT), combining residences, Grade A offices and ground-floor retail in a single contemporary development. The residential collection includes one-, two- and three-bedroom apartments plus Garden Homes, with one-bedroom prices from AED 1,120,000, two bedrooms from AED 1,631,000 and three bedrooms from AED 2,557,000. Offices start from AED 2,977,000, while retail spaces start from AED 3,878,000. The building comprises a ground level, five parking levels and 24 upper floors, with handover scheduled for Q3 2028."
+    },
+    "shortDescription": {
+      "ar": "برج متعدد الاستخدامات يضم مساكن ومكاتب من الفئة الأولى ومحلات تجزئة، والتسليم في الربع الثالث 2028.",
+      "en": "A mixed-use tower with residences, Grade A offices and retail, scheduled for Q3 2028."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "قرية جميرا المثلث",
+      "en": "Jumeirah Village Triangle (JVT)"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1120000,
+    "priceTo": 13516000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3"
+    ],
+    "areaSqftFrom": 674,
+    "areaSqftTo": 4200,
+    "paymentPlan": {
+      "ar": "50/50: حجز بقيمة 50,000 درهم؛ 20% مع 4% رسوم دائرة الأراضي و5,000 درهم رسوم إدارية عند توقيع عقد البيع؛ 5% خلال 6 أشهر؛ 5% خلال 12 شهرًا؛ 10% عند إنجاز 30%؛ 10% عند إنجاز 75%؛ و50% عند التسليم.",
+      "en": "50/50: AED 50,000 booking; 20% plus 4% DLD and AED 5,000 admin fee on SPA signing; 5% within 6 months; 5% within 12 months; 10% at 30% construction; 10% at 75% construction; and 50% on completion."
+    },
+    "handoverDate": "2028-09-30",
+    "handoverLabel": {
+      "ar": "الربع الثالث 2028",
+      "en": "Q3 2028"
+    },
+    "coverImage": {
+      "id": "7546783000003133004-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/interstellar-tower/images/01-interstellar-tower.jpg",
+      "alt": {
+        "ar": "برج إنترستيلر",
+        "en": "Interstellar Tower"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003133004-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/interstellar-tower/images/01-interstellar-tower.jpg",
+        "alt": {
+          "ar": "برج إنترستيلر",
+          "en": "Interstellar Tower"
+        }
+      },
+      {
+        "id": "7546783000003133004-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/interstellar-tower/images/02-interstellar-tower.jpg",
+        "alt": {
+          "ar": "برج إنترستيلر",
+          "en": "Interstellar Tower"
+        }
+      },
+      {
+        "id": "7546783000003133004-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/interstellar-tower/images/03-interstellar-tower.jpg",
+        "alt": {
+          "ar": "برج إنترستيلر",
+          "en": "Interstellar Tower"
+        }
+      },
+      {
+        "id": "7546783000003133004-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/interstellar-tower/images/04-interstellar-tower.jpg",
+        "alt": {
+          "ar": "برج إنترستيلر",
+          "en": "Interstellar Tower"
+        }
+      },
+      {
+        "id": "7546783000003133004-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/interstellar-tower/images/05-interstellar-tower.jpg",
+        "alt": {
+          "ar": "برج إنترستيلر",
+          "en": "Interstellar Tower"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/interstellar-tower/brochures/04-interstellar-residential-brochure-EN-web.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T12:53:51.000Z",
+    "updatedAt": "2026-10-22T13:07:41.000Z"
+  },
+  {
     "id": "7546783000003122001",
     "zohoRecordId": "7546783000003122001",
     "slug": "al-mamourah-building",
