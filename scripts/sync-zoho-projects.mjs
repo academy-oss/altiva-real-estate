@@ -78,7 +78,7 @@ console.log(`Synced ${projects.length} published project(s) from Zoho CRM.`);
 
 async function mapZohoProject(record) {
   const hasUploadedImages = Array.isArray(record.Website_Images) && record.Website_Images.length > 0;
-  if (!record.id || !record.Name || !record.Project_Name_Arabic || !record.Website_Slug || !record.Starting_Price || (!record.Cover_Image_URL && !hasUploadedImages)) {
+  if (!record.id || !record.Name || !record.Project_Name_Arabic || !record.Website_Slug || (!record.Cover_Image_URL && !hasUploadedImages)) {
     console.warn(`Skipping incomplete Zoho project record ${record.id || "unknown"}.`);
     return null;
   }
@@ -104,7 +104,7 @@ async function mapZohoProject(record) {
     area: { ar: record.Area_Arabic || "", en: record.Area_English || "" },
     developer: { ar: record.Developer?.name || "", en: record.Developer?.name || "" },
     propertyType: mapPropertyType(record.Website_Property_Type),
-    priceFrom: Number(record.Starting_Price),
+    ...(record.Starting_Price ? { priceFrom: Number(record.Starting_Price) } : {}),
     ...(record.Maximum_Price ? { priceTo: Number(record.Maximum_Price) } : {}),
     currency: "AED",
     isPriceEstimated: Boolean(record.Price_Is_Estimated),
