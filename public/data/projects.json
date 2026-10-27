@@ -465,6 +465,98 @@
     "updatedAt": "2026-09-08T17:59:53.000Z"
   },
   {
+    "id": "7546783000003165002",
+    "zohoRecordId": "7546783000003165002",
+    "slug": "ava-at-palm-jumeirah",
+    "title": {
+      "ar": "آفا في نخلة جميرا",
+      "en": "AVA at Palm Jumeirah"
+    },
+    "description": {
+      "ar": "آفا في نخلة جميرا مجموعة فائقة الخصوصية تضم 17 مسكنًا فقط من تطوير أمنيات وبإدارة دورشستر كوليكشن. تشمل الخيارات وحدات سيمبلكس من ثلاث وأربع غرف نوم، ودوبلكس واحد من أربع غرف، وسكاي بالاس من خمس غرف، مع تراسات ومسابح خاصة وإطلالات بزاوية 270 درجة ونوافذ ممتدة من الأرض إلى السقف. يستفيد السكان من الوصول إلى الشاطئ والمرسى عبر ون آت بالم، إضافة إلى مسبح لامتناهي وسبا ونادٍ رياضي وسينما واستوديو يوغا وقاعة اجتماعات.",
+      "en": "AVA at Palm Jumeirah is an ultra-limited collection of 17 private residences by OMNIYAT, managed by Dorchester Collection. The development offers three- and four-bedroom simplex homes, one four-bedroom duplex and a five-bedroom Sky Palace, with private terraces and pools, 270-degree views and floor-to-ceiling glazing. Residents benefit from beach and jetty access through One at Palm, alongside an infinity pool, spa, gym, cinema, yoga studio and boardroom."
+    },
+    "shortDescription": {
+      "ar": "مجموعة من 17 مسكنًا فقط بإدارة دورشستر كوليكشن في نخلة جميرا، مع مسابح خاصة وإطلالات بانورامية ومرافق استثنائية.",
+      "en": "A collection of only 17 Dorchester Collection-managed residences on Palm Jumeirah, with private pools, panoramic views and exceptional amenities."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "نخلة جميرا",
+      "en": "Palm Jumeirah"
+    },
+    "developer": {
+      "ar": "OMNIYAT",
+      "en": "OMNIYAT"
+    },
+    "propertyType": "apartment",
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "3",
+      "4",
+      "5+"
+    ],
+    "areaSqftFrom": 6400,
+    "areaSqftTo": 33000,
+    "paymentPlan": {
+      "ar": "حجز بقيمة 50,000 درهم؛ 10% دفعة أولى؛ 15% عند توقيع اتفاقية البيع والشراء؛ 10% بعد 12 شهرًا؛ 15% بعد 24 شهرًا؛ و50% عند الإنجاز.",
+      "en": "AED 50,000 reservation; 10% first instalment; 15% upon signing the SPA; 10% after 12 months; 15% after 24 months; and 50% on completion."
+    },
+    "handoverLabel": {
+      "ar": "مرحلة التشغيل النهائية؛ مستهدف الإنجاز خلال 2026",
+      "en": "Final commissioning; 2026 completion target"
+    },
+    "coverImage": {
+      "id": "7546783000003165002-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/01-ava-exterior.jpg",
+      "alt": {
+        "ar": "آفا في نخلة جميرا",
+        "en": "AVA at Palm Jumeirah"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003165002-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/01-ava-exterior.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      },
+      {
+        "id": "7546783000003165002-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/02-ava-palm-view.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      },
+      {
+        "id": "7546783000003165002-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/03-ava-location.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      },
+      {
+        "id": "7546783000003165002-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/04-ava-interior.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/brochures/01-ava-at-palm-jumeirah-factsheet-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-25T07:40:33.000Z",
+    "updatedAt": "2026-10-25T07:40:33.000Z"
+  },
+  {
     "id": "7546783000003142003",
     "zohoRecordId": "7546783000003142003",
     "slug": "villa-dell-arte",
