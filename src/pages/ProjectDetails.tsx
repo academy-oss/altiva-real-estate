@@ -110,7 +110,9 @@ export default function ProjectDetails() {
 
             <div className="mt-4 flex flex-wrap items-center gap-3">
               <span className="text-xl font-bold text-copper">
-                {t("projectDetails.priceFrom")}: {t("common.aed")} {formatPrice(project.priceFrom, lang)}
+                {project.priceFrom != null
+                  ? `${t("projectDetails.priceFrom")}: ${t("common.aed")} ${formatPrice(project.priceFrom, lang)}`
+                  : t("common.priceOnRequest")}
               </span>
               {project.isPriceEstimated && <Badge variant="neutral">{t("common.estimated")}</Badge>}
             </div>
