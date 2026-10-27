@@ -190,7 +190,7 @@ function serviceReply(service: ServiceId, language: AssistantLanguage): string {
 function projectDetails(project: Project, language: AssistantLanguage): string {
   const local = language === "ar";
   const title = project.title[language];
-  const price = formatPrice(project.priceFrom, language);
+  const price = project.priceFrom != null ? formatPrice(project.priceFrom, language) : null;
   const location = `${project.area[language]}${local ? "،" : ","} ${emirateName(project.emirate, language)}`;
   const bedrooms = project.bedrooms.map((room) => room === "studio" ? (local ? "استوديو" : "Studio") : room).join(local ? "، " : ", ");
   const payment = project.paymentPlan?.[language];
@@ -198,7 +198,7 @@ function projectDetails(project: Project, language: AssistantLanguage): string {
   if (local) {
     return [
       `${title}: ${project.shortDescription?.ar ?? project.description.ar}`,
-      `الموقع: ${location}. يبدأ السعر من ${price} درهم.${bedrooms ? ` الوحدات: ${bedrooms}.` : ""}`,
+      `الموقع: ${location}. ${price ? `يبدأ السعر من ${price} درهم.` : "السعر عند الطلب."}${bedrooms ? ` الوحدات: ${bedrooms}.` : ""}`,
       payment ? `خطة الدفع: ${payment}.` : "",
       handover ? `التسليم: ${handover}.` : "",
       "يمكنك فتح تفاصيل المشروع من الرابط أدناه. الأسعار والتوفر قابلة للتغيير ويؤكدها مستشار ALTIVA.",
@@ -206,7 +206,7 @@ function projectDetails(project: Project, language: AssistantLanguage): string {
   }
   return [
     `${title}: ${project.shortDescription?.en ?? project.description.en}`,
-    `Location: ${location}. Prices start from AED ${price}.${bedrooms ? ` Units: ${bedrooms}.` : ""}`,
+    `Location: ${location}. ${price ? `Prices start from AED ${price}.` : "Price on request."}${bedrooms ? ` Units: ${bedrooms}.` : ""}`,
     payment ? `Payment plan: ${payment}.` : "",
     handover ? `Handover: ${handover}.` : "",
     "Open the project details below. Prices and availability may change and should be confirmed by an ALTIVA advisor.",
@@ -218,10 +218,10 @@ function recommendationText(projects: Project[], language: AssistantLanguage, fi
   const lines = projects.map((project, index) => {
     const title = project.title[language];
     const area = project.area[language];
-    const price = formatPrice(project.priceFrom, language);
+    const price = project.priceFrom != null ? formatPrice(project.priceFrom, language) : null;
     return local
-      ? `${index + 1}. ${title} — ${area} — يبدأ من ${price} درهم`
-      : `${index + 1}. ${title} — ${area} — from AED ${price}`;
+      ? `${index + 1}. ${title} — ${area} — ${price ? `يبدأ من ${price} درهم` : "السعر عند الطلب"}`
+      : `${index + 1}. ${title} — ${area} — ${price ? `from AED ${price}` : "price on request"}`;
   });
   const intro = local
     ? (filtered ? "هذه أقرب المشاريع المنشورة لطلبك:" : "هذه مجموعة من المشاريع المنشورة حاليًا:")
@@ -237,9 +237,11 @@ function rankProjects(projects: Project[], emirate?: string, propertyType?: stri
     .filter((project) => project.publishOnWebsite)
     .filter((project) => !emirate || project.emirate === emirate)
     .filter((project) => !propertyType || project.propertyType === propertyType)
-    .filter((project) => !budget || project.priceFrom <= budget)
+    .filter((project) => !budget || (project.priceFrom != null && project.priceFrom <= budget))
     .sort((a, b) => {
-      const budgetDistance = budget ? Math.abs(a.priceFrom - budget) - Math.abs(b.priceFrom - budget) : 0;
+      const budgetDistance = budget
+        ? Math.abs((a.priceFrom ?? Number.POSITIVE_INFINITY) - budget) - Math.abs((b.priceFrom ?? Number.POSITIVE_INFINITY) - budget)
+        : 0;
       if (budgetDistance !== 0) return budgetDistance;
       return Number(Boolean(b.isFeatured)) - Number(Boolean(a.isFeatured));
     });
