@@ -102,7 +102,7 @@ export interface Project {
   propertyType: PropertyType;
 
   /** Pricing (Zoho: Price_From, Price_To, Currency, Is_Estimated). */
-  priceFrom: number;
+  priceFrom?: number;
   priceTo?: number;
   currency: "AED";
   isPriceEstimated?: boolean;
@@ -137,5 +137,6 @@ export interface Project {
 export function projectMatchesPriceRange(project: Project, rangeId: PriceRangeId): boolean {
   const range = PRICE_RANGES.find((r) => r.id === rangeId);
   if (!range) return true;
+  if (project.priceFrom == null) return false;
   return project.priceFrom >= range.min && project.priceFrom < range.max;
 }
