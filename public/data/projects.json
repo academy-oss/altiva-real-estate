@@ -1,5 +1,97 @@
 [
   {
+    "id": "7546783000001731009",
+    "zohoRecordId": "7546783000001731009",
+    "slug": "ayami-residence",
+    "title": {
+      "ar": "أيامي ريزيدنس",
+      "en": "Ayami Residence"
+    },
+    "description": {
+      "ar": "أيامي ريزيدنس في ورسان الأولى، مشروع سكني حديث بالقرب من مسار مترو دبي الأزرق. العرض الحالي: شقة غرفة وصالة مع غرفة مكتب، تبدأ الأسعار من 896,000 درهم، بخطة دفع 30/70، والتسليم في الربع الرابع من 2028.",
+      "en": "Ayami Residence in Warsan 1 is a modern residential development near the Dubai Metro Blue Line. The current offer features a 1-bedroom apartment with a study, starting from AED 896,000, with a 30/70 payment plan and handover in Q4 2028."
+    },
+    "shortDescription": {
+      "ar": "غرفة وصالة مع غرفة مكتب من 896 ألف درهم، قرب مترو دبي الأزرق، خطة 30/70، والتسليم Q4 2028.",
+      "en": "1-bedroom + study from AED 896K, near Dubai Metro Blue Line, 30/70 plan, handover Q4 2028."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "ورسان الأولى",
+      "en": "Warsan 1"
+    },
+    "developer": {
+      "ar": "Tiger Group",
+      "en": "Tiger Group"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 896000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1"
+    ],
+    "areaSqftFrom": 700,
+    "areaSqftTo": 1450,
+    "paymentPlan": {
+      "ar": "خطة دفع 30/70.",
+      "en": "30/70 payment plan."
+    },
+    "handoverDate": "2028-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2028",
+      "en": "Q4 2028"
+    },
+    "coverImage": {
+      "id": "7546783000001731009-cover",
+      "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
+      "alt": {
+        "ar": "أيامي ريزيدنس",
+        "en": "Ayami Residence"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001731009-g1",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g2",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/exterior.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g3",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/pool.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g4",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/lobby.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/ayami-residence/brochures/01-Ayami-Residence-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-11-08T10:05:45.000Z"
+  },
+  {
     "id": "7546783000003131001",
     "zohoRecordId": "7546783000003131001",
     "slug": "villa-del-garda",
@@ -111,100 +203,6 @@
     "isFeatured": true,
     "createdAt": "2026-10-22T11:36:41.000Z",
     "updatedAt": "2026-10-22T12:08:13.000Z"
-  },
-  {
-    "id": "7546783000001731009",
-    "zohoRecordId": "7546783000001731009",
-    "slug": "ayami-residence",
-    "title": {
-      "ar": "أيامي ريزيدنس",
-      "en": "Ayami Residence"
-    },
-    "description": {
-      "ar": "مجمع سكني في ورسان الأولى يضم شققًا بمساحات مدروسة ومرافق مشتركة عصرية، ضمن منطقة تشهد نموًا سكانيًا وتطويريًا متسارعًا. العرض الحالي: غرفة واحدة من 888,888 درهم، وغرفتان من 1.1 مليون درهم، مع إمكانية الحجز بدفعة 5% فقط.",
-      "en": "A residential complex in Warsan 1 with thoughtfully sized apartments and modern shared amenities, in an area experiencing rapid population and development growth. Current offer: 1-bedroom from AED 888,888 and 2-bedroom from AED 1.1M, with reservation from just 5%."
-    },
-    "shortDescription": {
-      "ar": "غرفة واحدة من 888,888 درهم، وغرفتان من 1.1 مليون، واحجز بـ5% فقط.",
-      "en": "1BR from AED 888,888; 2BR from AED 1.1M; reserve with 5%."
-    },
-    "emirate": "dubai",
-    "area": {
-      "ar": "ورسان الأولى",
-      "en": "Warsan 1"
-    },
-    "developer": {
-      "ar": "Tiger Group",
-      "en": "Tiger Group"
-    },
-    "propertyType": "apartment",
-    "priceFrom": 888888,
-    "currency": "AED",
-    "isPriceEstimated": false,
-    "bedrooms": [
-      "1",
-      "2",
-      "3"
-    ],
-    "areaSqftFrom": 700,
-    "areaSqftTo": 1450,
-    "paymentPlan": {
-      "ar": "احجز بـ5% فقط، والباقي وفق خطة الدفع الحالية للمطور.",
-      "en": "5% on booking; remaining balance per the developer's current payment plan."
-    },
-    "handoverDate": "2027-03-31",
-    "handoverLabel": {
-      "ar": "الربع الأول 2027",
-      "en": "Q1 2027"
-    },
-    "coverImage": {
-      "id": "7546783000001731009-cover",
-      "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
-      "alt": {
-        "ar": "أيامي ريزيدنس",
-        "en": "Ayami Residence"
-      }
-    },
-    "gallery": [
-      {
-        "id": "7546783000001731009-g1",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g2",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/exterior.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g3",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/pool.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g4",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/lobby.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      }
-    ],
-    "brochureEn": "/data/zoho-media/ayami-residence/brochures/01-Ayami-Residence-EN.pdf",
-    "status": "off_plan",
-    "publishOnWebsite": true,
-    "isFeatured": true,
-    "createdAt": "2026-09-07T07:25:55.000Z",
-    "updatedAt": "2026-09-18T08:12:21.000Z"
   },
   {
     "id": "7546783000001731008",
