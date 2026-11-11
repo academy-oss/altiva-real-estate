@@ -37,7 +37,9 @@ export function ProjectCard({ project }: { project: Project }) {
 
         <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
           <span className="text-sm font-bold text-copper">
-            {t("common.startingFrom")} {t("common.aed")} {formatPrice(project.priceFrom, lang)}
+            {project.priceFrom != null
+              ? `${t("common.startingFrom")} ${t("common.aed")} ${formatPrice(project.priceFrom, lang)}`
+              : t("common.priceOnRequest")}
           </span>
           {project.isPriceEstimated && (
             <Badge variant="neutral" className="text-[10px]">

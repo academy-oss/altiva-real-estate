@@ -1,5 +1,97 @@
 [
   {
+    "id": "7546783000001731009",
+    "zohoRecordId": "7546783000001731009",
+    "slug": "ayami-residence",
+    "title": {
+      "ar": "أيامي ريزيدنس",
+      "en": "Ayami Residence"
+    },
+    "description": {
+      "ar": "أيامي ريزيدنس في ورسان الأولى، مشروع سكني حديث بالقرب من مسار مترو دبي الأزرق. العرض الحالي: شقة غرفة وصالة مع غرفة مكتب، تبدأ الأسعار من 896,000 درهم، بخطة دفع 30/70، والتسليم في الربع الرابع من 2028.",
+      "en": "Ayami Residence in Warsan 1 is a modern residential development near the Dubai Metro Blue Line. The current offer features a 1-bedroom apartment with a study, starting from AED 896,000, with a 30/70 payment plan and handover in Q4 2028."
+    },
+    "shortDescription": {
+      "ar": "غرفة وصالة مع غرفة مكتب من 896 ألف درهم، قرب مترو دبي الأزرق، خطة 30/70، والتسليم Q4 2028.",
+      "en": "1-bedroom + study from AED 896K, near Dubai Metro Blue Line, 30/70 plan, handover Q4 2028."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "ورسان الأولى",
+      "en": "Warsan 1"
+    },
+    "developer": {
+      "ar": "Tiger Group",
+      "en": "Tiger Group"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 896000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1"
+    ],
+    "areaSqftFrom": 700,
+    "areaSqftTo": 1450,
+    "paymentPlan": {
+      "ar": "خطة دفع 30/70.",
+      "en": "30/70 payment plan."
+    },
+    "handoverDate": "2028-12-31",
+    "handoverLabel": {
+      "ar": "الربع الرابع 2028",
+      "en": "Q4 2028"
+    },
+    "coverImage": {
+      "id": "7546783000001731009-cover",
+      "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
+      "alt": {
+        "ar": "أيامي ريزيدنس",
+        "en": "Ayami Residence"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000001731009-g1",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g2",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/exterior.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g3",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/pool.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      },
+      {
+        "id": "7546783000001731009-g4",
+        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/lobby.jpg",
+        "alt": {
+          "ar": "أيامي ريزيدنس",
+          "en": "Ayami Residence"
+        }
+      }
+    ],
+    "brochureEn": "/data/zoho-media/ayami-residence/brochures/01-Ayami-Residence-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": true,
+    "createdAt": "2026-09-07T07:25:55.000Z",
+    "updatedAt": "2026-11-08T10:05:45.000Z"
+  },
+  {
     "id": "7546783000003131001",
     "zohoRecordId": "7546783000003131001",
     "slug": "villa-del-garda",
@@ -111,100 +203,6 @@
     "isFeatured": true,
     "createdAt": "2026-10-22T11:36:41.000Z",
     "updatedAt": "2026-10-22T12:08:13.000Z"
-  },
-  {
-    "id": "7546783000001731009",
-    "zohoRecordId": "7546783000001731009",
-    "slug": "ayami-residence",
-    "title": {
-      "ar": "أيامي ريزيدنس",
-      "en": "Ayami Residence"
-    },
-    "description": {
-      "ar": "مجمع سكني في ورسان الأولى يضم شققًا بمساحات مدروسة ومرافق مشتركة عصرية، ضمن منطقة تشهد نموًا سكانيًا وتطويريًا متسارعًا. العرض الحالي: غرفة واحدة من 888,888 درهم، وغرفتان من 1.1 مليون درهم، مع إمكانية الحجز بدفعة 5% فقط.",
-      "en": "A residential complex in Warsan 1 with thoughtfully sized apartments and modern shared amenities, in an area experiencing rapid population and development growth. Current offer: 1-bedroom from AED 888,888 and 2-bedroom from AED 1.1M, with reservation from just 5%."
-    },
-    "shortDescription": {
-      "ar": "غرفة واحدة من 888,888 درهم، وغرفتان من 1.1 مليون، واحجز بـ5% فقط.",
-      "en": "1BR from AED 888,888; 2BR from AED 1.1M; reserve with 5%."
-    },
-    "emirate": "dubai",
-    "area": {
-      "ar": "ورسان الأولى",
-      "en": "Warsan 1"
-    },
-    "developer": {
-      "ar": "Tiger Group",
-      "en": "Tiger Group"
-    },
-    "propertyType": "apartment",
-    "priceFrom": 888888,
-    "currency": "AED",
-    "isPriceEstimated": false,
-    "bedrooms": [
-      "1",
-      "2",
-      "3"
-    ],
-    "areaSqftFrom": 700,
-    "areaSqftTo": 1450,
-    "paymentPlan": {
-      "ar": "احجز بـ5% فقط، والباقي وفق خطة الدفع الحالية للمطور.",
-      "en": "5% on booking; remaining balance per the developer's current payment plan."
-    },
-    "handoverDate": "2027-03-31",
-    "handoverLabel": {
-      "ar": "الربع الأول 2027",
-      "en": "Q1 2027"
-    },
-    "coverImage": {
-      "id": "7546783000001731009-cover",
-      "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
-      "alt": {
-        "ar": "أيامي ريزيدنس",
-        "en": "Ayami Residence"
-      }
-    },
-    "gallery": [
-      {
-        "id": "7546783000001731009-g1",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/cover.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g2",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/exterior.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g3",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/pool.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      },
-      {
-        "id": "7546783000001731009-g4",
-        "url": "https://academy-oss.github.io/altiva-real-estate/projects/ayami-residence/lobby.jpg",
-        "alt": {
-          "ar": "أيامي ريزيدنس",
-          "en": "Ayami Residence"
-        }
-      }
-    ],
-    "brochureEn": "/data/zoho-media/ayami-residence/brochures/01-Ayami-Residence-EN.pdf",
-    "status": "off_plan",
-    "publishOnWebsite": true,
-    "isFeatured": true,
-    "createdAt": "2026-09-07T07:25:55.000Z",
-    "updatedAt": "2026-09-18T08:12:21.000Z"
   },
   {
     "id": "7546783000001731008",
@@ -463,6 +461,407 @@
     "isFeatured": true,
     "createdAt": "2026-09-07T07:25:55.000Z",
     "updatedAt": "2026-09-08T17:59:53.000Z"
+  },
+  {
+    "id": "7546783000003165002",
+    "zohoRecordId": "7546783000003165002",
+    "slug": "ava-at-palm-jumeirah",
+    "title": {
+      "ar": "آفا في نخلة جميرا",
+      "en": "AVA at Palm Jumeirah"
+    },
+    "description": {
+      "ar": "آفا في نخلة جميرا مجموعة فائقة الخصوصية تضم 17 مسكنًا فقط من تطوير أمنيات وبإدارة دورشستر كوليكشن. تشمل الخيارات وحدات سيمبلكس من ثلاث وأربع غرف نوم، ودوبلكس واحد من أربع غرف، وسكاي بالاس من خمس غرف، مع تراسات ومسابح خاصة وإطلالات بزاوية 270 درجة ونوافذ ممتدة من الأرض إلى السقف. يستفيد السكان من الوصول إلى الشاطئ والمرسى عبر ون آت بالم، إضافة إلى مسبح لامتناهي وسبا ونادٍ رياضي وسينما واستوديو يوغا وقاعة اجتماعات.",
+      "en": "AVA at Palm Jumeirah is an ultra-limited collection of 17 private residences by OMNIYAT, managed by Dorchester Collection. The development offers three- and four-bedroom simplex homes, one four-bedroom duplex and a five-bedroom Sky Palace, with private terraces and pools, 270-degree views and floor-to-ceiling glazing. Residents benefit from beach and jetty access through One at Palm, alongside an infinity pool, spa, gym, cinema, yoga studio and boardroom."
+    },
+    "shortDescription": {
+      "ar": "مجموعة من 17 مسكنًا فقط بإدارة دورشستر كوليكشن في نخلة جميرا، مع مسابح خاصة وإطلالات بانورامية ومرافق استثنائية.",
+      "en": "A collection of only 17 Dorchester Collection-managed residences on Palm Jumeirah, with private pools, panoramic views and exceptional amenities."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "نخلة جميرا",
+      "en": "Palm Jumeirah"
+    },
+    "developer": {
+      "ar": "OMNIYAT",
+      "en": "OMNIYAT"
+    },
+    "propertyType": "apartment",
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "3",
+      "4",
+      "5+"
+    ],
+    "areaSqftFrom": 6400,
+    "areaSqftTo": 33000,
+    "paymentPlan": {
+      "ar": "حجز بقيمة 50,000 درهم؛ 10% دفعة أولى؛ 15% عند توقيع اتفاقية البيع والشراء؛ 10% بعد 12 شهرًا؛ 15% بعد 24 شهرًا؛ و50% عند الإنجاز.",
+      "en": "AED 50,000 reservation; 10% first instalment; 15% upon signing the SPA; 10% after 12 months; 15% after 24 months; and 50% on completion."
+    },
+    "handoverLabel": {
+      "ar": "مرحلة التشغيل النهائية؛ مستهدف الإنجاز خلال 2026",
+      "en": "Final commissioning; 2026 completion target"
+    },
+    "coverImage": {
+      "id": "7546783000003165002-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/01-ava-exterior.jpg",
+      "alt": {
+        "ar": "آفا في نخلة جميرا",
+        "en": "AVA at Palm Jumeirah"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003165002-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/01-ava-exterior.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      },
+      {
+        "id": "7546783000003165002-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/02-ava-palm-view.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      },
+      {
+        "id": "7546783000003165002-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/03-ava-location.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      },
+      {
+        "id": "7546783000003165002-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/images/04-ava-interior.jpg",
+        "alt": {
+          "ar": "آفا في نخلة جميرا",
+          "en": "AVA at Palm Jumeirah"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/ava-at-palm-jumeirah/brochures/01-ava-at-palm-jumeirah-factsheet-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-25T07:40:33.000Z",
+    "updatedAt": "2026-10-25T07:40:33.000Z"
+  },
+  {
+    "id": "7546783000003142003",
+    "zohoRecordId": "7546783000003142003",
+    "slug": "villa-dell-arte",
+    "title": {
+      "ar": "فيلا ديل آرتي",
+      "en": "Villa dell'ARTE"
+    },
+    "description": {
+      "ar": "فيلا ديل آرتي مشروع سكني بوتيكي بالقرب من المارينا في جزر دبي. يجمع المبنى بين طابق أرضي وطابقين للنادي وثمانية طوابق سكنية، ويقدم شققًا ودوبلكس من غرفة إلى أربع غرف نوم، مع تصاميم داخلية عصرية ومرافق ترفيهية بطابع منتجعي ومسبح مميز على السطح.",
+      "en": "Villa dell'ARTE is a boutique residential development near the marina at Dubai Islands. The building combines a ground level, two club floors and eight residential levels, offering one- to four-bedroom apartments and duplexes with contemporary interiors, resort-style leisure spaces and a distinctive rooftop pool."
+    },
+    "shortDescription": {
+      "ar": "شقق ودوبلكس بوتيكية من غرفة إلى أربع غرف قرب المارينا في جزر دبي.",
+      "en": "Boutique one- to four-bedroom apartments and duplexes near the marina on Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 1911000,
+    "priceTo": 6835000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 681,
+    "areaSqftTo": 4204,
+    "paymentPlan": {
+      "ar": "حجز بقيمة 100,000 درهم؛ 20% إضافة إلى 4% رسوم دائرة الأراضي والرسوم الإدارية عند توقيع عقد البيع؛ 5% بعد 6 أشهر؛ 5% عند إنجاز 20%؛ 5% عند إنجاز 50%؛ 5% عند إنجاز 75%؛ و60% عند الإنجاز.",
+      "en": "AED 100,000 booking; 20% plus 4% DLD and admin fee on SPA signing; 5% after 6 months; 5% at 20% construction; 5% at 50% construction; 5% at 75% construction; and 60% on completion."
+    },
+    "handoverLabel": {
+      "ar": "",
+      "en": ""
+    },
+    "coverImage": {
+      "id": "7546783000003142003-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/01-villa-dell-arte.jpg",
+      "alt": {
+        "ar": "فيلا ديل آرتي",
+        "en": "Villa dell'ARTE"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003142003-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/01-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/02-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/03-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/04-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      },
+      {
+        "id": "7546783000003142003-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/05-villa-dell-arte.jpg",
+        "alt": {
+          "ar": "فيلا ديل آرتي",
+          "en": "Villa dell'ARTE"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-dell-arte/images/01-villa-dell-arte-key-facts-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T18:12:48.000Z",
+    "updatedAt": "2026-10-22T18:12:48.000Z"
+  },
+  {
+    "id": "7546783000003142002",
+    "zohoRecordId": "7546783000003142002",
+    "slug": "villa-del-gavi",
+    "title": {
+      "ar": "فيلا ديل غافي",
+      "en": "Villa del GAVI"
+    },
+    "description": {
+      "ar": "فيلا ديل غافي مشروع سكني في الصف الأول على الواجهة البحرية في جزر دبي، ويضم 87 وحدة ضمن مبنى من طابق أرضي وطابقي بوديوم و12 طابقًا سكنيًا. تشمل المجموعة وحدات من غرفتين وثلاث وأربع غرف نوم، وبعضها بغرفة خادمة، مع مساحات رحبة وإطلالات ساحلية مباشرة.",
+      "en": "Villa del GAVI is a first-line waterfront development on Dubai Islands with 87 residences across a ground level, two podiums and 12 residential floors. The collection includes two-, three- and four-bedroom homes, selected residences with maid rooms, generous internal areas and direct coastal views."
+    },
+    "shortDescription": {
+      "ar": "مجموعة من 87 وحدة سكنية من غرفتين إلى أربع غرف على الواجهة البحرية في جزر دبي.",
+      "en": "A collection of 87 two- to four-bedroom waterfront residences on Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 3659000,
+    "priceTo": 9525000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "2",
+      "3",
+      "4"
+    ],
+    "areaSqftFrom": 1015.37,
+    "areaSqftTo": 4574.59,
+    "paymentPlan": {
+      "ar": "35/65: حجز بقيمة 100,000 درهم؛ 20% إضافة إلى 4% رسوم دائرة الأراضي و5,000 درهم رسوم إدارية؛ 5% بعد 6 أشهر؛ 5% عند إنجاز 20%؛ 5% عند إنجاز 75%؛ و65% عند التسليم.",
+      "en": "35/65: AED 100,000 booking; 20% plus 4% DLD and AED 5,000 admin fee; 5% after 6 months; 5% at 20% construction; 5% at 75% construction; and 65% on handover."
+    },
+    "handoverLabel": {
+      "ar": "",
+      "en": ""
+    },
+    "coverImage": {
+      "id": "7546783000003142002-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/01-villa-del-gavi.jpg",
+      "alt": {
+        "ar": "فيلا ديل غافي",
+        "en": "Villa del GAVI"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003142002-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/01-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/02-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/03-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/04-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      },
+      {
+        "id": "7546783000003142002-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/05-villa-del-gavi.jpg",
+        "alt": {
+          "ar": "فيلا ديل غافي",
+          "en": "Villa del GAVI"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-del-gavi/images/01-villa-del-gavi-fact-sheet-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T18:12:48.000Z",
+    "updatedAt": "2026-10-22T18:12:48.000Z"
+  },
+  {
+    "id": "7546783000003142001",
+    "zohoRecordId": "7546783000003142001",
+    "slug": "villa-del-divos",
+    "title": {
+      "ar": "فيلا ديل ديفوس",
+      "en": "Villa del DIVOS"
+    },
+    "description": {
+      "ar": "فيلا ديل ديفوس مجموعة حصرية من 108 وحدات سكنية بعلامة تجارية في جزر دبي، ضمن مبنى يضم طابقًا أرضيًا وطابقي بوديوم و12 طابقًا سكنيًا. يقدم المشروع شققًا من غرفة إلى أربع غرف نوم، إضافة إلى سكاي مانشن من خمس غرف، مع مساحات رحبة وأسلوب حياة راقٍ على الواجهة البحرية.",
+      "en": "Villa del DIVOS is an exclusive collection of 108 branded residences on Dubai Islands, arranged across a ground level, two podiums and 12 residential floors. The project offers one- to four-bedroom apartments and a five-bedroom Sky Mansion, with generous layouts, waterfront living and a curated set of lifestyle amenities."
+    },
+    "shortDescription": {
+      "ar": "108 وحدات سكنية فاخرة من غرفة إلى خمس غرف على الواجهة البحرية في جزر دبي.",
+      "en": "108 branded waterfront residences from one to five bedrooms on Dubai Islands."
+    },
+    "emirate": "dubai",
+    "area": {
+      "ar": "جزر دبي",
+      "en": "Dubai Islands"
+    },
+    "developer": {
+      "ar": "Mr. Eight Development",
+      "en": "Mr. Eight Development"
+    },
+    "propertyType": "apartment",
+    "priceFrom": 2200000,
+    "priceTo": 28000000,
+    "currency": "AED",
+    "isPriceEstimated": false,
+    "bedrooms": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "areaSqftFrom": 666,
+    "areaSqftTo": 7072,
+    "paymentPlan": {
+      "ar": "35/65: حجز بقيمة 50,000 درهم؛ 20% إضافة إلى 4% رسوم دائرة الأراضي؛ 5% بعد 6 أشهر؛ 5% عند إنجاز 20%؛ 5% عند إنجاز 75%؛ و65% عند التسليم.",
+      "en": "35/65: AED 50,000 booking; 20% plus 4% DLD; 5% after 6 months; 5% at 20% construction; 5% at 75% construction; and 65% on handover."
+    },
+    "handoverLabel": {
+      "ar": "",
+      "en": ""
+    },
+    "coverImage": {
+      "id": "7546783000003142001-cover",
+      "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/01-villa-del-divos.jpg",
+      "alt": {
+        "ar": "فيلا ديل ديفوس",
+        "en": "Villa del DIVOS"
+      }
+    },
+    "gallery": [
+      {
+        "id": "7546783000003142001-g1",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/01-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g2",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/02-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g3",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/03-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g4",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/04-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      },
+      {
+        "id": "7546783000003142001-g5",
+        "url": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/05-villa-del-divos.jpg",
+        "alt": {
+          "ar": "فيلا ديل ديفوس",
+          "en": "Villa del DIVOS"
+        }
+      }
+    ],
+    "brochureEn": "https://altivaproperties.com/data/zoho-media/villa-del-divos/images/01-villa-del-divos-fact-sheet-EN.pdf",
+    "status": "off_plan",
+    "publishOnWebsite": true,
+    "isFeatured": false,
+    "createdAt": "2026-10-22T18:12:48.000Z",
+    "updatedAt": "2026-10-22T18:12:48.000Z"
   },
   {
     "id": "7546783000003133003",

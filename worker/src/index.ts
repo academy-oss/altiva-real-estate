@@ -24,7 +24,7 @@ interface ProjectRecord {
   area: { ar: string; en: string };
   developer: { ar: string; en: string };
   propertyType: string;
-  priceFrom: number;
+  priceFrom?: number;
   priceTo?: number;
   bedrooms: string[];
   paymentPlan?: { ar: string; en: string };
