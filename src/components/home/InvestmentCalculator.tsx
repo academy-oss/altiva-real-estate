@@ -27,8 +27,8 @@ export function InvestmentCalculator() {
   const numberFormatter = new Intl.NumberFormat(i18n.language === "ar" ? "ar-KW" : "en-KW");
 
   const message = bilingualWhatsAppMessage(
-    `مرحبًا، أرغب بمعرفة المزيد عن فرص الاستثمار العقاري في دولة الإمارات. مبلغ استثماري التقريبي هو ${new Intl.NumberFormat("ar-KW").format(amount)} د.ك.`,
-    `Hello, I'd like to learn more about real estate investment opportunities in the UAE. My approximate investment amount is KWD ${new Intl.NumberFormat("en-KW").format(amount)}.`
+    `مرحبًا، أرغب بمعرفة المزيد عن فرص الاستثمار العقاري في دول الخليج. مبلغ استثماري التقريبي هو ${new Intl.NumberFormat("ar-KW").format(amount)} د.ك.`,
+    `Hello, I'd like to learn more about real estate investment opportunities across the GCC. My approximate investment amount is KWD ${new Intl.NumberFormat("en-KW").format(amount)}.`
   );
 
   return (

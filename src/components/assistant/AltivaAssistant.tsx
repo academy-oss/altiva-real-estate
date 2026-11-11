@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 import { askAltivaAssistant } from "../../services/assistantService";
 import { submitAssistantLead } from "../../services/leadsService";
 import { fetchProjects } from "../../services/projectsService";
-import { EMIRATES, PRICE_RANGES, PROPERTY_TYPES } from "../../types/project";
+import { PRICE_RANGES, PROPERTY_TYPES } from "../../types/project";
+import { GCC_MARKETS } from "../../data/gccMarkets";
 import type { Project } from "../../types/project";
 import type { AssistantLanguage, AssistantMessage } from "../../types/assistant";
 
@@ -51,9 +52,9 @@ const INITIAL_LEAD: LeadForm = {
 const COPY = {
   ar: {
     title: "مستشار ALTIVA الذكي",
-    subtitle: "دليلك إلى المشاريع والخدمات العقارية",
+    subtitle: "دليلك للاستثمار والخدمات العقارية الخليجية",
     open: "اسأل مستشار ALTIVA الذكي",
-    greeting: "أهلاً بك في ALTIVA. أستطيع مساعدتك في استكشاف المشاريع، والتعرف على خدمات الشراء والبيع وإدارة العقارات والتثمين والمقاولين والاستشاريين، أو تزويدك ببيانات التواصل الرسمية.",
+    greeting: "أهلاً بك في ALTIVA. نساعد المستثمر الكويتي في الفرص والخدمات العقارية عبر الإمارات والسعودية وقطر والبحرين وعُمان، من الشراء والبيع إلى الإدارة والتثمين والمقاولين والاستشاريين.",
     placeholder: "اكتب سؤالك هنا...",
     send: "إرسال",
     quick: ["ما خدمات ALTIVA؟", "رشّح لي مشروعًا", "كيف أتواصل معكم؟"],
@@ -64,7 +65,7 @@ const COPY = {
     phone: "رقم الهاتف *",
     email: "البريد الإلكتروني (اختياري)",
     budget: "الميزانية التقريبية",
-    emirate: "الإمارة المفضلة",
+    emirate: "الدولة أو السوق المفضل",
     property: "نوع العقار",
     optional: "غير محدد",
     consent: "أوافق على سياسة الخصوصية وأسمح لألتيفا بالتواصل معي بخصوص طلبي.",
@@ -81,9 +82,9 @@ const COPY = {
   },
   en: {
     title: "ALTIVA Smart Advisor",
-    subtitle: "Your guide to properties and services",
+    subtitle: "Your guide to GCC property and services",
     open: "Ask ALTIVA Smart Advisor",
-    greeting: "Welcome to ALTIVA. I can help you explore projects, learn about our buying, selling, property management, valuation, contractor and consultant services, or provide our official contact details.",
+    greeting: "Welcome to ALTIVA. We support Kuwaiti investors with property opportunities and services across the UAE, Saudi Arabia, Qatar, Bahrain and Oman—from buying and selling to management, valuation, contractors and consultants.",
     placeholder: "Type your question...",
     send: "Send",
     quick: ["What services does ALTIVA offer?", "Recommend a project", "How can I contact ALTIVA?"],
@@ -94,7 +95,7 @@ const COPY = {
     phone: "Phone number *",
     email: "Email (optional)",
     budget: "Approximate budget",
-    emirate: "Preferred emirate",
+    emirate: "Preferred country or market",
     property: "Property type",
     optional: "Not specified",
     consent: "I agree to the Privacy Policy and allow ALTIVA to contact me about my request.",
@@ -259,7 +260,7 @@ export function AltivaAssistant() {
                   <div className="grid grid-cols-2 gap-2">
                     <select className="assistant-field" value={lead.emirateOfInterest} onChange={(event) => setLead({ ...lead, emirateOfInterest: event.target.value })}>
                       <option value="">{copy.emirate}</option>
-                      {EMIRATES.map((emirate) => <option key={emirate} value={emirate}>{t(`emirates.${emirate}`)}</option>)}
+                      {GCC_MARKETS.map((market) => <option key={market} value={market}>{t(`gccMarkets.${market}`)}</option>)}
                     </select>
                     <select className="assistant-field" value={lead.propertyType} onChange={(event) => setLead({ ...lead, propertyType: event.target.value })}>
                       <option value="">{copy.property}</option>

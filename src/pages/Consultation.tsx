@@ -2,9 +2,10 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { CheckCircle2 } from "lucide-react";
-import { EMIRATES, PROPERTY_TYPES, PRICE_RANGES, BEDROOM_OPTIONS } from "../types/project";
+import { PROPERTY_TYPES, PRICE_RANGES, BEDROOM_OPTIONS } from "../types/project";
 import type { ConsultationLead, PreferredContactMethod, PurchasePurpose, PurchaseTimeline } from "../types/lead";
 import { submitConsultationLead } from "../services/leadsService";
+import { GCC_MARKETS } from "../data/gccMarkets";
 import { Container } from "../components/ui/Container";
 import { Button } from "../components/ui/Button";
 import { TextField, SelectField, TextareaField, CheckboxField, RadioGroupField } from "../components/forms/fields";
@@ -180,13 +181,13 @@ export default function Consultation() {
               error={errors.countryOfResidence}
             />
             <SelectField
-              label={t("consultation.form.emirate")}
+              label={t("consultation.form.market")}
               htmlFor="emirateOfInterest"
               required
               value={form.emirateOfInterest}
               onChange={(e) => set("emirateOfInterest", e.target.value)}
-              options={EMIRATES.map((em) => ({ value: em, label: t(`emirates.${em}`) }))}
-              placeholder={t("consultation.form.emirate")}
+              options={GCC_MARKETS.map((market) => ({ value: market, label: t(`gccMarkets.${market}`) }))}
+              placeholder={t("consultation.form.market")}
               error={errors.emirateOfInterest}
             />
             <SelectField

@@ -11,28 +11,28 @@ type Copy = { title: string; description: string };
 
 const PAGES: Record<string, { ar: Copy; en: Copy }> = {
   "/": {
-    ar: { title: "ألتيفا العقارية | فرص وخدمات عقارية في الإمارات", description: "فرص عقارية مختارة وخدمات شراء وبيع وإدارة وتثمين العقارات في الإمارات للمستثمرين من الكويت ودول الخليج." },
-    en: { title: "ALTIVA Real Estate | UAE Property Opportunities & Services", description: "Selected UAE property opportunities and end-to-end buying, selling, management and valuation services for investors from Kuwait and the GCC." },
+    ar: { title: "ألتيفا العقارية | شريك المستثمر الكويتي في الخليج", description: "فرص وخدمات عقارية متكاملة للمستثمر الكويتي في الإمارات والسعودية وقطر والبحرين وعُمان." },
+    en: { title: "ALTIVA Real Estate | The Kuwaiti Investor's GCC Property Partner", description: "Property opportunities and end-to-end services for Kuwaiti investors across the UAE, Saudi Arabia, Qatar, Bahrain and Oman." },
   },
   "/projects": {
     ar: { title: "المشاريع العقارية في الإمارات | ألتيفا العقارية", description: "استكشف مشاريع عقارية مختارة في دبي وأبوظبي والشارقة وعجمان ورأس الخيمة وبقية إمارات الدولة." },
     en: { title: "UAE Real Estate Projects | ALTIVA Real Estate", description: "Explore selected real estate projects across Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah and the other UAE emirates." },
   },
   "/services": {
-    ar: { title: "خدمات عقارية متكاملة في الإمارات | ألتيفا", description: "شراء وبيع وإدارة وتثمين العقارات، مع توفير المقاولين والاستشاريين وخدمات عقارية متكاملة في الإمارات." },
-    en: { title: "Integrated UAE Real Estate Services | ALTIVA", description: "Property buying, selling, management and valuation, plus access to suitable contractors, consultants and tailored UAE real estate support." },
+    ar: { title: "خدمات عقارية متكاملة في الخليج | ألتيفا", description: "شراء وبيع وإدارة وتثمين العقارات، مع توفير المقاولين والاستشاريين للمستثمر الكويتي في أسواق الخليج." },
+    en: { title: "Integrated GCC Real Estate Services | ALTIVA", description: "Property buying, selling, management and valuation, plus contractor and consultant support for Kuwaiti investors across GCC markets." },
   },
   "/about": {
-    ar: { title: "من نحن | ألتيفا العقارية", description: "تعرّف على ألتيفا العقارية وفريقها وخبرتها في ربط المستثمرين من الكويت ودول الخليج بالفرص العقارية في الإمارات." },
-    en: { title: "About ALTIVA Real Estate", description: "Meet ALTIVA Real Estate and the team connecting investors from Kuwait and the GCC with selected property opportunities across the UAE." },
+    ar: { title: "من نحن | ألتيفا العقارية", description: "تعرّف على ألتيفا العقارية، شريك المستثمر الكويتي للفرص والخدمات العقارية في أسواق الخليج." },
+    en: { title: "About ALTIVA Real Estate", description: "Meet ALTIVA Real Estate, the Kuwaiti investor's partner for property opportunities and services across GCC markets." },
   },
   "/contact": {
-    ar: { title: "تواصل معنا | ألتيفا العقارية", description: "تواصل مع فريق ألتيفا العقارية في الكويت للاستفسار عن الفرص والخدمات العقارية في الإمارات." },
-    en: { title: "Contact Us | ALTIVA Real Estate", description: "Contact the ALTIVA Real Estate team in Kuwait about UAE property opportunities and real estate services." },
+    ar: { title: "تواصل معنا | ألتيفا العقارية", description: "تواصل مع فريق ألتيفا في الكويت للاستفسار عن الفرص والخدمات العقارية في الإمارات والسعودية وقطر والبحرين وعُمان." },
+    en: { title: "Contact Us | ALTIVA Real Estate", description: "Contact the ALTIVA team in Kuwait about property opportunities and services across the UAE, Saudi Arabia, Qatar, Bahrain and Oman." },
   },
   "/consultation": {
-    ar: { title: "اطلب استشارة عقارية | ألتيفا العقارية", description: "أرسل طلب استشارتك وسيتواصل معك فريق ألتيفا لمساعدتك في اختيار الفرصة العقارية المناسبة في الإمارات." },
-    en: { title: "Request a Real Estate Consultation | ALTIVA", description: "Request a consultation and let the ALTIVA team help you find a suitable UAE property opportunity." },
+    ar: { title: "اطلب استشارة عقارية خليجية | ألتيفا", description: "أرسل طلبك وسيساعدك فريق ألتيفا في اختيار السوق والفرصة العقارية المناسبة في دول الخليج." },
+    en: { title: "Request a GCC Real Estate Consultation | ALTIVA", description: "Request a consultation and let ALTIVA help you choose a suitable GCC market and property opportunity." },
   },
   "/privacy": {
     ar: { title: "سياسة الخصوصية | ألتيفا العقارية", description: "سياسة الخصوصية الخاصة بموقع ألتيفا العقارية وطلبات التواصل والخدمات." },
@@ -80,7 +80,7 @@ function structuredData(url: string, seo: Copy, lang: "ar" | "en", project: Proj
     telephone: ["+965 5777 5289", "+965 22200355"],
     email: ["info@altivaproperties.com", "sales@altivaproperties.com"],
     address: { "@type": "PostalAddress", streetAddress: "Al Salhiya Complex, Gate 5, Second Floor", addressLocality: "Kuwait City", addressCountry: "KW" },
-    areaServed: ["United Arab Emirates", "Kuwait"],
+    areaServed: ["Kuwait", "United Arab Emirates", "Saudi Arabia", "Qatar", "Bahrain", "Oman"],
     sameAs: ["https://www.facebook.com/profile.php?id=61590010035394", "https://www.instagram.com/altiva_properties"],
   };
   const website = {

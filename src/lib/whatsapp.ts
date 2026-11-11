@@ -5,8 +5,8 @@ export function bilingualWhatsAppMessage(arabic: string, english: string) {
 }
 
 export const GENERAL_WHATSAPP_MESSAGE = bilingualWhatsAppMessage(
-  "مرحبًا، أرغب بمعرفة المزيد عن أفضل الفرص العقارية والاستثمارية المتاحة لدى ألتيفا في دولة الإمارات.",
-  "Hello, I'd like to learn more about the best real estate investment opportunities available with ALTIVA in the UAE."
+  "مرحبًا، أرغب بمعرفة المزيد عن أفضل الفرص العقارية والاستثمارية المتاحة لدى ألتيفا في دول الخليج.",
+  "Hello, I'd like to learn more about the best GCC real estate investment opportunities available with ALTIVA."
 );
 
 export function whatsappUrl(message = GENERAL_WHATSAPP_MESSAGE) {

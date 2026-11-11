@@ -167,7 +167,7 @@ function consultationFormData(lead: ConsultationLead): FormData {
   const form = baseFormData(lead.fullName, lead.email, lead.phone);
   form.set("LEADCF1", mapCountry(lead.countryOfResidence));
   form.set("LEADCF2", pageLanguage());
-  form.set("LEADCF3", lead.projectSlug || mapEmirate(lead.emirateOfInterest));
+  form.set("LEADCF3", lead.projectSlug || mapGccMarket(lead.emirateOfInterest));
   form.set("LEADCF6", mapBudget(lead.budget));
   form.set("LEADCF8", mapTimeline(lead.purchaseTimeline));
   form.set("LEADCF9", mapPropertyType(lead.propertyType));
@@ -179,7 +179,10 @@ function consultationFormData(lead: ConsultationLead): FormData {
   form.set("LEADCF19", "Consultation");
   form.set("LEADCF58", "on");
   form.set("LEADCF59", formatZohoDate(lead.submittedAt));
-  if (lead.message) form.set("Description", lead.message);
+  form.set("Description", [
+    `GCC market of interest: ${mapGccMarket(lead.emirateOfInterest)}`,
+    lead.message || "",
+  ].filter(Boolean).join("\n\n"));
   return form;
 }
 
@@ -209,7 +212,11 @@ function assistantFormData(lead: AssistantLead): FormData {
     form.set("LEADCF3", lead.projectSlug);
     form.set("LEADCF18", lead.projectSlug);
   }
-  form.set("Description", `[ALTIVA AI Assistant]\n\n${lead.conversationSummary}`);
+  form.set("Description", [
+    "[ALTIVA AI Assistant]",
+    lead.emirateOfInterest ? `GCC market of interest: ${mapGccMarket(lead.emirateOfInterest)}` : "",
+    lead.conversationSummary,
+  ].filter(Boolean).join("\n\n"));
   return form;
 }
 
@@ -246,6 +253,13 @@ function mapEmirate(value: string) {
     dubai: "Dubai", abu_dhabi: "Abu Dhabi", sharjah: "Sharjah", ajman: "Ajman",
     umm_al_quwain: "Umm Al Quwain", ras_al_khaimah: "Ras Al Khaimah", fujairah: "Fujairah",
   } as Record<string, string>)[value] ?? "Any Emirate";
+}
+
+function mapGccMarket(value: string) {
+  return ({
+    uae: "United Arab Emirates", saudi_arabia: "Saudi Arabia", qatar: "Qatar",
+    bahrain: "Bahrain", oman: "Oman", kuwait: "Kuwait", any_gcc: "Any GCC Market",
+  } as Record<string, string>)[value] ?? mapEmirate(value);
 }
 
 function mapPropertyType(value: string) {
@@ -323,7 +337,7 @@ export async function submitServiceRequestLead(lead: ServiceRequestLead): Promis
   const form = baseFormData(lead.fullName, lead.email ?? "", lead.phone);
   addZohoFormKeys(form);
   form.set("LEADCF2", pageLanguage());
-  form.set("LEADCF3", lead.propertyLocation || mapEmirate(lead.emirateOfInterest));
+  form.set("LEADCF3", lead.propertyLocation || mapGccMarket(lead.emirateOfInterest));
   form.set("LEADCF14", mapEmirate(lead.emirateOfInterest));
   form.set("LEADCF17", mapContactMethod(lead.preferredContactMethod));
   form.set("LEADCF19", "Consultation");
@@ -337,6 +351,7 @@ export async function submitServiceRequestLead(lead: ServiceRequestLead): Promis
   const description = [
     "[ALTIVA Website - Services]",
     `Service: ${mapServiceRequest(lead.serviceType)}`,
+    `GCC market: ${mapGccMarket(lead.emirateOfInterest)}`,
     lead.propertyLocation ? `Property location: ${lead.propertyLocation}` : "",
     lead.message ? `Details: ${lead.message}` : "",
   ].filter(Boolean).join("\n");

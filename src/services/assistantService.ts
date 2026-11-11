@@ -73,8 +73,8 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
   if (hasAny(normalized, ["عائد", "ارباح", "ربح", "roi", "return", "yield"])) {
     return {
       reply: language === "ar"
-        ? "العائد يختلف حسب المشروع والمنطقة وطريقة التأجير. أستطيع مساعدتك في مقارنة المشاريع المنشورة، لكن أي نسبة عائد هي تقديرية وليست ضمانًا أو نصيحة مالية ملزمة. اكتب ميزانيتك والإمارة أو نوع العقار الذي تفضله."
-        : "Returns vary by project, area, and rental strategy. I can compare ALTIVA's published projects, but any return figure is an estimate—not a guarantee or binding financial advice. Tell me your budget and preferred emirate or property type.",
+        ? "العائد يختلف حسب المشروع والسوق وطريقة التأجير. أستطيع مساعدتك في مقارنة المشاريع المنشورة، لكن أي نسبة عائد هي تقديرية وليست ضمانًا أو نصيحة مالية ملزمة. اكتب ميزانيتك والدولة أو نوع العقار الذي تفضله."
+        : "Returns vary by project, market, and rental strategy. I can compare ALTIVA's published projects, but any return figure is an estimate—not a guarantee or binding financial advice. Tell me your budget and preferred country or property type.",
       projectSlugs: [],
       source: "local",
     };
@@ -85,6 +85,16 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
       reply: language === "ar"
         ? `واتساب ALTIVA: +965 5777 5289، وهاتف المكتب: +965 22200355. البريد الإلكتروني: sales@altivaproperties.com أو info@altivaproperties.com. العنوان: مجمع الصالحية، بوابة 5، الطابق الثاني، الكويت.\nالموقع على Google Maps: ${ALTIVA_MAP_URL}\nويمكنك أيضًا الضغط على «طلب تواصل من مستشار» أسفل المحادثة.`
         : `ALTIVA WhatsApp: +965 5777 5289. Office phone: +965 22200355. Email: sales@altivaproperties.com or info@altivaproperties.com. Address: Al Salhiya Complex, Gate 5, Second Floor, Kuwait.\nGoogle Maps: ${ALTIVA_MAP_URL}\nYou can also select “Request an advisor call” below.`,
+      projectSlugs: [],
+      source: "local",
+    };
+  }
+
+  if (asksAboutGccMarkets(normalized)) {
+    return {
+      reply: language === "ar"
+        ? "تخدم ALTIVA المستثمر الكويتي في الأسواق العقارية بدولة الإمارات والمملكة العربية السعودية وقطر والبحرين وسلطنة عُمان. تختلف الفرص والخدمات المتاحة حسب الدولة، ويؤكد مستشار ALTIVA التفاصيل الحالية بعد معرفة هدفك وميزانيتك."
+        : "ALTIVA supports Kuwaiti investors across the property markets of the UAE, Saudi Arabia, Qatar, Bahrain and Oman. Available opportunities and services vary by country, and an ALTIVA advisor will confirm current details after learning your goals and budget.",
       projectSlugs: [],
       source: "local",
     };
@@ -103,8 +113,8 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
     if (!matches.length) {
       return {
         reply: language === "ar"
-          ? "لا أرى حاليًا مشروعًا منشورًا يطابق جميع هذه الشروط. اكتب لي أي شرط يمكن تغييره—الميزانية أو الإمارة أو نوع العقار—وسأبحث لك من جديد."
-          : "I can't currently find a published project matching all those requirements. Tell me which condition can change—budget, emirate, or property type—and I'll search again.",
+          ? "لا أرى حاليًا مشروعًا منشورًا يطابق جميع هذه الشروط. اكتب لي أي شرط يمكن تغييره—الميزانية أو الموقع أو نوع العقار—وسأبحث لك من جديد."
+          : "I can't currently find a published project matching all those requirements. Tell me which condition can change—budget, location, or property type—and I'll search again.",
         projectSlugs: [],
         source: "local",
       };
@@ -118,8 +128,8 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
 
   return {
     reply: language === "ar"
-      ? "أهلاً بك. أستطيع مساعدتك في مشاريع ALTIVA وخدماتها العقارية، ومنها الشراء والبيع وإدارة العقارات والتثمين وتوفير المقاولين والاستشاريين، كما أستطيع تزويدك ببيانات التواصل الرسمية. ما الذي تحتاجه؟"
-      : "Welcome. I can help with ALTIVA's projects and real estate services, including buying, selling, property management, valuation, and contractor or consultant coordination. I can also provide ALTIVA's official contact details. How can I help?",
+      ? "أهلاً بك. تساعد ALTIVA المستثمر الكويتي في الفرص والخدمات العقارية عبر الإمارات والسعودية وقطر والبحرين وعُمان، ومنها الشراء والبيع وإدارة العقارات والتثمين وتوفير المقاولين والاستشاريين. ما الذي تحتاجه؟"
+      : "Welcome. ALTIVA supports Kuwaiti investors with property opportunities and services across the UAE, Saudi Arabia, Qatar, Bahrain and Oman, including buying, selling, management, valuation, contractors and consultants. How can I help?",
     projectSlugs: [],
     source: "local",
   };
@@ -152,16 +162,23 @@ function asksForOfficeLocation(value: string): boolean {
   ]);
 }
 
+function asksAboutGccMarkets(value: string): boolean {
+  return hasAny(value, [
+    "الخليج", "السعوديه", "السعودية", "قطر", "البحرين", "عمان", "عُمان", "الامارات", "الإمارات", "دول تخدمون", "وين تستثمرون",
+    "gcc", "gulf", "saudi", "qatar", "bahrain", "oman", "uae", "which countries", "markets do you serve",
+  ]);
+}
+
 function serviceReply(service: ServiceId, language: AssistantLanguage): string {
   if (service === "all") {
     return language === "ar"
-      ? "تقدم ALTIVA خدمات شراء العقارات وبيعها وتسويقها، وإدارة العقارات، وتثمين العقار، وتوفير خيارات مناسبة من المقاولين والاستشاريين للبناء والتطوير، إلى جانب تنسيق الاحتياجات العقارية الأخرى. يمكنك إرسال طلبك من صفحة «خدماتنا» أو الضغط على «طلب تواصل من مستشار»."
-      : "ALTIVA offers property purchase support, property sales and marketing, property management, property valuation, suitable contractor and consultant options for construction or development, and coordination of other real estate needs. You can submit a request through the Services page or select “Request an advisor call.”";
+      ? "تقدم ALTIVA للمستثمر الكويتي خدمات شراء العقارات وبيعها وتسويقها، وإدارة العقارات، وتثمين العقار، وتوفير خيارات مناسبة من المقاولين والاستشاريين في الإمارات والسعودية وقطر والبحرين وعُمان، بحسب توفر الخدمة في كل سوق. يمكنك إرسال طلبك من صفحة «خدماتنا» أو الضغط على «طلب تواصل من مستشار»."
+      : "ALTIVA supports Kuwaiti investors with property purchases, sales and marketing, management, valuation, and suitable contractor or consultant options across the UAE, Saudi Arabia, Qatar, Bahrain and Oman, subject to availability in each market. Submit a request through the Services page or select “Request an advisor call.”";
   }
   const replies: Record<Exclude<ServiceId, "all">, { ar: string; en: string }> = {
     buy: {
-      ar: "نساعدك على تحديد العقار الأنسب لهدفك وميزانيتك في مختلف إمارات الدولة، مع مقارنة الفرص والتفاوض على أفضل سعر متاح ومتابعة خطوات الشراء. التفاصيل والأسعار النهائية يؤكدها مستشار ALTIVA.",
-      en: "We help identify suitable UAE properties for your goals and budget, compare opportunities, negotiate the best available price, and follow the purchase process. Final details and pricing are confirmed by an ALTIVA advisor.",
+      ar: "نساعدك على تحديد العقار الأنسب لهدفك وميزانيتك في السوق الخليجي الذي تختاره، مع مقارنة الفرص والتفاوض على أفضل سعر متاح ومتابعة خطوات الشراء. التفاصيل والأسعار النهائية يؤكدها مستشار ALTIVA.",
+      en: "We help identify suitable properties for your goals and budget in your chosen GCC market, compare opportunities, negotiate the best available price, and follow the purchase process. Final details and pricing are confirmed by an ALTIVA advisor.",
     },
     sell: {
       ar: "نتولى دراسة عقارك والسوق، وإعداد خطة تسويقه، والوصول إلى المشترين المناسبين، والتنسيق حتى إتمام البيع. أرسل تفاصيل الطلب من صفحة «خدماتنا» ليتواصل معك الفريق.",

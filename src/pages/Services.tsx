@@ -12,7 +12,8 @@ import {
   ShieldCheck,
   UploadCloud,
 } from "lucide-react";
-import { EMIRATES, PRICE_RANGES, PROPERTY_TYPES } from "../types/project";
+import { PRICE_RANGES, PROPERTY_TYPES } from "../types/project";
+import { GCC_MARKETS } from "../data/gccMarkets";
 import type { PreferredContactMethod, ServiceRequestLead, ServiceRequestType } from "../types/lead";
 import { submitServiceRequestLead } from "../services/leadsService";
 import { Container } from "../components/ui/Container";
@@ -236,13 +237,13 @@ export default function Services() {
                   error={errors.serviceType}
                 />
                 <SelectField
-                  label={t("services.form.emirate")}
+                  label={t("services.form.market")}
                   htmlFor="serviceEmirate"
                   required
                   value={form.emirateOfInterest}
                   onChange={(e) => set("emirateOfInterest", e.target.value)}
-                  options={[...EMIRATES.map((emirate) => ({ value: emirate, label: t(`emirates.${emirate}`) })), { value: "any_emirate", label: t("services.form.anyEmirate") }]}
-                  placeholder={t("services.form.chooseEmirate")}
+                  options={[...GCC_MARKETS.map((market) => ({ value: market, label: t(`gccMarkets.${market}`) })), { value: "any_gcc", label: t("services.form.anyMarket") }]}
+                  placeholder={t("services.form.chooseMarket")}
                   error={errors.emirateOfInterest}
                 />
                 <SelectField
