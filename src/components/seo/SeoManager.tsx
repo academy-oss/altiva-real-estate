@@ -19,8 +19,8 @@ const PAGES: Record<string, { ar: Copy; en: Copy }> = {
     en: { title: "UAE Real Estate Projects | ALTIVA Real Estate", description: "Explore selected real estate projects across Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah and the other UAE emirates." },
   },
   "/services": {
-    ar: { title: "خدمات عقارية متكاملة في الخليج | ألتيفا", description: "شراء وبيع وإدارة وتثمين العقارات، مع توفير المقاولين والاستشاريين للمستثمر الكويتي في أسواق الخليج." },
-    en: { title: "Integrated GCC Real Estate Services | ALTIVA", description: "Property buying, selling, management and valuation, plus contractor and consultant support for Kuwaiti investors across GCC markets." },
+    ar: { title: "خدمات عقارية متكاملة في الخليج | ألتيفا", description: "شراء وبيع وتثمين العقارات في دول الخليج، وإدارة العقارات داخل الإمارات، مع خدمات مخصصة للمستثمر الكويتي." },
+    en: { title: "Integrated GCC Real Estate Services | ALTIVA", description: "Property buying, selling and valuation across GCC countries, with UAE property management and tailored support for Kuwaiti investors." },
   },
   "/about": {
     ar: { title: "من نحن | ألتيفا العقارية", description: "تعرّف على ألتيفا العقارية، شريك المستثمر الكويتي للفرص والخدمات العقارية في أسواق الخليج." },

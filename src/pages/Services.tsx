@@ -55,7 +55,7 @@ const initialForm = (serviceType: ServiceRequestType | "" = ""): FormState => ({
   phone: "",
   email: "",
   serviceType,
-  emirateOfInterest: "",
+  emirateOfInterest: serviceType === "property_management" ? "uae" : "",
   propertyType: "",
   budget: "",
   propertyLocation: "",
@@ -85,8 +85,17 @@ export default function Services() {
     if (errors[key]) setErrors((current) => ({ ...current, [key]: undefined }));
   };
 
+  const setServiceType = (serviceType: ServiceRequestType) => {
+    setForm((current) => ({
+      ...current,
+      serviceType,
+      ...(serviceType === "property_management" ? { emirateOfInterest: "uae" } : {}),
+    }));
+    setErrors((current) => ({ ...current, serviceType: undefined, emirateOfInterest: undefined }));
+  };
+
   const chooseService = (serviceType: ServiceRequestType) => {
-    set("serviceType", serviceType);
+    setServiceType(serviceType);
     window.setTimeout(() => document.getElementById("service-request")?.scrollIntoView({ behavior: "smooth", block: "start" }), 0);
   };
 
@@ -231,17 +240,18 @@ export default function Services() {
                   htmlFor="serviceType"
                   required
                   value={form.serviceType}
-                  onChange={(e) => set("serviceType", e.target.value as ServiceRequestType)}
+                  onChange={(e) => setServiceType(e.target.value as ServiceRequestType)}
                   options={SERVICE_TYPES.map((service) => ({ value: service, label: t(`services.serviceOptions.${service}`) }))}
                   placeholder={t("services.form.chooseService")}
                   error={errors.serviceType}
                 />
                 <SelectField
-                  label={t("services.form.market")}
+                  label={form.serviceType === "property_management" ? t("services.form.managementMarket") : t("services.form.market")}
                   htmlFor="serviceEmirate"
                   required
                   value={form.emirateOfInterest}
                   onChange={(e) => set("emirateOfInterest", e.target.value)}
+                  disabled={form.serviceType === "property_management"}
                   options={[...GCC_MARKETS.map((market) => ({ value: market, label: t(`gccMarkets.${market}`) })), { value: "any_gcc", label: t("services.form.anyMarket") }]}
                   placeholder={t("services.form.chooseMarket")}
                   error={errors.emirateOfInterest}

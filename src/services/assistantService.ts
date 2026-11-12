@@ -128,8 +128,8 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
 
   return {
     reply: language === "ar"
-      ? "أهلاً بك. تساعد ALTIVA المستثمر الكويتي في الفرص والخدمات العقارية عبر الإمارات والسعودية وقطر والبحرين وعُمان، ومنها الشراء والبيع وإدارة العقارات والتثمين وتوفير المقاولين والاستشاريين. ما الذي تحتاجه؟"
-      : "Welcome. ALTIVA supports Kuwaiti investors with property opportunities and services across the UAE, Saudi Arabia, Qatar, Bahrain and Oman, including buying, selling, management, valuation, contractors and consultants. How can I help?",
+      ? "أهلاً بك. تساعد ALTIVA المستثمر الكويتي في الفرص والخدمات العقارية عبر الإمارات والسعودية وقطر والبحرين وعُمان. يشمل تثمين العقارات دول الخليج، بينما تتوفر إدارة العقارات داخل الإمارات فقط. ما الذي تحتاجه؟"
+      : "Welcome. ALTIVA supports Kuwaiti investors across the UAE, Saudi Arabia, Qatar, Bahrain and Oman. Property valuation is available across GCC countries, while property management is available within the UAE only. How can I help?",
     projectSlugs: [],
     source: "local",
   };
@@ -172,8 +172,8 @@ function asksAboutGccMarkets(value: string): boolean {
 function serviceReply(service: ServiceId, language: AssistantLanguage): string {
   if (service === "all") {
     return language === "ar"
-      ? "تقدم ALTIVA للمستثمر الكويتي خدمات شراء العقارات وبيعها وتسويقها، وإدارة العقارات، وتثمين العقار، وتوفير خيارات مناسبة من المقاولين والاستشاريين في الإمارات والسعودية وقطر والبحرين وعُمان، بحسب توفر الخدمة في كل سوق. يمكنك إرسال طلبك من صفحة «خدماتنا» أو الضغط على «طلب تواصل من مستشار»."
-      : "ALTIVA supports Kuwaiti investors with property purchases, sales and marketing, management, valuation, and suitable contractor or consultant options across the UAE, Saudi Arabia, Qatar, Bahrain and Oman, subject to availability in each market. Submit a request through the Services page or select “Request an advisor call.”";
+      ? "تقدم ALTIVA للمستثمر الكويتي خدمات شراء العقارات وبيعها وتسويقها وتثمينها في دول الخليج، مع توفير خيارات مناسبة من المقاولين والاستشاريين بحسب توفر الخدمة في كل سوق. أما إدارة العقارات فتتوفر داخل دولة الإمارات فقط. يمكنك إرسال طلبك من صفحة «خدماتنا» أو الضغط على «طلب تواصل من مستشار»."
+      : "ALTIVA supports Kuwaiti investors with property purchases, sales, marketing and valuation across GCC countries, plus suitable contractor and consultant options subject to availability in each market. Property management is available within the UAE only. Submit a request through the Services page or select “Request an advisor call.”";
   }
   const replies: Record<Exclude<ServiceId, "all">, { ar: string; en: string }> = {
     buy: {
@@ -185,12 +185,12 @@ function serviceReply(service: ServiceId, language: AssistantLanguage): string {
       en: "We review your property and the market, prepare a marketing plan, reach suitable buyers, and coordinate through completion of the sale. Submit the details through the Services page and our team will contact you.",
     },
     management: {
-      ar: "ننسق إدارة العقار ومتابعة احتياجات المالك بما يحافظ على جودة الأصل العقاري، مع متابعة دورية وتقارير واضحة. النطاق التفصيلي والرسوم يؤكدهما مستشار ALTIVA بعد مراجعة العقار.",
-      en: "We coordinate property management and owner requirements to help maintain the asset's quality, with regular follow-up and clear reporting. Detailed scope and fees are confirmed by an ALTIVA advisor after reviewing the property.",
+      ar: "تتوفر خدمة إدارة العقارات لدى ALTIVA داخل دولة الإمارات فقط، وتشمل تنسيق احتياجات المالك والمتابعة الدورية والتقارير الواضحة بما يحافظ على جودة الأصل العقاري. النطاق التفصيلي والرسوم يؤكدهما المستشار بعد مراجعة العقار.",
+      en: "ALTIVA property management is available within the UAE only. It includes coordinating owner requirements, regular follow-up and clear reporting to help maintain the asset's quality. Detailed scope and fees are confirmed after reviewing the property.",
     },
     valuation: {
-      ar: "نساعدك في الوصول إلى تقدير مهني لقيمة العقار عبر مراجعة بياناته ومقارنات السوق، لدعم قرار البيع أو الشراء أو الاستثمار. يحدد مستشار ALTIVA نطاق التثمين المطلوب بعد مراجعة التفاصيل.",
-      en: "We help you obtain a professional property value estimate through property-data review and market comparisons to support a sale, purchase, or investment decision. An ALTIVA advisor will confirm the required valuation scope after reviewing the details.",
+      ar: "نساعدك في تثمين العقار في دول الخليج عبر مراجعة بياناته ومقارنات السوق، لدعم قرار البيع أو الشراء أو الاستثمار. يحدد مستشار ALTIVA نطاق التثمين المطلوب وتوفره في الدولة المعنية بعد مراجعة التفاصيل.",
+      en: "We support property valuation across GCC countries through property-data review and market comparisons for sale, purchase or investment decisions. An ALTIVA advisor will confirm the required scope and availability in the relevant country after reviewing the details.",
     },
     contractors: {
       ar: "نوفر خيارات مناسبة من المقاولين والاستشاريين عند التخطيط للبناء أو التطوير، بعد فهم نطاق المشروع، ثم ننسق التواصل والعروض. الاختيار النهائي والنطاق والتكلفة تخضع لمراجعة العميل والجهة المقدمة للخدمة.",

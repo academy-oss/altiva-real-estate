@@ -97,8 +97,8 @@
       "items": [
         { "title": "Buy a Property", "text": "We search, compare and negotiate for the right opportunity at the best available price" },
         { "title": "Sell & Market a Property", "text": "We market your property and connect it with suitable buyers in the target GCC market" },
-        { "title": "Property Management", "text": "Coordinated property management and professional support for owners" },
-        { "title": "Property Valuation", "text": "Professional guidance to understand value and make informed decisions" },
+        { "title": "Property Management", "text": "End-to-end property management within the UAE and professional owner support" },
+        { "title": "Property Valuation", "text": "Professional property valuation across GCC countries to support informed decisions" },
         { "title": "Contractors & Consultants", "text": "We connect you with suitable contractors and consultants when you plan to build" },
         { "title": "End-to-End Real Estate Support", "text": "Tailored support for other real estate needs and related transactions" }
       ],
@@ -107,7 +107,7 @@
     "stats": {
       "years": "Years of experience in real estate investment and development",
       "partners": "Trusted partnerships with developers and real estate partners across the GCC",
-      "management": "Comprehensive property management",
+      "management": "Comprehensive property management within the UAE",
       "returns": "Rewarding returns — well-studied investments that deliver"
     },
     "partners": {
@@ -142,7 +142,7 @@
   },
   "services": {
     "pageTitle": "End-to-End Real Estate Services Across the GCC",
-    "pageSubtitle": "From Kuwait, ALTIVA coordinates your property needs across the UAE, Saudi Arabia, Qatar, Bahrain and Oman—from buying and selling to management, valuation and construction support—with step-by-step follow-up.",
+    "pageSubtitle": "From Kuwait, ALTIVA coordinates your property needs across the UAE, Saudi Arabia, Qatar, Bahrain and Oman, with GCC-wide valuation and property management within the UAE only.",
     "trustLine": "One request goes directly to the ALTIVA team for prompt and attentive follow-up.",
     "cardsTitle": "How Can We Help?",
     "cardsSubtitle": "Choose the right service and send the details you have. Our team will contact you to complete the request.",
@@ -160,12 +160,12 @@
       },
       {
         "title": "Property Management",
-        "text": "We coordinate property management and owner requirements to help maintain the quality of the asset.",
+        "text": "We provide property management within the UAE only, coordinating owner requirements to help maintain the quality of the asset.",
         "points": ["Regular follow-up", "Property needs coordination", "Clear owner reporting"]
       },
       {
         "title": "Property Valuation",
-        "text": "We help you access professional value guidance for selling, buying or investment decisions.",
+        "text": "We help you access professional property valuation across GCC countries for selling, buying or investment decisions.",
         "points": ["Property information review", "Market comparison", "Guidance on next steps"]
       },
       {
@@ -196,6 +196,7 @@
       "serviceType": "Service Type",
       "chooseService": "Choose a service",
       "market": "GCC Country or Market",
+      "managementMarket": "Country (property management is UAE-only)",
       "chooseMarket": "Choose a country or market",
       "anyMarket": "Any GCC Market / Not Sure",
       "propertyType": "Property Type (optional)",
