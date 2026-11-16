@@ -15,6 +15,7 @@
       "ar": "غرفة وصالة مع غرفة مكتب من 896 ألف درهم، قرب مترو دبي الأزرق، خطة 30/70، والتسليم Q4 2028.",
       "en": "1-bedroom + study from AED 896K, near Dubai Metro Blue Line, 30/70 plan, handover Q4 2028."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "ورسان الأولى",
@@ -107,6 +108,7 @@
       "ar": "وحدات فاخرة مفروشة ومخدومة بالكامل من غرفة إلى خمس غرف بإطلالات المارينا في جزر دبي.",
       "en": "Fully furnished and serviced 1–5 bedroom branded residences with marina views at Dubai Islands."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -220,6 +222,7 @@
       "ar": "شقق جاهزة للتسليم في جبل علي",
       "en": "Ready-to-move apartments in Jebel Ali"
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جبل علي",
@@ -307,6 +310,7 @@
       "ar": "شقق بعوائد إيجارية مرتفعة في وارسان",
       "en": "High-yield apartments in Warsan"
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "وارسان 4",
@@ -392,6 +396,7 @@
       "ar": "بيوت عطلات جبلية في رأس الخيمة",
       "en": "Mountain holiday homes in Ras Al Khaimah"
     },
+    "country": "uae",
     "emirate": "ras_al_khaimah",
     "area": {
       "ar": "جبل جيس",
@@ -478,6 +483,7 @@
       "ar": "مجموعة من 17 مسكنًا فقط بإدارة دورشستر كوليكشن في نخلة جميرا، مع مسابح خاصة وإطلالات بانورامية ومرافق استثنائية.",
       "en": "A collection of only 17 Dorchester Collection-managed residences on Palm Jumeirah, with private pools, panoramic views and exceptional amenities."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "نخلة جميرا",
@@ -570,6 +576,7 @@
       "ar": "شقق ودوبلكس بوتيكية من غرفة إلى أربع غرف قرب المارينا في جزر دبي.",
       "en": "Boutique one- to four-bedroom apartments and duplexes near the marina on Dubai Islands."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -673,6 +680,7 @@
       "ar": "مجموعة من 87 وحدة سكنية من غرفتين إلى أربع غرف على الواجهة البحرية في جزر دبي.",
       "en": "A collection of 87 two- to four-bedroom waterfront residences on Dubai Islands."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -775,6 +783,7 @@
       "ar": "108 وحدات سكنية فاخرة من غرفة إلى خمس غرف على الواجهة البحرية في جزر دبي.",
       "en": "108 branded waterfront residences from one to five bedrooms on Dubai Islands."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -879,6 +888,7 @@
       "ar": "معلم متعدد الاستخدامات في دبي لاند يجمع السكن والمكاتب والتجزئة والمرافق البانورامية.",
       "en": "A mixed-use landmark in DLRC with residences, business suites, retail and panoramic lifestyle amenities."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "مجمع دبي لاند ريزيدنس",
@@ -982,6 +992,7 @@
       "ar": "وحدات سكنية فاخرة مفروشة بالكامل على واجهة المارينا في جزر دبي بإطلالات بحرية وحدائق.",
       "en": "Fully furnished marina-front branded residences on Dubai Islands with sea, marina and park views."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -1085,6 +1096,7 @@
       "ar": "مجموعة خاصة من 69 شقة ودوبلكس وبنتهاوس على الواجهة البحرية في جزر دبي.",
       "en": "A private collection of 69 beachfront apartments, duplexes and penthouses on Dubai Islands."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -1189,6 +1201,7 @@
       "ar": "برج متعدد الاستخدامات يضم مساكن ومكاتب من الفئة الأولى ومحلات تجزئة، والتسليم في الربع الثالث 2028.",
       "en": "A mixed-use tower with residences, Grade A offices and retail, scheduled for Q3 2028."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "قرية جميرا المثلث",
@@ -1292,6 +1305,7 @@
       "ar": "",
       "en": ""
     },
+    "country": "uae",
     "emirate": "ras_al_khaimah",
     "area": {
       "ar": "المعمورة",
@@ -1374,6 +1388,7 @@
       "ar": "بناية جاهزة في الغوير بالشارقة تضم 35 استوديو و4 محلات، بسعر 6.5 مليون درهم.",
       "en": "Ready building in Al Ghuwair, Sharjah with 35 studios and four shops, offered at AED 6.5M."
     },
+    "country": "uae",
     "emirate": "sharjah",
     "area": {
       "ar": "الغوير، حي الغرب",
@@ -1498,6 +1513,7 @@
       "ar": "مكاتب تجارية مميزة في مراسي باي بمساحات وخيارات تصميم متعددة.",
       "en": "Premium commercial offices in Marasi Bay with multiple workspace formats."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "مراسي باي، الخليج التجاري",
@@ -1629,6 +1645,7 @@
       "ar": "شقق لوفت من غرفة وغرفتين في قلب دبي مارينا بإطلالات مميزة.",
       "en": "One- and two-bedroom loft apartments in the heart of Dubai Marina."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "دبي مارينا",
@@ -1763,6 +1780,7 @@
       "ar": "شقق من غرفة وغرفتين في مراسي درايف بإطلالات على القناة والحديقة.",
       "en": "One- and two-bedroom apartments on Marasi Drive with canal and park views."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "مراسي درايف، الخليج التجاري",
@@ -1889,6 +1907,7 @@
       "ar": "مساكن ذكية على الواجهة البحرية في جزر دبي بمرافق مستوحاة من المنتجعات.",
       "en": "Smart waterfront residences on Dubai Islands with resort-inspired amenities."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -2007,6 +2026,7 @@
       "ar": "مساكن بوتيكية فاخرة بتشطيبات فيرساتشي سيراميكس في الصفوح.",
       "en": "Boutique luxury residences with Versace Ceramics finishes in Al Sufouh."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "الصفوح",
@@ -2127,6 +2147,7 @@
       "ar": "مساكن فائقة الفخامة مع شاطئ خاص في جزيرة المرجان.",
       "en": "Ultra-luxury beachfront residences with private beach access on Al Marjan Island."
     },
+    "country": "uae",
     "emirate": "ras_al_khaimah",
     "area": {
       "ar": "جزيرة المرجان",
@@ -2238,6 +2259,7 @@
       "ar": "شقق مفروشة بمخططات ذكية ومرافق متكاملة في دبي لاند ريزيدنس.",
       "en": "Fully furnished apartments with smart layouts and resort-style amenities in DLRC."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "مجمع دبي لاند ريزيدنس",
@@ -2350,6 +2372,7 @@
       "ar": "حياة ساحلية فاخرة بإطلالات بحرية على جزيرة المرجان.",
       "en": "Luxury coastal living with panoramic sea views on Al Marjan Island."
     },
+    "country": "uae",
     "emirate": "ras_al_khaimah",
     "area": {
       "ar": "جزيرة المرجان",
@@ -2463,6 +2486,7 @@
       "ar": "مكاتب تجارية فئة A في موتور سيتي بمخزون محدود وخطة دفع 50/50 وتسليم متوقع في الربع الأول 2030.",
       "en": "Grade A commercial offices in Dubai Motor City with limited inventory, a 50/50 payment plan and expected Q1 2030 completion."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "موتور سيتي",
@@ -2560,6 +2584,7 @@
       "ar": "مجتمع سكني حديث في دبي الجنوب يوفر شققًا ودوبلكس من غرفة إلى ثلاث غرف، بخطة دفع 50/50 وتسليم متوقع في الربع الثاني 2028.",
       "en": "Contemporary 1-3 bedroom apartments and duplexes in Dubai South with a 50/50 payment plan and expected Q2 2028 handover."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "دبي الجنوب",
@@ -2686,6 +2711,7 @@
       "ar": "مساكن فاخرة على الواجهة البحرية في جزر دبي مع أكثر من 20 مرفقًا.",
       "en": "Luxury waterfront residences on Dubai Islands with 20+ lifestyle and wellness amenities."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -2772,6 +2798,7 @@
       "ar": "مساكن فاخرة مفروشة بإطلالات بحرية على جزيرة المرجان",
       "en": "Fully furnished luxury residences with sea views on Al Marjan Island"
     },
+    "country": "uae",
     "emirate": "ras_al_khaimah",
     "area": {
       "ar": "جزيرة المرجان",
@@ -2915,6 +2942,7 @@
       "ar": "مساكن ذكية ومكاتب بوتيك ومحلات في JVC بمرافق تركز على العافية",
       "en": "Smart residences, boutique offices and retail in JVC with wellness-led amenities"
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "قرية جميرا الدائرية (JVC)",
@@ -3058,6 +3086,7 @@
       "ar": "استوديوهات وشقق غرفة واحدة ذكية حول فناء أخضر في مدينة دبي للاستوديوهات",
       "en": "Smart studios and one-bedroom homes around a landscaped courtyard in Dubai Studio City"
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "مدينة دبي للاستوديوهات",
@@ -3199,6 +3228,7 @@
       "ar": "برجان سكنيان فاخران في مجمع دبي للعلوم مع وحدات مفروشة ومرافق متكاملة وإطلالات على المسبح ودبي هيلز وبرج خليفة والمرسى.",
       "en": "A premium twin-tower community in Dubai Science Park with furnished residences, expansive views and a broad collection of wellness, leisure and business amenities."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "مجمع دبي للعلوم",
@@ -3345,6 +3375,7 @@
       "ar": "68 مسكنًا فاخرًا ومفروشًا بالكامل في جزر دبي، مع مرافق خمس نجوم وخدمات ضيافة ومزايا ويندهام وإمكانية التأجير قصير المدى.",
       "en": "A limited collection of 68 fully furnished branded residences on Dubai Islands with short-term rental flexibility, Wyndham privileges and 20+ lifestyle amenities."
     },
+    "country": "uae",
     "emirate": "dubai",
     "area": {
       "ar": "جزر دبي",
@@ -3488,6 +3519,7 @@
       "ar": "أصل استثماري قائم على الواجهة المائية في رأس الخيمة",
       "en": "Operating waterfront investment asset in Ras Al Khaimah"
     },
+    "country": "uae",
     "emirate": "ras_al_khaimah",
     "area": {
       "ar": "كورنيش القواسم",
