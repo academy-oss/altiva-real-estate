@@ -83,13 +83,19 @@ export async function fetchSimilarProjects(currentSlug: string, limit = 3): Prom
   const projects = synced ?? getPublishedProjects();
   const current = projects.find((project) => project.slug === currentSlug);
   const pool = projects.filter((p) => p.slug !== currentSlug);
-  const sameType = pool.filter((p) => p.propertyType === current?.propertyType);
-  const rest = pool.filter((p) => p.propertyType !== current?.propertyType);
-  return [...sameType, ...rest].slice(0, limit);
+  const currentCountry = current?.country ?? "uae";
+  const sameCountryAndType = pool.filter((p) => (p.country ?? "uae") === currentCountry && p.propertyType === current?.propertyType);
+  const sameCountry = pool.filter((p) => (p.country ?? "uae") === currentCountry && p.propertyType !== current?.propertyType);
+  const rest = pool.filter((p) => (p.country ?? "uae") !== currentCountry);
+  return [...sameCountryAndType, ...sameCountry, ...rest].slice(0, limit);
 }
 
-export function getAvailableAreas(projects: Project[], emirate?: string): { ar: string; en: string }[] {
-  const source = emirate ? projects.filter((p) => p.emirate === emirate) : projects;
+export function getAvailableAreas(projects: Project[], country?: string, emirate?: string): { ar: string; en: string }[] {
+  const source = projects.filter((project) => {
+    if (country && (project.country ?? "uae") !== country) return false;
+    if (emirate && project.emirate !== emirate) return false;
+    return true;
+  });
   const seen = new Map<string, { ar: string; en: string }>();
   for (const p of source) seen.set(p.area.en, p.area);
   return Array.from(seen.values());

@@ -15,8 +15,8 @@ const PAGES: Record<string, { ar: Copy; en: Copy }> = {
     en: { title: "ALTIVA Real Estate | The Kuwaiti Investor's GCC Property Partner", description: "Property opportunities and end-to-end services for Kuwaiti investors across the UAE, Saudi Arabia, Qatar, Bahrain and Oman." },
   },
   "/projects": {
-    ar: { title: "المشاريع العقارية في الإمارات | ألتيفا العقارية", description: "استكشف مشاريع عقارية مختارة في دبي وأبوظبي والشارقة وعجمان ورأس الخيمة وبقية إمارات الدولة." },
-    en: { title: "UAE Real Estate Projects | ALTIVA Real Estate", description: "Explore selected real estate projects across Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah and the other UAE emirates." },
+    ar: { title: "المشاريع العقارية في الخليج | ألتيفا العقارية", description: "استكشف مشاريع وفرصًا عقارية مختارة في الإمارات والسعودية وقطر والبحرين وعُمان، مع فلاتر حسب الدولة والموقع ونوع العقار." },
+    en: { title: "GCC Real Estate Projects | ALTIVA Real Estate", description: "Explore selected property projects and opportunities across the UAE, Saudi Arabia, Qatar, Bahrain and Oman, with country, location and property-type filters." },
   },
   "/services": {
     ar: { title: "خدمات عقارية متكاملة في الخليج | ألتيفا", description: "شراء وبيع وتثمين العقارات في دول الخليج، وإدارة العقارات داخل الإمارات، مع خدمات مخصصة للمستثمر الكويتي." },

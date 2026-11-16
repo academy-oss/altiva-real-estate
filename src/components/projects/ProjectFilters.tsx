@@ -7,6 +7,7 @@ import {
   BEDROOM_OPTIONS,
   PROJECT_STATUSES,
 } from "../../types/project";
+import { GCC_MARKETS } from "../../data/gccMarkets";
 import type { ProjectFilterState, HandoverFilter } from "../../lib/filterProjects";
 import { cn } from "../../lib/utils";
 
@@ -49,11 +50,34 @@ export function ProjectFilters({ filters, onChange, areas, developers }: Project
       </div>
 
       {/* Emirate */}
-      <FilterSection title={t("projects.filters.emirate")}>
+      <FilterSection title={t("projects.filters.country")}>
+        <select
+          aria-label={t("projects.filters.country")}
+          value={filters.country}
+          onChange={(e) => onChange({
+            ...filters,
+            country: e.target.value as ProjectFilterState["country"],
+            emirate: "all",
+            area: "all",
+          })}
+          className="w-full rounded-xl border border-cream-dark bg-white px-3 py-2.5 text-sm text-navy-deep focus:border-copper focus:outline-none"
+        >
+          <option value="all">{t("common.all")}</option>
+          {GCC_MARKETS.map((country) => (
+            <option key={country} value={country}>{t(`gccMarkets.${country}`)}</option>
+          ))}
+        </select>
+      </FilterSection>
+
+      {/* UAE emirate */}
+      {(filters.country === "all" || filters.country === "uae") && <FilterSection title={t("projects.filters.emirate")}>
         <select
           aria-label={t("projects.filters.emirate")}
           value={filters.emirate}
-          onChange={(e) => onChange({ ...filters, emirate: e.target.value as ProjectFilterState["emirate"], area: "all" })}
+          onChange={(e) => {
+            const emirate = e.target.value as ProjectFilterState["emirate"];
+            onChange({ ...filters, country: emirate === "all" ? filters.country : "uae", emirate, area: "all" });
+          }}
           className="w-full rounded-xl border border-cream-dark bg-white px-3 py-2.5 text-sm text-navy-deep focus:border-copper focus:outline-none"
         >
           <option value="all">{t("common.all")}</option>
@@ -63,7 +87,7 @@ export function ProjectFilters({ filters, onChange, areas, developers }: Project
             </option>
           ))}
         </select>
-      </FilterSection>
+      </FilterSection>}
 
       {/* Area */}
       <FilterSection title={t("projects.filters.area")}>

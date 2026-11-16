@@ -46,7 +46,7 @@ export function Hero() {
 
 function SkylineDecoration() {
   return (
-    <svg className="absolute inset-x-0 bottom-0 h-52 w-full sm:h-72 md:h-80" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax meet">
+    <svg aria-hidden="true" className="absolute inset-x-0 bottom-0 h-52 w-full sm:h-72 md:h-80" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax meet">
       <defs>
         <linearGradient id="hero-skyline-copper" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
           <stop offset="0%" stopColor="#7A5A22" stopOpacity="0.7" />
@@ -64,6 +64,7 @@ function SkylineDecoration() {
       </defs>
       <path d="M0,320 L0,270 L36,270 L36,240 L80,240 L80,290 L124,290 L124,210 L160,210 L160,255 L200,255 L200,300 L940,300 L940,260 L980,260 L980,215 L1020,215 L1020,280 L1060,280 L1060,235 L1104,235 L1104,300 L1200,300 L1200,320 Z" fill="none" stroke="url(#hero-skyline-copper)" strokeWidth="1.25" strokeOpacity="0.4" />
       <g strokeLinejoin="round" style={{ filter: "url(#hero-skyline-glow)" }}>
+        {/* Kuwait Towers — Kuwait */}
         <line x1="182" y1="300" x2="182" y2="60" stroke="#E0B568" strokeWidth="2.25" strokeLinecap="round" />
         <circle cx="182" cy="57" r="2" fill="#F0D68C" />
         <line x1="232" y1="300" x2="232" y2="216" stroke="#E0B568" strokeWidth="3.5" />
@@ -74,8 +75,32 @@ function SkylineDecoration() {
         <circle cx="292" cy="144" r="32" fill="url(#hero-skyline-teal)" fillOpacity="0.55" stroke="url(#hero-skyline-teal)" strokeWidth="2.75" />
         <ellipse cx="292" cy="172" rx="40" ry="5" fill="none" stroke="url(#hero-skyline-teal)" strokeWidth="1.25" strokeOpacity="0.75" />
         <line x1="292" y1="112" x2="292" y2="26" stroke="#E0B568" strokeWidth="2.5" strokeLinecap="round" />
+
+        {/* Kingdom Centre — Saudi Arabia */}
+        <path d="M405,300 L420,92 Q450,66 480,92 L495,300" fill="none" stroke="url(#hero-skyline-copper)" strokeWidth="2" />
+        <path d="M429,96 Q450,76 471,96 L460,126 Q450,138 440,126 Z" fill="none" stroke="#F0D68C" strokeWidth="1.5" />
+        <line x1="420" y1="170" x2="480" y2="170" stroke="#E0B568" strokeWidth="1" strokeOpacity="0.45" />
+
+        {/* Aspire Tower — Qatar */}
+        <path d="M556,300 Q566,220 565,132 Q564,84 578,48 Q592,84 591,132 Q590,220 600,300" fill="none" stroke="url(#hero-skyline-copper)" strokeWidth="2" />
+        <ellipse cx="578" cy="49" rx="9" ry="15" fill="url(#hero-skyline-teal)" fillOpacity="0.36" stroke="#E0B568" strokeWidth="1.25" />
+
+        {/* Bahrain World Trade Center — Bahrain */}
+        <path d="M654,300 L664,100 Q700,132 712,300 M770,300 L760,100 Q724,132 712,300" fill="none" stroke="url(#hero-skyline-copper)" strokeWidth="2" />
+        <line x1="678" y1="180" x2="746" y2="180" stroke="#E0B568" strokeWidth="1.25" />
+        <line x1="686" y1="220" x2="738" y2="220" stroke="#E0B568" strokeWidth="1.25" />
       </g>
+      {/* Burj Khalifa — United Arab Emirates */}
       <path d="M816,300 L816,260 L823,260 L823,170 L830,170 L830,90 L838,90 L838,40 L847,40 L850,4 L853,40 L862,40 L862,90 L870,90 L870,170 L877,170 L877,260 L884,260 L884,300" fill="none" stroke="url(#hero-skyline-copper)" strokeWidth="1.75" strokeLinejoin="round" style={{ filter: "url(#hero-skyline-glow)" }} />
+
+      {/* Sultan Qaboos Grand Mosque — Oman */}
+      <g fill="none" stroke="url(#hero-skyline-copper)" strokeLinejoin="round" style={{ filter: "url(#hero-skyline-glow)" }}>
+        <path d="M970,300 L970,228 L1000,228 Q1004,190 1040,180 Q1076,190 1080,228 L1110,228 L1110,300" strokeWidth="1.75" />
+        <path d="M1012,228 Q1015,197 1040,190 Q1065,197 1068,228" strokeWidth="1.5" />
+        <path d="M954,300 L954,154 L960,142 L966,154 L966,300 M1114,300 L1114,154 L1120,142 L1126,154 L1126,300" strokeWidth="1.5" />
+        <line x1="960" y1="142" x2="960" y2="126" strokeWidth="1" />
+        <line x1="1120" y1="142" x2="1120" y2="126" strokeWidth="1" />
+      </g>
     </svg>
   );
 }

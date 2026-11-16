@@ -7,6 +7,7 @@ const moduleName = process.env.ZOHO_PROJECTS_MODULE || "Real_Estate_Projects";
 const outputPath = resolve(process.env.ZOHO_PROJECTS_OUTPUT || "public/data/projects.json");
 const publicBasePath = normalizeBasePath(process.env.ZOHO_PUBLIC_BASE_PATH || "/altiva-real-estate/");
 const mediaRoot = resolve(process.env.ZOHO_MEDIA_OUTPUT || "public/data/zoho-media");
+const countryField = String(process.env.ZOHO_PROJECT_COUNTRY_FIELD || "").trim();
 
 const fields = [
   "id", "Name", "Project_Name_Arabic", "Website_Slug", "Description_Arabic", "Description_English",
@@ -18,6 +19,7 @@ const fields = [
   "Project_Status", "Construction_Status",
   "Publish_on_Website", "Featured_on_Website", "Created_Time", "Modified_Time"
 ];
+if (countryField) fields.push(countryField);
 
 let accessToken = process.env.ZOHO_ACCESS_TOKEN;
 if (!accessToken) {
@@ -92,6 +94,7 @@ async function mapZohoProject(record) {
   const coverImageUrl = galleryUrls[0] || record.Cover_Image_URL;
   const brochureAr = findBrochure(uploadedBrochures, "ar")?.url || record.Brochure_Arabic_URL;
   const brochureEn = findBrochure(uploadedBrochures, "en")?.url || record.Brochure_English_URL;
+  const country = mapCountry(countryField ? record[countryField] : undefined, record.Emirate);
 
   return {
     id: record.id,
@@ -100,13 +103,14 @@ async function mapZohoProject(record) {
     title,
     description: { ar: record.Description_Arabic || "", en: record.Description_English || "" },
     shortDescription: { ar: record.Short_Desc_Arabic || "", en: record.Short_Desc_English || "" },
-    emirate: mapEmirate(record.Emirate),
+    country,
+    ...(country === "uae" ? { emirate: mapEmirate(record.Emirate) } : {}),
     area: { ar: record.Area_Arabic || "", en: record.Area_English || "" },
     developer: { ar: record.Developer?.name || "", en: record.Developer?.name || "" },
     propertyType: mapPropertyType(record.Website_Property_Type),
     ...(record.Starting_Price ? { priceFrom: Number(record.Starting_Price) } : {}),
     ...(record.Maximum_Price ? { priceTo: Number(record.Maximum_Price) } : {}),
-    currency: "AED",
+    currency: mapCurrency(record.Price_Currency, country),
     isPriceEstimated: Boolean(record.Price_Is_Estimated),
     bedrooms: (record.Bedrooms_Available || []).map((value) => value === "Studio" ? "studio" : value),
     ...(record.Area_From_Sqft ? { areaSqftFrom: Number(record.Area_From_Sqft) } : {}),
@@ -201,6 +205,23 @@ function mapEmirate(value) {
     Dubai: "dubai", "Abu Dhabi": "abu_dhabi", Sharjah: "sharjah", Ajman: "ajman",
     "Umm Al Quwain": "umm_al_quwain", "Ras Al Khaimah": "ras_al_khaimah", Fujairah: "fujairah",
   })[value] || "dubai";
+}
+
+function mapCountry(value, emirate) {
+  const normalized = String(value || emirate || "").toLowerCase().replace(/[_-]+/g, " ").trim();
+  if (["saudi arabia", "ksa", "السعودية", "المملكة العربية السعودية"].includes(normalized)) return "saudi_arabia";
+  if (["qatar", "قطر"].includes(normalized)) return "qatar";
+  if (["bahrain", "البحرين"].includes(normalized)) return "bahrain";
+  if (["oman", "سلطنة عمان", "عمان"].includes(normalized)) return "oman";
+  if (["kuwait", "الكويت"].includes(normalized)) return "kuwait";
+  return "uae";
+}
+
+function mapCurrency(value, country) {
+  const supported = new Set(["AED", "SAR", "QAR", "BHD", "OMR", "KWD"]);
+  const normalized = String(value || "").toUpperCase().trim();
+  if (supported.has(normalized)) return normalized;
+  return ({ uae: "AED", saudi_arabia: "SAR", qatar: "QAR", bahrain: "BHD", oman: "OMR", kuwait: "KWD" })[country] || "AED";
 }
 
 function mapPropertyType(value) {

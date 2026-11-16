@@ -1,10 +1,21 @@
 import type { BedroomOption, Emirate, PriceRangeId, Project, ProjectStatus, PropertyType } from "../types/project";
+import type { GccMarket } from "../data/gccMarkets";
 import { projectMatchesPriceRange } from "../types/project";
+
+const COUNTRY_SEARCH_TERMS: Record<GccMarket, string> = {
+  uae: "uae united arab emirates الامارات الإمارات دولة الامارات دولة الإمارات",
+  saudi_arabia: "saudi arabia ksa السعودية السعوديه المملكة العربية السعودية",
+  qatar: "qatar قطر",
+  bahrain: "bahrain البحرين",
+  oman: "oman عمان عُمان سلطنة عمان",
+  kuwait: "kuwait الكويت",
+};
 
 export type HandoverFilter = "all" | "ready" | "2026" | "2027" | "2028_plus";
 
 export interface ProjectFilterState {
   search: string;
+  country: GccMarket | "all";
   emirate: Emirate | "all";
   area: string | "all"; // area.en used as key
   propertyTypes: PropertyType[];
@@ -17,6 +28,7 @@ export interface ProjectFilterState {
 
 export const DEFAULT_FILTERS: ProjectFilterState = {
   search: "",
+  country: "all",
   emirate: "all",
   area: "all",
   propertyTypes: [],
@@ -30,6 +42,7 @@ export const DEFAULT_FILTERS: ProjectFilterState = {
 export function hasActiveFilters(filters: ProjectFilterState): boolean {
   return (
     filters.search.trim() !== "" ||
+    filters.country !== "all" ||
     filters.emirate !== "all" ||
     filters.area !== "all" ||
     filters.propertyTypes.length > 0 ||
@@ -56,6 +69,8 @@ export function filterProjects(projects: Project[], filters: ProjectFilterState)
   const search = filters.search.trim().toLowerCase();
 
   return projects.filter((p) => {
+    const projectCountry = p.country ?? "uae";
+    if (filters.country !== "all" && projectCountry !== filters.country) return false;
     if (filters.emirate !== "all" && p.emirate !== filters.emirate) return false;
     if (filters.area !== "all" && p.area.en !== filters.area) return false;
     if (filters.developer !== "all" && p.developer.en !== filters.developer) return false;
@@ -66,7 +81,7 @@ export function filterProjects(projects: Project[], filters: ProjectFilterState)
     if (!matchesHandover(p, filters.handover)) return false;
 
     if (search) {
-      const haystack = [p.title.ar, p.title.en, p.area.ar, p.area.en, p.developer.ar, p.developer.en].join(" ").toLowerCase();
+      const haystack = [COUNTRY_SEARCH_TERMS[projectCountry], p.emirate ?? "", p.title.ar, p.title.en, p.area.ar, p.area.en, p.developer.ar, p.developer.en].join(" ").toLowerCase();
       if (!haystack.includes(search)) return false;
     }
 

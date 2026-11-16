@@ -9,6 +9,7 @@ import { Badge } from "../ui/Badge";
 export function ProjectCard({ project }: { project: Project }) {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
+  const currency = project.currency ?? "AED";
 
   return (
     <Link
@@ -32,13 +33,13 @@ export function ProjectCard({ project }: { project: Project }) {
 
         <div className="flex items-center gap-1.5 text-sm text-cream/60">
           <MapPin size={15} className="shrink-0 text-copper" />
-          <span>{localized(project.area, lang)}</span>
+          <span>{localized(project.area, lang)} · {t(`gccMarkets.${project.country ?? "uae"}`)}</span>
         </div>
 
         <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
           <span className="text-sm font-bold text-copper">
             {project.priceFrom != null
-              ? `${t("common.startingFrom")} ${t("common.aed")} ${formatPrice(project.priceFrom, lang)}`
+              ? `${t("common.startingFrom")} ${currency} ${formatPrice(project.priceFrom, lang)}`
               : t("common.priceOnRequest")}
           </span>
           {project.isPriceEstimated && (

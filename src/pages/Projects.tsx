@@ -23,8 +23,12 @@ export default function Projects() {
   }, []);
 
   const areas = useMemo(
-    () => getAvailableAreas(allProjects ?? [], filters.emirate === "all" ? undefined : filters.emirate),
-    [allProjects, filters.emirate]
+    () => getAvailableAreas(
+      allProjects ?? [],
+      filters.country === "all" ? undefined : filters.country,
+      filters.emirate === "all" ? undefined : filters.emirate,
+    ),
+    [allProjects, filters.country, filters.emirate]
   );
   const developers = useMemo(() => getAvailableDevelopers(allProjects ?? []), [allProjects]);
 

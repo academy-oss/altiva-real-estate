@@ -20,12 +20,14 @@ interface ProjectRecord {
   title: { ar: string; en: string };
   description: { ar: string; en: string };
   shortDescription?: { ar: string; en: string };
-  emirate: string;
+  country?: string;
+  emirate?: string;
   area: { ar: string; en: string };
   developer: { ar: string; en: string };
   propertyType: string;
   priceFrom?: number;
   priceTo?: number;
+  currency?: string;
   bedrooms: string[];
   paymentPlan?: { ar: string; en: string };
   handoverLabel?: { ar: string; en: string };
@@ -38,11 +40,11 @@ const ALTIVA_SERVICES = [
     id: "buy_property",
     ar: {
       name: "شراء العقار",
-      description: "نساعد العميل على تحديد العقار الأنسب لهدفه وميزانيته في مختلف إمارات دولة الإمارات، مع بحث الفرص ومقارنتها والتفاوض على أفضل سعر متاح ومتابعة خطوات الشراء.",
+      description: "نساعد المستثمر الكويتي على تحديد العقار الأنسب لهدفه وميزانيته في أسواق الخليج التي نغطيها، مع بحث الفرص ومقارنتها والتفاوض على أفضل سعر متاح ومتابعة خطوات الشراء.",
     },
     en: {
       name: "Property purchase",
-      description: "ALTIVA helps clients identify suitable UAE properties for their goals and budget, compare opportunities, negotiate the best available price, and follow the purchase process.",
+      description: "ALTIVA helps Kuwaiti investors identify suitable properties in the GCC markets we cover, compare opportunities, negotiate the best available price, and follow the purchase process.",
     },
   },
   {
@@ -60,33 +62,33 @@ const ALTIVA_SERVICES = [
     id: "property_management",
     ar: {
       name: "إدارة العقارات",
-      description: "ننسق إدارة العقار ومتابعة احتياجات المالك بما يحافظ على جودة الأصل العقاري، مع متابعة دورية وتقارير واضحة للمالك.",
+      description: "نقدم إدارة العقارات داخل دولة الإمارات فقط، وننسق احتياجات المالك بما يحافظ على جودة الأصل العقاري، مع متابعة دورية وتقارير واضحة للمالك.",
     },
     en: {
       name: "Property management",
-      description: "ALTIVA coordinates property management and the owner's requirements to help maintain the quality of the asset, with regular follow-up and clear owner reporting.",
+      description: "ALTIVA provides property management within the UAE only, coordinating owner requirements to help maintain the quality of the asset, with regular follow-up and clear owner reporting.",
     },
   },
   {
     id: "property_valuation",
     ar: {
       name: "تثمين العقار",
-      description: "نساعد العميل في الوصول إلى تقدير مهني لقيمة العقار عبر مراجعة بياناته ومقارنات السوق بما يدعم قرارات البيع أو الشراء أو الاستثمار.",
+      description: "نساعد العميل في الوصول إلى تقدير مهني لقيمة العقار في دول الخليج عبر مراجعة بياناته ومقارنات السوق بما يدعم قرارات البيع أو الشراء أو الاستثمار، ويؤكد المستشار توفر الخدمة ونطاقها في الدولة المعنية.",
     },
     en: {
       name: "Property valuation",
-      description: "ALTIVA helps clients obtain a professional property value estimate through property-data review and market comparisons to support selling, buying, or investment decisions.",
+      description: "ALTIVA supports property valuation across GCC countries through property-data review and market comparisons for selling, buying, or investment decisions. An advisor confirms availability and scope in the relevant country.",
     },
   },
   {
     id: "contractors_consultants",
     ar: {
       name: "المقاولون والاستشاريون",
-      description: "نوفر خيارات مناسبة من المقاولين والاستشاريين عند التخطيط للبناء أو التطوير، بعد فهم نطاق المشروع، ثم ننسق التواصل والعروض.",
+      description: "نوفر خيارات مناسبة من المقاولين والاستشاريين عند التخطيط للبناء أو التطوير بحسب توفر الخدمة في السوق المعني، بعد فهم نطاق المشروع، ثم ننسق التواصل والعروض.",
     },
     en: {
       name: "Contractors and consultants",
-      description: "ALTIVA provides suitable contractor and consultant options for construction or development after understanding the project scope, then coordinates introductions and proposals.",
+      description: "ALTIVA provides suitable contractor and consultant options for construction or development, subject to availability in the relevant market, then coordinates introductions and proposals after understanding the project scope.",
     },
   },
   {
@@ -196,12 +198,14 @@ async function loadProjects(url = "https://altivaproperties.com/data/projects.js
     title: project.title,
     description: project.description,
     shortDescription: project.shortDescription,
+    country: project.country || "uae",
     emirate: project.emirate,
     area: project.area,
     developer: project.developer,
     propertyType: project.propertyType,
     priceFrom: project.priceFrom,
     priceTo: project.priceTo,
+    currency: project.currency || "AED",
     bedrooms: project.bedrooms,
     paymentPlan: project.paymentPlan,
     handoverLabel: project.handoverLabel,
@@ -221,12 +225,15 @@ Hard rules:
 - Never invent a project, price, return, legal rule, availability claim, or investment guarantee.
 - If the catalog does not contain an answer, say that you do not have confirmed information and offer contact with an ALTIVA advisor.
 - Keep answers warm, professional, and short: usually 2-6 sentences or a compact list of up to 3 projects.
-- When recommending, ask or use budget, emirate, and property type. Mention exact project names so the website can show project links.
+- When recommending, ask or use budget, country, city/emirate/area, and property type. Mention exact project names so the website can show project links.
 - Prices and availability can change and must be confirmed by an ALTIVA advisor.
 - Any ROI or yield is an estimate, not a guarantee or binding financial advice.
 - Do not request passport, civil ID, bank, card, password, or other sensitive information.
 - Do not collect contact details in chat. Direct the visitor to the site's consent-based advisor form.
-- ALTIVA serves investors from Kuwait and the GCC seeking UAE real estate opportunities.
+- ALTIVA supports Kuwaiti investors across the property markets of the UAE, Saudi Arabia, Qatar, Bahrain and Oman. The published project catalog may contain projects from any of these markets and must be filtered by the project's country field.
+- Property management is available within the UAE only. Property valuation is offered across GCC countries, subject to an ALTIVA advisor confirming availability and scope in the relevant country.
+- Property purchase, sale and marketing may be supported across the GCC markets ALTIVA covers. Contractor and consultant introductions depend on service availability in the relevant market.
+- If no published project matches the requested country, location, property type, or budget, say so clearly. Do not substitute a project from another country unless you label it as an alternative and the visitor agrees.
 - When asked generally about ALTIVA's services, briefly list the relevant official services and invite the visitor to the Services page or to request an advisor.
 - When asked about a specific service, explain only the confirmed scope below. Exact scope, fees, timing, third-party selection, and eligibility must be confirmed by an ALTIVA advisor.
 - Do not describe a valuation as government-approved, legally binding, or certified unless that claim is explicitly confirmed in the official service data.

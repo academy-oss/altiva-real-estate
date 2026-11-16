@@ -1,3 +1,5 @@
+import type { GccMarket } from "../data/gccMarkets";
+
 /**
  * Project data model
  * ----------------------------------------------------------------------
@@ -21,6 +23,8 @@ export const EMIRATES = [
   "fujairah",
 ] as const;
 export type Emirate = (typeof EMIRATES)[number];
+
+export type ProjectCurrency = "AED" | "SAR" | "QAR" | "BHD" | "OMR" | "KWD";
 
 export const PROPERTY_TYPES = [
   "apartment",
@@ -93,8 +97,9 @@ export interface Project {
   description: LocalizedText;
   shortDescription?: LocalizedText;
 
-  /** Location fields (Zoho: Emirate, Area, Developer). */
-  emirate: Emirate;
+  /** Location fields. Older synced records omit country and are treated as UAE projects. */
+  country?: GccMarket;
+  emirate?: Emirate;
   area: LocalizedText;
   developer: LocalizedText;
 
@@ -104,7 +109,7 @@ export interface Project {
   /** Pricing (Zoho: Price_From, Price_To, Currency, Is_Estimated). */
   priceFrom?: number;
   priceTo?: number;
-  currency: "AED";
+  currency: ProjectCurrency;
   isPriceEstimated?: boolean;
 
   /** Unit details (Zoho: Bedrooms_From, Bedrooms_To, Area_From_Sqft, Area_To_Sqft). */

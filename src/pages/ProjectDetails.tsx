@@ -59,6 +59,11 @@ export default function ProjectDetails() {
   }
 
   const gallery = project.gallery.length > 0 ? project.gallery : [project.coverImage];
+  const country = project.country ?? "uae";
+  const currency = project.currency ?? "AED";
+  const locationLabel = country === "uae" && project.emirate
+    ? `${localized(project.area, lang)} · ${t(`emirates.${project.emirate}`)} · ${t("gccMarkets.uae")}`
+    : `${localized(project.area, lang)} · ${t(`gccMarkets.${country}`)}`;
   const message = bilingualWhatsAppMessage(
     `مرحبًا، أنا مهتم بمشروع "${project.title.ar}" وأرغب بمعرفة المزيد من التفاصيل.`,
     `Hello, I'm interested in the "${project.title.en}" project and would like more details.`
@@ -104,14 +109,14 @@ export default function ProjectDetails() {
           <div>
             <div className="mb-2 flex items-center gap-2 text-sm text-cream/60">
               <MapPin size={16} className="text-copper" />
-              {localized(project.area, lang)} · {t(`emirates.${project.emirate}`)}
+              {locationLabel}
             </div>
             <h1 className="font-display-heading text-3xl font-bold text-cream sm:text-4xl">{localized(project.title, lang)}</h1>
 
             <div className="mt-4 flex flex-wrap items-center gap-3">
               <span className="text-xl font-bold text-copper">
                 {project.priceFrom != null
-                  ? `${t("projectDetails.priceFrom")}: ${t("common.aed")} ${formatPrice(project.priceFrom, lang)}`
+                  ? `${t("projectDetails.priceFrom")}: ${currency} ${formatPrice(project.priceFrom, lang)}`
                   : t("common.priceOnRequest")}
               </span>
               {project.isPriceEstimated && <Badge variant="neutral">{t("common.estimated")}</Badge>}

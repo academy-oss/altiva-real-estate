@@ -224,9 +224,10 @@
   },
   "projects": {
     "pageTitle": "Projects",
-    "pageSubtitle": "Explore our selected real estate opportunities across every emirate",
+    "pageSubtitle": "Explore selected real estate opportunities across the UAE and GCC markets",
     "filters": {
       "title": "Filters",
+      "country": "Country",
       "emirate": "Emirate",
       "area": "Area",
       "propertyType": "Property Type",
@@ -235,7 +236,7 @@
       "developer": "Developer",
       "status": "Project Status",
       "handover": "Handover",
-      "search": "Search for a project or area...",
+      "search": "Search for a project, country or area...",
       "apply": "Apply Filters",
       "clear": "Clear All"
     }

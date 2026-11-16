@@ -90,16 +90,7 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
     };
   }
 
-  if (asksAboutGccMarkets(normalized)) {
-    return {
-      reply: language === "ar"
-        ? "تخدم ALTIVA المستثمر الكويتي في الأسواق العقارية بدولة الإمارات والمملكة العربية السعودية وقطر والبحرين وسلطنة عُمان. تختلف الفرص والخدمات المتاحة حسب الدولة، ويؤكد مستشار ALTIVA التفاصيل الحالية بعد معرفة هدفك وميزانيتك."
-        : "ALTIVA supports Kuwaiti investors across the property markets of the UAE, Saudi Arabia, Qatar, Bahrain and Oman. Available opportunities and services vary by country, and an ALTIVA advisor will confirm current details after learning your goals and budget.",
-      projectSlugs: [],
-      source: "local",
-    };
-  }
-
+  const country = detectCountry(normalized);
   const emirate = detectEmirate(normalized);
   const propertyType = detectPropertyType(normalized);
   const budget = detectBudget(normalized);
@@ -109,7 +100,7 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
   ]);
 
   if (asksForProjects || emirate || propertyType || budget) {
-    const matches = rankProjects(projects, emirate, propertyType, budget).slice(0, 3);
+    const matches = rankProjects(projects, country, emirate, propertyType, budget).slice(0, 3);
     if (!matches.length) {
       return {
         reply: language === "ar"
@@ -120,8 +111,18 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
       };
     }
     return {
-      reply: recommendationText(matches, language, Boolean(emirate || propertyType || budget)),
+      reply: recommendationText(matches, language, Boolean(country || emirate || propertyType || budget)),
       projectSlugs: matches.map((project) => project.slug),
+      source: "local",
+    };
+  }
+
+  if (asksAboutGccMarkets(normalized)) {
+    return {
+      reply: language === "ar"
+        ? "تخدم ALTIVA المستثمر الكويتي في الأسواق العقارية بدولة الإمارات والمملكة العربية السعودية وقطر والبحرين وسلطنة عُمان. يعرض الموقع المشاريع المنشورة حسب الدولة، وتختلف الفرص والخدمات المتاحة في كل سوق. يشمل تثمين العقارات دول الخليج، بينما تتوفر إدارة العقارات داخل الإمارات فقط."
+        : "ALTIVA supports Kuwaiti investors across the property markets of the UAE, Saudi Arabia, Qatar, Bahrain and Oman. The website shows published projects by country, and available opportunities and services vary by market. Valuation covers GCC countries, while property management is available in the UAE only.",
+      projectSlugs: [],
       source: "local",
     };
   }
@@ -208,14 +209,17 @@ function projectDetails(project: Project, language: AssistantLanguage): string {
   const local = language === "ar";
   const title = project.title[language];
   const price = project.priceFrom != null ? formatPrice(project.priceFrom, language) : null;
-  const location = `${project.area[language]}${local ? "،" : ","} ${emirateName(project.emirate, language)}`;
+  const country = project.country ?? "uae";
+  const currency = project.currency ?? "AED";
+  const locationParts = [project.area[language], project.emirate ? emirateName(project.emirate, language) : "", countryName(country, language)].filter(Boolean);
+  const location = locationParts.join(local ? "، " : ", ");
   const bedrooms = project.bedrooms.map((room) => room === "studio" ? (local ? "استوديو" : "Studio") : room).join(local ? "، " : ", ");
   const payment = project.paymentPlan?.[language];
   const handover = project.handoverLabel?.[language];
   if (local) {
     return [
       `${title}: ${project.shortDescription?.ar ?? project.description.ar}`,
-      `الموقع: ${location}. ${price ? `يبدأ السعر من ${price} درهم.` : "السعر عند الطلب."}${bedrooms ? ` الوحدات: ${bedrooms}.` : ""}`,
+      `الموقع: ${location}. ${price ? `يبدأ السعر من ${price} ${currency}.` : "السعر عند الطلب."}${bedrooms ? ` الوحدات: ${bedrooms}.` : ""}`,
       payment ? `خطة الدفع: ${payment}.` : "",
       handover ? `التسليم: ${handover}.` : "",
       "يمكنك فتح تفاصيل المشروع من الرابط أدناه. الأسعار والتوفر قابلة للتغيير ويؤكدها مستشار ALTIVA.",
@@ -223,7 +227,7 @@ function projectDetails(project: Project, language: AssistantLanguage): string {
   }
   return [
     `${title}: ${project.shortDescription?.en ?? project.description.en}`,
-    `Location: ${location}. ${price ? `Prices start from AED ${price}.` : "Price on request."}${bedrooms ? ` Units: ${bedrooms}.` : ""}`,
+    `Location: ${location}. ${price ? `Prices start from ${currency} ${price}.` : "Price on request."}${bedrooms ? ` Units: ${bedrooms}.` : ""}`,
     payment ? `Payment plan: ${payment}.` : "",
     handover ? `Handover: ${handover}.` : "",
     "Open the project details below. Prices and availability may change and should be confirmed by an ALTIVA advisor.",
@@ -235,10 +239,12 @@ function recommendationText(projects: Project[], language: AssistantLanguage, fi
   const lines = projects.map((project, index) => {
     const title = project.title[language];
     const area = project.area[language];
+    const country = countryName(project.country ?? "uae", language);
+    const currency = project.currency ?? "AED";
     const price = project.priceFrom != null ? formatPrice(project.priceFrom, language) : null;
     return local
-      ? `${index + 1}. ${title} — ${area} — ${price ? `يبدأ من ${price} درهم` : "السعر عند الطلب"}`
-      : `${index + 1}. ${title} — ${area} — ${price ? `from AED ${price}` : "price on request"}`;
+      ? `${index + 1}. ${title} — ${area}، ${country} — ${price ? `يبدأ من ${price} ${currency}` : "السعر عند الطلب"}`
+      : `${index + 1}. ${title} — ${area}, ${country} — ${price ? `from ${currency} ${price}` : "price on request"}`;
   });
   const intro = local
     ? (filtered ? "هذه أقرب المشاريع المنشورة لطلبك:" : "هذه مجموعة من المشاريع المنشورة حاليًا:")
@@ -249,9 +255,10 @@ function recommendationText(projects: Project[], language: AssistantLanguage, fi
   return [intro, ...lines, close].join("\n");
 }
 
-function rankProjects(projects: Project[], emirate?: string, propertyType?: string, budget?: number): Project[] {
+function rankProjects(projects: Project[], country?: string, emirate?: string, propertyType?: string, budget?: number): Project[] {
   return projects
     .filter((project) => project.publishOnWebsite)
+    .filter((project) => !country || (project.country ?? "uae") === country)
     .filter((project) => !emirate || project.emirate === emirate)
     .filter((project) => !propertyType || project.propertyType === propertyType)
     .filter((project) => !budget || (project.priceFrom != null && project.priceFrom <= budget))
@@ -262,6 +269,18 @@ function rankProjects(projects: Project[], emirate?: string, propertyType?: stri
       if (budgetDistance !== 0) return budgetDistance;
       return Number(Boolean(b.isFeatured)) - Number(Boolean(a.isFeatured));
     });
+}
+
+function detectCountry(value: string): string | undefined {
+  const choices: Record<string, string[]> = {
+    uae: ["الامارات", "الإمارات", "دوله الامارات", "uae", "united arab emirates"],
+    saudi_arabia: ["السعوديه", "السعودية", "المملكه العربيه السعوديه", "saudi", "saudi arabia", "ksa"],
+    qatar: ["قطر", "qatar"],
+    bahrain: ["البحرين", "bahrain"],
+    oman: ["عمان", "عُمان", "سلطنه عمان", "oman"],
+    kuwait: ["الكويت", "kuwait"],
+  };
+  return Object.entries(choices).find(([, aliases]) => hasAny(value, aliases))?.[0];
 }
 
 function detectBudget(value: string): number | undefined {
@@ -307,6 +326,18 @@ function emirateName(value: string, language: AssistantLanguage): string {
     sharjah: { ar: "الشارقة", en: "Sharjah" }, ajman: { ar: "عجمان", en: "Ajman" },
     umm_al_quwain: { ar: "أم القيوين", en: "Umm Al Quwain" },
     ras_al_khaimah: { ar: "رأس الخيمة", en: "Ras Al Khaimah" }, fujairah: { ar: "الفجيرة", en: "Fujairah" },
+  };
+  return names[value]?.[language] ?? value;
+}
+
+function countryName(value: string, language: AssistantLanguage): string {
+  const names: Record<string, { ar: string; en: string }> = {
+    uae: { ar: "الإمارات العربية المتحدة", en: "United Arab Emirates" },
+    saudi_arabia: { ar: "المملكة العربية السعودية", en: "Saudi Arabia" },
+    qatar: { ar: "قطر", en: "Qatar" },
+    bahrain: { ar: "البحرين", en: "Bahrain" },
+    oman: { ar: "سلطنة عُمان", en: "Oman" },
+    kuwait: { ar: "الكويت", en: "Kuwait" },
   };
   return names[value]?.[language] ?? value;
 }
