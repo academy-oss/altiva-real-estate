@@ -341,10 +341,10 @@
     },
     "teamTitle": "Our Team",
     "team": [
-      { "name": "Yasmin Shahabi", "role": "Manager's Secretary" },
+      { "name": "Yasmin Shahabi", "role": "Office Manager" },
       { "name": "Milad", "role": "Accounts Officer" },
       { "name": "Fatma Hasan", "role": "Sales Consultant" },
-      { "name": "Sarah Al Otaibi", "role": "Sales Consultant" }
+      { "name": "Sarah Al Otaibi", "role": "Secretary" }
     ]
   },
   "contact": {
