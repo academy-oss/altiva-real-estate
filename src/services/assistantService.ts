@@ -11,7 +11,16 @@ export async function askAltivaAssistant(
   projects: Project[],
 ): Promise<AssistantAnswer> {
   const normalized = normalize(message);
-  if (detectService(normalized) || asksForContact(normalized)) {
+  const shouldUseVerifiedSiteKnowledge = detectService(normalized)
+    || asksForContact(normalized)
+    || asksForOfficeLocation(normalized)
+    || asksAboutGccMarkets(normalized)
+    || asksForProjects(normalized)
+    || hasAny(normalized, ["عائد", "ارباح", "ربح", "roi", "return", "yield"])
+    || Boolean(detectCountry(normalized) || detectEmirate(normalized) || detectPropertyType(normalized) || detectBudget(normalized))
+    || projects.some((project) => matchesProjectName(normalized, project));
+
+  if (shouldUseVerifiedSiteKnowledge) {
     return buildLocalAnswer(message, language, projects);
   }
 
@@ -94,12 +103,9 @@ function buildLocalAnswer(message: string, language: AssistantLanguage, projects
   const emirate = detectEmirate(normalized);
   const propertyType = detectPropertyType(normalized);
   const budget = detectBudget(normalized);
-  const asksForProjects = hasAny(normalized, [
-    "مشروع", "مشاريع", "عقار", "عقارات", "شقه", "فيلا", "ميزاني", "درهم",
-    "project", "projects", "property", "properties", "budget", "aed", "apartment", "villa",
-  ]);
+  const projectRequest = asksForProjects(normalized);
 
-  if (asksForProjects || emirate || propertyType || budget) {
+  if (projectRequest || emirate || propertyType || budget) {
     const matches = rankProjects(projects, country, emirate, propertyType, budget).slice(0, 3);
     if (!matches.length) {
       return {
@@ -167,6 +173,13 @@ function asksAboutGccMarkets(value: string): boolean {
   return hasAny(value, [
     "الخليج", "السعوديه", "السعودية", "قطر", "البحرين", "عمان", "عُمان", "الامارات", "الإمارات", "دول تخدمون", "وين تستثمرون",
     "gcc", "gulf", "saudi", "qatar", "bahrain", "oman", "uae", "which countries", "markets do you serve",
+  ]);
+}
+
+function asksForProjects(value: string): boolean {
+  return hasAny(value, [
+    "مشروع", "مشاريع", "عقار", "عقارات", "شقه", "فيلا", "ميزاني", "درهم", "ريال", "دينار",
+    "project", "projects", "property", "properties", "budget", "aed", "sar", "qar", "bhd", "omr", "kwd", "apartment", "villa",
   ]);
 }
 
