@@ -29,9 +29,9 @@ for (const route of [...STATIC_ROUTES, ...projectRoutes]) {
           .replace("ألتيفا العقارية — شريك المستثمر الكويتي للفرص والخدمات العقارية في الإمارات والسعودية وقطر والبحرين وعُمان.", "Yasmin Shahabi, Office Manager at ALTIVA Real Estate.")
           .replace("index, follow, max-image-preview:large", "noindex, nofollow")
           .replace("https://altivaproperties.com/\" data-altiva-seo", "https://altivaproperties.com/card/yasmin-shahabi/\" data-altiva-seo")
-          .replace("ألتيفا العقارية | شريك المستثمر الكويتي في الخليج", "Yasmin Shahabi | Office Manager — ALTIVA")
-          .replace("فرص وخدمات عقارية متكاملة للمستثمر الكويتي في الإمارات والسعودية وقطر والبحرين وعُمان.", "Digital business card for Yasmin Shahabi, Office Manager at ALTIVA Real Estate.")
-          .replace("https://altivaproperties.com/projects/ventana-residences/cover.jpg", "https://altivaproperties.com/team/yasmin-shahabi.jpg")
+          .replaceAll("ألتيفا العقارية | شريك المستثمر الكويتي في الخليج", "Yasmin Shahabi | Office Manager — ALTIVA")
+          .replaceAll("فرص وخدمات عقارية متكاملة للمستثمر الكويتي في الإمارات والسعودية وقطر والبحرين وعُمان.", "Digital business card for Yasmin Shahabi, Office Manager at ALTIVA Real Estate.")
+          .replaceAll("https://altivaproperties.com/projects/ventana-residences/cover.jpg", "https://altivaproperties.com/team/yasmin-shahabi.jpg")
           .replace("https://altivaproperties.com/\"", "https://altivaproperties.com/card/yasmin-shahabi/\"")
       : rootHtml;
   await writeFile(join(routeDirectory, "index.html"), routeHtml);
