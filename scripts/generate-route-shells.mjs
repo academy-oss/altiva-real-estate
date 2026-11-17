@@ -12,6 +12,11 @@ const CARD_ROUTE_META = {
     description: "Digital business card for Sarah Al Otaibi, Executive Secretary at ALTIVA Real Estate.",
     image: "https://altivaproperties.com/team/sarah-alotaibi.jpg",
   },
+  "card/fatma-hasan": {
+    title: "Fatma Hasan | Sales Consultant — ALTIVA",
+    description: "Digital business card for Fatma Hasan, Sales Consultant at ALTIVA Real Estate.",
+    image: "https://altivaproperties.com/team/fatma-hasan.jpg",
+  },
 };
 const STATIC_ROUTES = ["projects", "services", "about", "contact", "consultation", "privacy", "guide/dubai-investor-2026", ...Object.keys(CARD_ROUTE_META)];
 const PROJECT_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;

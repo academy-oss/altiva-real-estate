@@ -42,6 +42,19 @@ const profiles = {
     photo: "team/sarah-alotaibi.jpg",
     downloadName: "Sarah-Al-Otaibi-ALTIVA.vcf",
   },
+  fatma: {
+    slug: "fatma-hasan",
+    name: { ar: "فاطمه حسن", en: "Fatma Hasan" },
+    title: { ar: "استشارية مبيعات", en: "Sales Consultant" },
+    firstName: "Fatma",
+    phone: "+96557775043",
+    phoneDisplay: "+965 5777 5043",
+    officePhone: "+96522200355",
+    officePhoneDisplay: "+965 2220 0355",
+    email: "fatma@altivaproperties.com",
+    photo: "team/fatma-hasan.jpg",
+    downloadName: "Fatma-Hasan-ALTIVA.vcf",
+  },
 } as const;
 
 type ProfileKey = keyof typeof profiles;

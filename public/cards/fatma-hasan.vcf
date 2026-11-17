@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Hasan;Fatma;;;
+FN:Fatma Hasan
+ORG:ALTIVA Real Estate
+TITLE:Sales Consultant
+TEL;TYPE=CELL,VOICE:+96557775043
+TEL;TYPE=WORK,VOICE:+96522200355
+EMAIL;TYPE=WORK:fatma@altivaproperties.com
+EMAIL;TYPE=WORK:info@altivaproperties.com
+URL;TYPE=CARD:https://altivaproperties.com/card/fatma-hasan
+URL;TYPE=WORK:https://altivaproperties.com/
+ADR;TYPE=WORK:;;Al Salhiya Complex\, Gate 5\, Second Floor;Kuwait City;;;Kuwait
+NOTE:Sales Consultant | استشارية مبيعات
+END:VCARD

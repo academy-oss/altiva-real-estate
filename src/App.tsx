@@ -18,6 +18,7 @@ function App() {
       <Route path="/guide/dubai-investor-2026" element={<InvestorGuide />} />
       <Route path="/card/yasmin-shahabi" element={<DigitalCard profileKey="yasmin" />} />
       <Route path="/card/sarah-alotaibi" element={<DigitalCard profileKey="sarah" />} />
+      <Route path="/card/fatma-hasan" element={<DigitalCard profileKey="fatma" />} />
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
