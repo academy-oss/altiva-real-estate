@@ -13,14 +13,41 @@ import {
 } from "lucide-react";
 import { publicAsset } from "../lib/utils";
 
-const CARD_URL = "https://altivaproperties.com/card/yasmin-shahabi";
-const WHATSAPP_URL = "https://wa.me/96557775289?text=Hello%20Yasmin%2C%20I%20contacted%20you%20through%20your%20ALTIVA%20digital%20card.";
 const MAP_URL = "https://share.google/6IICTy9gYjbXOnDQj";
+
+const profiles = {
+  yasmin: {
+    slug: "yasmin-shahabi",
+    name: { ar: "ياسمين شهابي", en: "Yasmin Shahabi" },
+    title: { ar: "مديرة المكتب", en: "Office Manager" },
+    firstName: "Yasmin",
+    phone: "+96557775289",
+    phoneDisplay: "+965 5777 5289",
+    officePhone: "+96522200355",
+    officePhoneDisplay: "+965 2220 0355",
+    email: "yasmin@altivaproperties.com",
+    photo: "team/yasmin-shahabi.jpg",
+    downloadName: "Yasmin-Shahabi-ALTIVA.vcf",
+  },
+  sarah: {
+    slug: "sarah-alotaibi",
+    name: { ar: "سارة العتيبي", en: "Sarah Al Otaibi" },
+    title: { ar: "السكرتيرة", en: "Secretary" },
+    firstName: "Sarah",
+    phone: "+96557775094",
+    phoneDisplay: "+965 5777 5094",
+    officePhone: "+96522200355",
+    officePhoneDisplay: "+965 2220 0355",
+    email: "sarah@altivaproperties.com",
+    photo: "team/sarah-alotaibi.jpg",
+    downloadName: "Sarah-Al-Otaibi-ALTIVA.vcf",
+  },
+} as const;
+
+type ProfileKey = keyof typeof profiles;
 
 const copy = {
   ar: {
-    name: "ياسمين شهابي",
-    title: "مديرة المكتب",
     company: "ألتيفا العقارية",
     call: "اتصال",
     whatsapp: "واتساب",
@@ -37,8 +64,6 @@ const copy = {
     language: "EN",
   },
   en: {
-    name: "Yasmin Shahabi",
-    title: "Office Manager",
     company: "ALTIVA Real Estate",
     call: "Call",
     whatsapp: "WhatsApp",
@@ -56,17 +81,23 @@ const copy = {
   },
 } as const;
 
-export default function DigitalCard() {
+export default function DigitalCard({ profileKey }: { profileKey: ProfileKey }) {
   const { i18n } = useTranslation();
   const language = i18n.language.startsWith("en") ? "en" : "ar";
   const text = copy[language];
+  const profile = profiles[profileKey];
+  const name = profile.name[language];
+  const title = profile.title[language];
+  const cardUrl = `https://altivaproperties.com/card/${profile.slug}`;
+  const whatsappMessage = `مرحبًا ${profile.name.ar}، تواصلت معك عبر بطاقتك الرقمية من ALTIVA.\nHello ${profile.firstName}, I contacted you through your ALTIVA digital card.`;
+  const whatsappUrl = `https://wa.me/${profile.phone.replace("+", "")}?text=${encodeURIComponent(whatsappMessage)}`;
   const [shareStatus, setShareStatus] = useState("");
 
   useEffect(() => {
     const previousTitle = document.title;
     const previousDirection = document.documentElement.dir;
     const previousLanguage = document.documentElement.lang;
-    document.title = language === "ar" ? "ياسمين شهابي | مديرة المكتب — ألتيفا" : "Yasmin Shahabi | Office Manager — ALTIVA";
+    document.title = `${name} | ${title} — ALTIVA`;
     document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
     document.documentElement.lang = language;
 
@@ -85,14 +116,14 @@ export default function DigitalCard() {
       document.documentElement.lang = previousLanguage;
       if (previousRobots) robots!.content = previousRobots;
     };
-  }, [language]);
+  }, [language, name, title]);
 
   async function shareCard() {
     try {
       if (navigator.share) {
-        await navigator.share({ title: `${text.name} — ${text.company}`, text: text.title, url: CARD_URL });
+        await navigator.share({ title: `${name} — ${text.company}`, text: title, url: cardUrl });
       } else {
-        await navigator.clipboard.writeText(CARD_URL);
+        await navigator.clipboard.writeText(cardUrl);
         setShareStatus(text.copied);
         window.setTimeout(() => setShareStatus(""), 2200);
       }
@@ -142,26 +173,26 @@ export default function DigitalCard() {
         <section className="relative px-6 pb-7 text-center">
           <div className="mx-auto -mt-5 h-32 w-32 overflow-hidden rounded-full border-[3px] border-copper bg-navy-light p-1 shadow-gold-lg">
             <img
-              src={publicAsset("team/yasmin-shahabi.jpg")}
-              alt={text.name}
+              src={publicAsset(profile.photo)}
+              alt={name}
               className="h-full w-full rounded-full object-cover object-top"
             />
           </div>
 
-          <h1 className="mt-4 font-display-heading text-3xl font-bold text-cream">{text.name}</h1>
-          <p className="mt-1 text-sm font-bold tracking-wide text-copper">{text.title}</p>
+          <h1 className="mt-4 font-display-heading text-3xl font-bold text-cream">{name}</h1>
+          <p className="mt-1 text-sm font-bold tracking-wide text-copper">{title}</p>
           <p className="mt-1 text-xs text-cream/55">{text.company}</p>
 
           <div className="mt-6 grid grid-cols-4 gap-3">
-            <Action href="tel:+96557775289" icon={Phone} label={text.call} />
-            <Action href={WHATSAPP_URL} icon={MessageCircle} label={text.whatsapp} external />
-            <Action href="mailto:yasmin@altivaproperties.com" icon={Mail} label={text.email} />
+            <Action href={`tel:${profile.phone}`} icon={Phone} label={text.call} />
+            <Action href={whatsappUrl} icon={MessageCircle} label={text.whatsapp} external />
+            <Action href={`mailto:${profile.email}`} icon={Mail} label={text.email} />
             <Action href={MAP_URL} icon={MapPin} label={text.location} external />
           </div>
 
           <a
-            href={publicAsset("cards/yasmin-shahabi.vcf")}
-            download="Yasmin-Shahabi-ALTIVA.vcf"
+            href={publicAsset(`cards/${profile.slug}.vcf`)}
+            download={profile.downloadName}
             className="btn-shine mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-gold-gradient px-5 py-3.5 text-sm font-extrabold text-navy-deep shadow-gold-sm transition hover:-translate-y-0.5"
           >
             <Download size={18} />
@@ -169,9 +200,9 @@ export default function DigitalCard() {
           </a>
 
           <div className="mt-6 overflow-hidden rounded-2xl border border-cream/10 bg-navy-light/60 text-start">
-            <Detail href="tel:+96557775289" icon={Phone} label={text.mobile} value="+965 5777 5289" />
-            <Detail href="tel:+96522200355" icon={Building2} label={text.office} value="+965 2220 0355" />
-            <Detail href="mailto:yasmin@altivaproperties.com" icon={Mail} label={text.email} value="yasmin@altivaproperties.com" />
+            <Detail href={`tel:${profile.phone}`} icon={Phone} label={text.mobile} value={profile.phoneDisplay} />
+            <Detail href={`tel:${profile.officePhone}`} icon={Building2} label={text.office} value={profile.officePhoneDisplay} />
+            <Detail href={`mailto:${profile.email}`} icon={Mail} label={text.email} value={profile.email} />
             <Detail href={MAP_URL} icon={MapPin} label={text.location} value={text.address} external />
           </div>
 

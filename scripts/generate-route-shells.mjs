@@ -1,7 +1,19 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
-const STATIC_ROUTES = ["projects", "services", "about", "contact", "consultation", "privacy", "guide/dubai-investor-2026", "card/yasmin-shahabi"];
+const CARD_ROUTE_META = {
+  "card/yasmin-shahabi": {
+    title: "Yasmin Shahabi | Office Manager — ALTIVA",
+    description: "Digital business card for Yasmin Shahabi, Office Manager at ALTIVA Real Estate.",
+    image: "https://altivaproperties.com/team/yasmin-shahabi.jpg",
+  },
+  "card/sarah-alotaibi": {
+    title: "Sarah Al Otaibi | Secretary — ALTIVA",
+    description: "Digital business card for Sarah Al Otaibi, Secretary at ALTIVA Real Estate.",
+    image: "https://altivaproperties.com/team/sarah-alotaibi.jpg",
+  },
+};
+const STATIC_ROUTES = ["projects", "services", "about", "contact", "consultation", "privacy", "guide/dubai-investor-2026", ...Object.keys(CARD_ROUTE_META)];
 const PROJECT_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const distDirectory = resolve("dist");
 const rootHtml = await readFile(join(distDirectory, "index.html"), "utf8");
@@ -13,6 +25,7 @@ const projectRoutes = projects
 for (const route of [...STATIC_ROUTES, ...projectRoutes]) {
   const routeDirectory = join(distDirectory, route);
   await mkdir(routeDirectory, { recursive: true });
+  const cardMeta = CARD_ROUTE_META[route];
   const routeHtml = route === "guide/dubai-investor-2026"
     ? rootHtml
         .replace("ALTIVA Real Estate | ألتيفا العقارية", "دليل المستثمر العقاري في دبي 2026 | ALTIVA")
@@ -23,16 +36,16 @@ for (const route of [...STATIC_ROUTES, ...projectRoutes]) {
         .replaceAll("https://altivaproperties.com/projects/ventana-residences/cover.jpg", "https://altivaproperties.com/altiva-investor-guide-cover.png")
         .replace("ألتيفا العقارية | فرص وخدمات عقارية في الإمارات", "دليل المستثمر العقاري في دبي 2026 | ALTIVA")
         .replace("فرص عقارية مختارة وخدمات عقارية متكاملة في الإمارات للمستثمرين من الكويت ودول الخليج.", "دليل عربي مجاني من ALTIVA يساعدك على طرح الأسئلة الصحيحة وفهم أرقام الاستثمار العقاري في دبي.")
-    : route === "card/yasmin-shahabi"
+    : cardMeta
       ? rootHtml
-          .replace("ALTIVA Real Estate | ألتيفا العقارية", "Yasmin Shahabi | Office Manager — ALTIVA")
-          .replace("ألتيفا العقارية — شريك المستثمر الكويتي للفرص والخدمات العقارية في الإمارات والسعودية وقطر والبحرين وعُمان.", "Yasmin Shahabi, Office Manager at ALTIVA Real Estate.")
+          .replace("ALTIVA Real Estate | ألتيفا العقارية", cardMeta.title)
+          .replace("ألتيفا العقارية — شريك المستثمر الكويتي للفرص والخدمات العقارية في الإمارات والسعودية وقطر والبحرين وعُمان.", cardMeta.description)
           .replace("index, follow, max-image-preview:large", "noindex, nofollow")
-          .replace("https://altivaproperties.com/\" data-altiva-seo", "https://altivaproperties.com/card/yasmin-shahabi/\" data-altiva-seo")
-          .replaceAll("ألتيفا العقارية | شريك المستثمر الكويتي في الخليج", "Yasmin Shahabi | Office Manager — ALTIVA")
-          .replaceAll("فرص وخدمات عقارية متكاملة للمستثمر الكويتي في الإمارات والسعودية وقطر والبحرين وعُمان.", "Digital business card for Yasmin Shahabi, Office Manager at ALTIVA Real Estate.")
-          .replaceAll("https://altivaproperties.com/projects/ventana-residences/cover.jpg", "https://altivaproperties.com/team/yasmin-shahabi.jpg")
-          .replace("https://altivaproperties.com/\"", "https://altivaproperties.com/card/yasmin-shahabi/\"")
+          .replace("https://altivaproperties.com/\" data-altiva-seo", `https://altivaproperties.com/${route}/\" data-altiva-seo`)
+          .replaceAll("ألتيفا العقارية | شريك المستثمر الكويتي في الخليج", cardMeta.title)
+          .replaceAll("فرص وخدمات عقارية متكاملة للمستثمر الكويتي في الإمارات والسعودية وقطر والبحرين وعُمان.", cardMeta.description)
+          .replaceAll("https://altivaproperties.com/projects/ventana-residences/cover.jpg", cardMeta.image)
+          .replace("https://altivaproperties.com/\"", `https://altivaproperties.com/${route}/\"`)
       : rootHtml;
   await writeFile(join(routeDirectory, "index.html"), routeHtml);
 }

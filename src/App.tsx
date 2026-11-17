@@ -16,7 +16,8 @@ function App() {
   return (
     <Routes>
       <Route path="/guide/dubai-investor-2026" element={<InvestorGuide />} />
-      <Route path="/card/yasmin-shahabi" element={<DigitalCard />} />
+      <Route path="/card/yasmin-shahabi" element={<DigitalCard profileKey="yasmin" />} />
+      <Route path="/card/sarah-alotaibi" element={<DigitalCard profileKey="sarah" />} />
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

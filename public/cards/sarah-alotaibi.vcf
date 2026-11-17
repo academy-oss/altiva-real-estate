@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Al Otaibi;Sarah;;;
+FN:Sarah Al Otaibi
+ORG:ALTIVA Real Estate
+TITLE:Secretary
+TEL;TYPE=CELL,VOICE:+96557775094
+TEL;TYPE=WORK,VOICE:+96522200355
+EMAIL;TYPE=WORK:sarah@altivaproperties.com
+EMAIL;TYPE=WORK:info@altivaproperties.com
+URL;TYPE=CARD:https://altivaproperties.com/card/sarah-alotaibi
+URL;TYPE=WORK:https://altivaproperties.com/
+ADR;TYPE=WORK:;;Al Salhiya Complex\, Gate 5\, Second Floor;Kuwait City;;;Kuwait
+NOTE:Secretary | السكرتيرة
+END:VCARD
