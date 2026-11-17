@@ -8,8 +8,8 @@ const CARD_ROUTE_META = {
     image: "https://altivaproperties.com/team/yasmin-shahabi.jpg",
   },
   "card/sarah-alotaibi": {
-    title: "Sarah Al Otaibi | Secretary — ALTIVA",
-    description: "Digital business card for Sarah Al Otaibi, Secretary at ALTIVA Real Estate.",
+    title: "Sarah Al Otaibi | Executive Secretary — ALTIVA",
+    description: "Digital business card for Sarah Al Otaibi, Executive Secretary at ALTIVA Real Estate.",
     image: "https://altivaproperties.com/team/sarah-alotaibi.jpg",
   },
 };

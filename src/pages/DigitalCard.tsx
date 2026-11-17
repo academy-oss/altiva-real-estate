@@ -32,7 +32,7 @@ const profiles = {
   sarah: {
     slug: "sarah-alotaibi",
     name: { ar: "سارة العتيبي", en: "Sarah Al Otaibi" },
-    title: { ar: "السكرتيرة", en: "Secretary" },
+    title: { ar: "سكرتيرة المدير", en: "Executive Secretary" },
     firstName: "Sarah",
     phone: "+96557775094",
     phoneDisplay: "+965 5777 5094",
