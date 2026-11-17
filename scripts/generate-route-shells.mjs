@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
-const STATIC_ROUTES = ["projects", "services", "about", "contact", "consultation", "privacy", "guide/dubai-investor-2026"];
+const STATIC_ROUTES = ["projects", "services", "about", "contact", "consultation", "privacy", "guide/dubai-investor-2026", "card/yasmin-shahabi"];
 const PROJECT_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const distDirectory = resolve("dist");
 const rootHtml = await readFile(join(distDirectory, "index.html"), "utf8");
@@ -23,7 +23,17 @@ for (const route of [...STATIC_ROUTES, ...projectRoutes]) {
         .replaceAll("https://altivaproperties.com/projects/ventana-residences/cover.jpg", "https://altivaproperties.com/altiva-investor-guide-cover.png")
         .replace("ألتيفا العقارية | فرص وخدمات عقارية في الإمارات", "دليل المستثمر العقاري في دبي 2026 | ALTIVA")
         .replace("فرص عقارية مختارة وخدمات عقارية متكاملة في الإمارات للمستثمرين من الكويت ودول الخليج.", "دليل عربي مجاني من ALTIVA يساعدك على طرح الأسئلة الصحيحة وفهم أرقام الاستثمار العقاري في دبي.")
-    : rootHtml;
+    : route === "card/yasmin-shahabi"
+      ? rootHtml
+          .replace("ALTIVA Real Estate | ألتيفا العقارية", "Yasmin Shahabi | Office Manager — ALTIVA")
+          .replace("ألتيفا العقارية — شريك المستثمر الكويتي للفرص والخدمات العقارية في الإمارات والسعودية وقطر والبحرين وعُمان.", "Yasmin Shahabi, Office Manager at ALTIVA Real Estate.")
+          .replace("index, follow, max-image-preview:large", "noindex, nofollow")
+          .replace("https://altivaproperties.com/\" data-altiva-seo", "https://altivaproperties.com/card/yasmin-shahabi/\" data-altiva-seo")
+          .replace("ألتيفا العقارية | شريك المستثمر الكويتي في الخليج", "Yasmin Shahabi | Office Manager — ALTIVA")
+          .replace("فرص وخدمات عقارية متكاملة للمستثمر الكويتي في الإمارات والسعودية وقطر والبحرين وعُمان.", "Digital business card for Yasmin Shahabi, Office Manager at ALTIVA Real Estate.")
+          .replace("https://altivaproperties.com/projects/ventana-residences/cover.jpg", "https://altivaproperties.com/team/yasmin-shahabi.jpg")
+          .replace("https://altivaproperties.com/\"", "https://altivaproperties.com/card/yasmin-shahabi/\"")
+      : rootHtml;
   await writeFile(join(routeDirectory, "index.html"), routeHtml);
 }
 

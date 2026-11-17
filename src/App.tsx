@@ -10,11 +10,13 @@ import Services from "./pages/Services";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 import InvestorGuide from "./pages/InvestorGuide";
+import DigitalCard from "./pages/DigitalCard";
 
 function App() {
   return (
     <Routes>
       <Route path="/guide/dubai-investor-2026" element={<InvestorGuide />} />
+      <Route path="/card/yasmin-shahabi" element={<DigitalCard />} />
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
